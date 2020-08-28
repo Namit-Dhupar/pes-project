@@ -1,7 +1,8 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
 import { makeStyles, useTheme } from '@material-ui/core/styles';
 import {AppBar, Toolbar, IconButton, Badge, MenuItem, Menu,
-Drawer, Divider, Hidden, List, ListItem, ListItemIcon, ListItemText} from '@material-ui/core';
+Drawer, Divider, Hidden, List, ListItem, ListItemIcon, ListItemText, Grid} from '@material-ui/core';
 import MenuIcon from '@material-ui/icons/Menu';
 import AccountCircle from '@material-ui/icons/AccountCircle';
 import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
@@ -73,22 +74,6 @@ const PrimarySearchAppBar = (props) => {
     setMobileMoreAnchorEl(event.currentTarget);
   };
 
-  const drawer = (
-    <div>
-      <div className={classes.toolbar} />
-      <Divider />
-      <List>
-        {['Home', 'Products', 'Contact Us'].map((text, index) => (
-          <ListItem button key={text}>
-            <ListItemIcon>{index === 0 ? <HomeIcon /> :
-            index === 1 ? <CardTravelIcon /> : <PhoneIcon />}</ListItemIcon>
-            <ListItemText primary={text} />
-          </ListItem>
-        ))}
-      </List>
-    </div>
-  );
-
   const container = window !== undefined ? () => window().document.body : undefined;
   
   const mobileMenuId = 'primary-search-account-menu-mobile';
@@ -126,7 +111,7 @@ const PrimarySearchAppBar = (props) => {
 
   return (
     <div className={classes.grow}>
-      <AppBar className={classes.appBar}>
+       <AppBar className={classes.appBar}>
         <Toolbar>
         <IconButton
             color="inherit"
@@ -137,7 +122,11 @@ const PrimarySearchAppBar = (props) => {
           >
             <MenuIcon />
           </IconButton>
-          <img style={{height:"3em", width:"20em"}} src="https://imgur.com/wClD8US.png" alt="pes logo" />
+          <Link to="/">
+          <Grid item xs={12}> 
+          <img style={{height:"40%", width:"45%"}} src="https://imgur.com/wClD8US.png" alt="pes logo" />
+          </Grid>
+          </Link>
           <div className={classes.grow} />
           <div className={classes.sectionDesktop}>
             <IconButton aria-label="show 4 new mails" color="inherit">
@@ -184,7 +173,33 @@ const PrimarySearchAppBar = (props) => {
               keepMounted: true, // Better open performance on mobile.
             }}
           >
-            {drawer}
+      <div>
+      <div className={classes.toolbar} />
+      <Divider />
+      <List onClick={handleDrawerToggle}>
+        <Link to="/" style={{textDecoration: 'none', color: "#000000"}}>
+        <ListItem button>
+           <ListItemIcon><HomeIcon /></ListItemIcon>
+           <ListItemText primary="Home" />
+        </ListItem>
+        </Link>
+
+        <Link to="/products" style={{textDecoration: 'none', color: "#000000"}}>
+        <ListItem button>
+           <ListItemIcon><CardTravelIcon /></ListItemIcon>
+           <ListItemText primary="Products" />
+        </ListItem>
+        </Link>
+
+        <Link to="/contact" style={{textDecoration: 'none', color: "#000000"}}>
+        <ListItem button>
+           <ListItemIcon><PhoneIcon /></ListItemIcon>
+           <ListItemText primary="Contact Us" />
+        </ListItem>
+        </Link>
+
+      </List>
+     </div>
           </Drawer>
         </Hidden>
       </nav>

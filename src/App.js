@@ -1,13 +1,17 @@
 import React from 'react';
 import Navbar from './components/UI/Navbar/Navbar';
+import { BrowserRouter, Route } from 'react-router-dom';
+import { HomePage, ProductList, ContactPage} from './components';
 
 function App() {
   return (
-    <div>
+    <BrowserRouter>
      <Navbar>
-      Hello World
+      <Route path="/" exact component={HomePage} />
+      <Route path="/products" component={ProductList} />
+      <Route path="/contact" component={ContactPage} />
      </Navbar> 
-    </div>
+    </BrowserRouter>
   );
 }
 
