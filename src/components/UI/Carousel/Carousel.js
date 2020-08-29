@@ -2,13 +2,14 @@ import React from 'react';
 import Carousel from "react-material-ui-carousel";
 import autoBind from "auto-bind";
 import '../../../styles/example.scss';
-
 import {
     Card,
     CardContent,
     CardMedia,
     Typography,
-    Grid
+    Grid,
+    Zoom,
+    Slide
 } from '@material-ui/core';
 
 function Banner(props) {
@@ -19,15 +20,18 @@ function Banner(props) {
 
     let items = [];
     const content = (
-        <Grid item xs={12 / totalItems} key="content">
+        <Grid item xs={12} lg={12 / totalItems} key="content">
             <CardContent className="Content">
+            <Zoom in="true" style={{ transitionDelay: true ? "500ms" : "0ms" }}>
                 <Typography className="Title">
                     {props.item.Name}
                 </Typography>
-
+            </Zoom>
+            <Slide direction="up" in="true">
                 <Typography className="Caption">
                     {props.item.Caption}
                 </Typography>
+            </Slide>    
             </CardContent>
         </Grid>
     )
@@ -37,7 +41,7 @@ function Banner(props) {
         const item = props.item.Items[i];
 
         const media = (
-            <Grid item xs={12 / totalItems} key={item.Name}>
+            <Grid item xs={0} lg={12 / totalItems} key={item.Name}>
                 <CardMedia
                     className="Media"
                     image={item.Image}
@@ -73,8 +77,8 @@ function Banner(props) {
 
 const items = [
     {
-        Name: "Pumps",
-        Caption: "Available in multiple series",
+        Name: "EXPORTER",
+        Caption: "Equipment for Pharmacueticals, Diary, Toffee, Candy",
         contentPosition: "left",
         Items: [
             {
@@ -88,8 +92,8 @@ const items = [
         ]
     },
     {
-        Name: "Sight Glasses",
-        Caption: "Observe Your Machinery!",
+        Name: "MANUFACTURES",
+        Caption: "Equipments for Juices, Edible Oil, Food Processing, Breweries, Soft Drink..",
         contentPosition: "right",
         Items: [
             {
@@ -103,9 +107,9 @@ const items = [
         ]
     },
     {
-        Name: "And More",
-        Caption: "Browse Through Our Catelogue!",
-        contentPosition: "right",
+        Name: "ENGINEERS",
+        Caption: "Equipments for Soft Drink, Confectionery, Perfumery, Live Stock etc.",
+        contentPosition: "middle",
         Items: [
             {
                 Name: "Refrigiration System",
@@ -138,10 +142,7 @@ class BannerExample extends React.Component {
    render() {
         return (
             <div style={{marginTop: "50px", color: "#494949"}}>
-                <Grid container>
-                <Grid item xs={12}>
                 <Carousel
-                    className="Example"
                     autoPlay={this.state.autoPlay}
                     timer={this.state.timer}
                     animation={this.state.animation}
@@ -155,8 +156,6 @@ class BannerExample extends React.Component {
                         })
                     }
                 </Carousel>
-                </Grid>
-                </Grid>
             </div>
 
         )

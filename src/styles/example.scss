@@ -1,8 +1,54 @@
 @import 'global';
 
+@media screen and (max-width: 600px) {
+
 .Banner
 {
-    height: 400px;
+    height: 100px;
+    position: absolute;
+
+    .Media
+    {
+       display: none;
+    }
+
+    .BannerGrid
+    {
+        height: 100%;
+    }
+
+    .Content
+    {
+        color: white;
+        background-color: $pes-blue;
+        height: 100%;
+        width: 100%;
+
+        cursor: pointer;
+
+        padding: 30px;
+
+        transition: 300ms;
+
+        .Title
+        {
+            font-size: 10px;
+            font-weight: 200;
+        }
+
+        .Caption
+        {
+            margin-top: 10px;
+            font-size: $small-font-size;
+        }
+    }
+}
+
+    
+}
+.Banner
+{
+    height: 300px;
     position: relative;
 
     .Media
@@ -10,7 +56,6 @@
         background-color: white;
         height: 100%;
         overflow: hidden;
-
         position: relative;
 
         .MediaCaption
@@ -79,18 +124,6 @@
         {
             margin-top: 10px;
             font-size: $normal-font-size;
-        }
-
-        .ViewButton
-        {
-            margin-top: 40px;
-            color: white;
-
-            font-size: $header-font-size;
-            border: 3px solid white;
-            text-transform: capitalize;
-
-            transition: 200ms;
         }
     }
 }

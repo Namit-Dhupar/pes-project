@@ -2,7 +2,7 @@ import React from 'react';
 import {Link} from 'react-router-dom';
 import { makeStyles, useTheme } from '@material-ui/core/styles';
 import {AppBar, Toolbar, IconButton, Badge, MenuItem, Menu,
-Drawer, Divider, Hidden, List, ListItem, ListItemIcon, ListItemText, Grid} from '@material-ui/core';
+Drawer, Divider, Hidden, List, ListItem, ListItemIcon, ListItemText} from '@material-ui/core';
 import MenuIcon from '@material-ui/icons/Menu';
 import AccountCircle from '@material-ui/icons/AccountCircle';
 import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
@@ -50,6 +50,12 @@ const useStyles = makeStyles((theme) => ({
   content: {
     flexGrow: 1,
     padding: theme.spacing(3),
+  },
+  logo: {
+    width: '100%',
+    [theme.breakpoints.up('sm')]: {
+      width: '45%',
+    },
   },
 }));
 
@@ -123,9 +129,7 @@ const PrimarySearchAppBar = (props) => {
             <MenuIcon />
           </IconButton>
           <Link to="/">
-          <Grid item xs={12}> 
-          <img style={{height:"40%", width:"45%"}} src="https://imgur.com/wClD8US.png" alt="pes logo" />
-          </Grid>
+          <img className={classes.logo} src="https://imgur.com/wClD8US.png" alt="pes logo" />
           </Link>
           <div className={classes.grow} />
           <div className={classes.sectionDesktop}>
