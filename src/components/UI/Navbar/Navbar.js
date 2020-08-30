@@ -129,7 +129,7 @@ const PrimarySearchAppBar = (props) => {
             <MenuIcon />
           </IconButton>
           <Link to="/">
-          <img className={classes.logo} src="https://imgur.com/wClD8US.png" alt="pes logo" />
+          <img className={classes.logo} src="/Images/Banner.png" alt="pes logo" />
           </Link>
           <div className={classes.grow} />
           <div className={classes.sectionDesktop}>

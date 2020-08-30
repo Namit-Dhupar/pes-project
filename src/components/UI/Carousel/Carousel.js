@@ -17,17 +17,16 @@ function Banner(props) {
     const contentPosition = props.contentPosition ? props.contentPosition : "left"
     const totalItems = props.length ? props.length : 3;
     const mediaLength = totalItems - 1;
-
     let items = [];
     const content = (
         <Grid item xs={12} lg={12 / totalItems} key="content">
             <CardContent className="Content">
-            <Zoom in="true" style={{ transitionDelay: true ? "500ms" : "0ms" }}>
+            <Zoom in={true} style={{ transitionDelay: true ? "500ms" : "0ms" }}>
                 <Typography className="Title">
                     {props.item.Name}
                 </Typography>
             </Zoom>
-            <Slide direction="up" in="true">
+            <Slide direction="up" in={true}>
                 <Typography className="Caption">
                     {props.item.Caption}
                 </Typography>
@@ -41,7 +40,7 @@ function Banner(props) {
         const item = props.item.Items[i];
 
         const media = (
-            <Grid item xs={0} lg={12 / totalItems} key={item.Name}>
+            <Grid item xs={false} lg={12 / totalItems} key={item.Name}>
                 <CardMedia
                     className="Media"
                     image={item.Image}
