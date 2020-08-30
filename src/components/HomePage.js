@@ -46,8 +46,7 @@ const HomePage = (props) => {
                 {/*PUMP PRODUCT */}
                 <Grid container>
                 <Grid item lg={3} xs={12}> 
-                <Link className="bard" to="/TALLY" style={{borderColor: "#068DDB" ,textDecoration: "none" ,
-                backgroundImage: "url(/Images/Puma-Pump.jpg)"}}>
+                <Link className="bard" to="/TALLY" style={{backgroundImage: "url(/Images/Puma-Pump.jpg)", margin: "0"}}>
                   <p>PUMPS</p>
                 <div>
                   <h1>Pumps</h1>
@@ -57,8 +56,7 @@ const HomePage = (props) => {
 
                  {/*TUBE PRODUCT */}
                  <Grid item lg={3} xs={12}> 
-                 <Link className="bard" to="/TALLY" style={{borderColor: "#068DDB" ,textDecoration: "none" ,
-                backgroundImage: "url(/Images/REFRIGERATION-SYSTEM.jpg)"}}>
+                 <Link className="bard" to="/TALLY" style={{backgroundImage: "url(/Images/REFRIGERATION-SYSTEM.jpg)"}}>
                   <p>TUBE & FITTINGS</p>
                 <div>
                   <h1>TUBE & FITTINGS</h1>
@@ -68,8 +66,7 @@ const HomePage = (props) => {
 
                  {/*HOMOGENIZER PRODUCT */}
                  <Grid item lg={3} xs={12}> 
-                 <Link className="bard" to="/TALLY" style={{borderColor: "#068DDB" ,textDecoration: "none" ,
-                backgroundImage: "url(/Images/HOMOGENIZER.jpg)"}}>
+                 <Link className="bard" to="/TALLY" style={{backgroundImage: "url(/Images/HOMOGENIZER.jpg)"}}>
                   <p>PIPE SUPPORT & ACCESSORIES</p>
                 <div>
                   <h1>PIPE SUPPORT & ACCESSORIES</h1>
@@ -79,8 +76,7 @@ const HomePage = (props) => {
 
                  {/*VALVES PRODUCT */}
                  <Grid item lg={3} xs={12}> 
-                 <Link className="bard" to="/TALLY" style={{borderColor: "#068DDB" ,textDecoration: "none" ,
-                backgroundImage: "url(/Images/BULK-COOLER.jpg)"}}>
+                 <Link className="bard" to="/TALLY" style={{backgroundImage: "url(/Images/BULK-COOLER.jpg)"}}>
                   <p>VALVE</p>
                 <div>
                   <h1>VALVE</h1>

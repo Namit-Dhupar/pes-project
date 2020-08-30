@@ -27,7 +27,7 @@
     transition: all, var(--transition-time);
     position: relative;
     overflow: hidden;
-    border: 1px solid #ccc;
+   // border: 1px solid #ccc;
     text-decoration: none;
   }
   
@@ -57,7 +57,7 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    margin-right: -50%;
+   // margin-right: -50%;
     transform: translate(-50%, -50%);
     text-decoration: underline;
     color: #ffffff;
