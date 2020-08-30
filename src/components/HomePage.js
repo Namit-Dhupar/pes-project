@@ -4,7 +4,7 @@ import {Grid} from '@material-ui/core';
 import '../styles/homepage.scss';
 import {Link} from 'react-router-dom';
 
-const HomePage = (props) => {
+const HomePage = () => {
     return (
           <Fragment >
             <Carousel/>
@@ -44,9 +44,9 @@ const HomePage = (props) => {
 
                 
                 {/*PUMP PRODUCT */}
-                <Grid container>
+                <Grid container className="Product">
                 <Grid item lg={3} xs={12}> 
-                <Link className="bard" to="/TALLY" style={{backgroundImage: "url(/Images/Puma-Pump.jpg)", margin: "0"}}>
+                <Link className="bard" to="/TALLY" style={{backgroundImage: "url(/Images/Puma-Pump.jpg)"}}>
                   <p>PUMPS</p>
                 <div>
                   <h1>Pumps</h1>

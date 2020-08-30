@@ -57,9 +57,7 @@
     position: absolute;
     top: 50%;
     left: 50%;
-   // margin-right: -50%;
     transform: translate(-50%, -50%);
-    text-decoration: underline;
     color: #ffffff;
 }
 
@@ -166,5 +164,17 @@
     transform: scale(1);
   }
   
-  
+  @media screen and (max-width: 600px) {
+      .Product{
+        padding-left: 45px;
+      }
+  }
+
+  @media screen and (max-width: 640px) {
+    .Product{
+      padding-left: 25px;
+    }
+}
+
+
   
