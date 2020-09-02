@@ -1,6 +1,6 @@
 import React, {Fragment} from 'react';
 import Carousel from './UI/Carousel/Carousel';
-import {Grid} from '@material-ui/core';
+import {Grid, Button} from '@material-ui/core';
 import '../styles/homepage.scss';
 import {Link} from 'react-router-dom';
 
@@ -84,6 +84,40 @@ const HomePage = () => {
                 </Link>
                </Grid>
                </Grid>
+               </div>
+
+               <br />
+                <div className="heading">
+                <h1>OUR CLIENT</h1>
+                <p className="title">We are providing our products and services to some of the very esteemed clients in 
+                the industry who are satisfied with our products and after sales service. Here are the few:</p>
+                <Grid container>
+                  <Grid item lg={3} xs={12}>
+                  <img style={{height:"100px"}} src="/Images/Clients/amul.png" alt="Amul"/>
+                  </Grid>
+                  <Grid item lg={3} xs={12}>
+                  <img style={{height:"100px"}} src="/Images/Clients/frooti.png" alt="Frooti"/>
+                  </Grid>
+                  <Grid item lg={3} xs={12}>
+                  <img style={{height:"100px"}} src="/Images/Clients/mother-dairy.png" alt="Mother-Diary"/>
+                  </Grid>
+                  <Grid item lg={3} xs={12}>
+                  <img style={{height:"100px"}} src="/Images/Clients/nestle.png" alt="Nestle"/>
+                  </Grid>
+                </Grid>
+               </div>
+               <br />
+               <div className="Download">
+                 <br />
+                 <h2>CREATE OWN BUSINESS WITH OUR IDEAS</h2>
+                 <p>We undertake turkey projects for dairy, candy, juices, chocolate industry and 
+                   like and are dedicated to provide you the best product with our expertise and
+                    dedicated team of professionals. You think it, we make it.</p>
+                 <br />
+                 <a style={{textDecoration:'none'}} href='/Catalogue.PDF' download='PES Brochure'>
+                <Button variant="contained" style={{backgroundColor:"#068DDB", color:"#ffffff", marginBottom:"2%"}}>
+                 Download Brochure
+                 </Button></a>
                </div>
             </Fragment>   
     )

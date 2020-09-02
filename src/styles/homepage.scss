@@ -14,6 +14,10 @@
     --color: #ffffff;
     --transition-time: 0.5s;
   }
+
+  .title{
+    font-size: 20px;
+  }
   
   .bard {
     height: 10em;
@@ -27,7 +31,6 @@
     transition: all, var(--transition-time);
     position: relative;
     overflow: hidden;
-   // border: 1px solid #ccc;
     text-decoration: none;
   }
   
@@ -168,6 +171,17 @@
       .Product{
         padding-left: 45px;
       }
+  }
+
+  .Download{
+    background-color: #00000066;
+    color: #ffffff;
+    display: inline-grid;
+    text-align: center;
+    width: 100%;
+    padding-left: 24px;
+    margin-left: -24px;
+    padding-right: 24px;    
   }
 
   @media screen and (max-width: 640px) {
