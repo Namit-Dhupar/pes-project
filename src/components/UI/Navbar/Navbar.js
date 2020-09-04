@@ -2,7 +2,8 @@ import React from 'react';
 import {Link} from 'react-router-dom';
 import { makeStyles, useTheme } from '@material-ui/core/styles';
 import {AppBar, Toolbar, IconButton, Badge, MenuItem, Menu,
-Drawer, Divider, Hidden, List, ListItem, ListItemIcon, ListItemText} from '@material-ui/core';
+Drawer, Divider, Hidden, List, ListItem, ListItemIcon, 
+ListItemText, Collapse} from '@material-ui/core';
 import MenuIcon from '@material-ui/icons/Menu';
 import AccountCircle from '@material-ui/icons/AccountCircle';
 import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
@@ -10,6 +11,9 @@ import MoreIcon from '@material-ui/icons/MoreVert';
 import CardTravelIcon from '@material-ui/icons/CardTravel';
 import HomeIcon from '@material-ui/icons/Home';
 import PhoneIcon from '@material-ui/icons/Phone';
+import BusinessIcon from '@material-ui/icons/Business';
+import ExpandLess from '@material-ui/icons/ExpandLess';
+import ExpandMore from '@material-ui/icons/ExpandMore';
 
 const drawerWidth = 240;
 const useStyles = makeStyles((theme) => ({
@@ -57,6 +61,13 @@ const useStyles = makeStyles((theme) => ({
       width: '45%',
     },
   },
+  nested: {
+    paddingLeft: theme.spacing(5),
+  },
+  nolink: {
+    textDecoration: 'none',
+    color: '#000000'
+  }
 }));
 
 const PrimarySearchAppBar = (props) => {
@@ -65,8 +76,13 @@ const PrimarySearchAppBar = (props) => {
   const theme = useTheme();
   const [mobileMoreAnchorEl, setMobileMoreAnchorEl] = React.useState(null);
   const [mobileOpen, setMobileOpen] = React.useState(false);
+  const [open, setOpen] = React.useState(true);
 
   const isMobileMenuOpen = Boolean(mobileMoreAnchorEl);
+
+  const handleClick = () => {
+    setOpen(!open);
+  };
 
   const handleDrawerToggle = () => {
     setMobileOpen(!mobileOpen);
@@ -180,22 +196,42 @@ const PrimarySearchAppBar = (props) => {
       <div>
       <div className={classes.toolbar} />
       <Divider />
-      <List onClick={handleDrawerToggle}>
-        <Link to="/" style={{textDecoration: 'none', color: "#000000"}}>
+      <List>
+        <Link onClick={handleDrawerToggle} to="/" className={classes.nolink}>
         <ListItem button>
            <ListItemIcon><HomeIcon /></ListItemIcon>
            <ListItemText primary="Home" />
         </ListItem>
         </Link>
 
-        <Link to="/products" style={{textDecoration: 'none', color: "#000000"}}>
+        <ListItem button onClick={handleClick}>
+        <ListItemIcon><BusinessIcon /></ListItemIcon>
+          <ListItemText primary="Company" />
+        {open != null ? open ? <ExpandMore /> : <ExpandLess /> : null}
+         </ListItem>
+        <Collapse component="li" in={!open} timeout="auto" unmountOnExit>
+        <List disablePadding>
+        <Link onClick={handleDrawerToggle} to="/company/about" className={classes.nolink}>  
+        <ListItem button className={classes.nested}>
+           <ListItemText primary="About Us" />
+        </ListItem>
+        </Link>
+        <Link onClick={handleDrawerToggle} to="/company/capabilities" className={classes.nolink}>
+        <ListItem button className={classes.nested}>
+           <ListItemText primary="Capabilities" />
+        </ListItem>
+        </Link>
+        </List>
+       </Collapse>
+
+        <Link onClick={handleDrawerToggle} to="/products" className={classes.nolink}>
         <ListItem button>
            <ListItemIcon><CardTravelIcon /></ListItemIcon>
            <ListItemText primary="Products" />
         </ListItem>
         </Link>
 
-        <Link to="/contact" style={{textDecoration: 'none', color: "#000000"}}>
+        <Link onClick={handleDrawerToggle} to="/contact" className={classes.nolink}>
         <ListItem button>
            <ListItemIcon><PhoneIcon /></ListItemIcon>
            <ListItemText primary="Contact Us" />
