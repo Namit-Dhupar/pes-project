@@ -1,0 +1,66 @@
+[
+    {
+     "ProductType": "Pumps",   
+     "Subtype": [
+         {
+             "id": 1,
+             "ItemName": "AST-C SERIES",
+             "ItemImageA": "/Images/Row%201/AST-C%20SERIES.jpg",
+             "ItemImageB": null
+         },
+         {
+             "id": 2,
+             "ItemName": "AST-P SERIES",
+             "ItemImageA": "/Images/Row%201/AST-P%20SERIES.jpg",
+             "ItemImageB": null             
+         },
+         {
+             "id": 3,
+             "ItemName": "AST-SELF PRIMING",
+             "ItemImageA": "/Images/Row%201/AST-SELF%20PRIMING.jpg",
+             "ItemImageB": null             
+         },
+         {
+             "id": 4,
+             "ItemName": "AST-XM I & III SERIES",
+             "ItemImageA": "/Images/Row%201/AST-XM%20I%20&%20III%20SERIES.jpg",
+             "ItemImageB": null             
+         },
+         {
+             "id": 5,
+             "ItemName": "AST-XM II SERIES",
+             "ItemImageA": "/Images/Row%201/AST-XM%20II%20SERIES.jpg",
+             "ItemImageB": null             
+         }
+     ]
+    },
+    {
+     "ProductType": "Valves",   
+     "Subtype":[
+         {
+             "id": 6,
+             "ItemName": "PNUEMATIC VALVE",
+             "ItemImageA": "/Images/Row%202/PNUEMATIC%20VALVES%201.jpg",
+             "ItemImageB": "/Images/Row%202/PNEUMATIC%20VALVES%202.jpg"             
+         },
+         {
+             "id": 7,
+             "ItemName": "TANKER VALVE",
+             "ItemImageA": "/Images/Row%203/TANKER%20VALVE.jpg",
+             "ItemImageB": null
+         },
+         {
+             "id": 8,
+             "ItemName": "PLUG VALVE",
+             "ItemImageA": "/Images/Row%203/PLUG%20VALVE%201.jpg",
+             "ItemImageB": "/Images/Row%203/PLUG%20VALVE%202.jpg"
+         },
+         {
+             "id": 9,
+             "ItemName": "STEAM CONTROL VALVE",
+             "ItemImageA": "/Images/Row%208/STEAM%20CONTROL%20VALVE%201.jpg",
+             "ItemImageB": "/Images/Row%208/STEAM%20CONTROL%20VALVE%202.jpg"
+         }
+     ]
+    }
+]   
