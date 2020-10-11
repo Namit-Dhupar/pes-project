@@ -1,11 +1,19 @@
 import React, { useState } from 'react';
-import { makeStyles } from '@material-ui/core/styles';
-import {Tabs, Tab, Box} from '@material-ui/core';
 import ProductData from '../data/ProductData.json';
+import Showpdf from './UI/Modal/Modal';
+import { makeStyles } from '@material-ui/core/styles';
+import {Tabs, 
+        Tab, 
+        Box, 
+        List, 
+        ListItem, 
+        Divider,
+        Grid,
+        Hidden} from '@material-ui/core';
 
 const TabPanel = (props) => {
     const { children, value, index, ...other } = props;
-  
+     
     return (
       <div
         role="tabpanel"
@@ -15,7 +23,7 @@ const TabPanel = (props) => {
         {...other}
       >
         {value === index && (
-          <Box p={3}>
+          <Box p={0}>
           {children}
           </Box>
         )}
@@ -35,11 +43,14 @@ const TabPanel = (props) => {
       flexGrow: 1,
       backgroundColor: theme.palette.background.paper,
       display: 'flex',
-      height: 924,
+      height: 924
     },
     tabs: {
-      borderRight: `1px solid ${theme.palette.divider}`,
+      borderRight: `1px solid ${theme.palette.divider}`
     },
+    list: {
+      width: '100%'
+    }
   }));
 
 const ProductList = () => {
@@ -48,25 +59,46 @@ const ProductList = () => {
     const handleChange = (event, newValue) => {
         setValue(newValue);
       };
-    const tab = ProductData.map((product,index) => {
+
+const tab = ProductData.map((product,index) => {
       return(
         <Tab key={index} label={product.ProductType} {...a11yProps(index)} />
       )
     });
-    const tabPanel = ProductData.map((product,index) => {
+const tabPanel = ProductData.map((product,index) => {
       return(
-       <TabPanel key={index} value={value} index={index}>
+       <TabPanel className={classes.list} key={index} value={value} index={index}>
         {product.Subtype.map((el,index) => (
-          <div key={el.id} style={{cursor:'pointer'}}>  
-          <img src={el.ItemImageA} alt={index}/>
-          {(el.ItemImageB) ? <img src={el.ItemImageB} alt={index}/> : null}
-          <p>{el.ItemName}</p>
-          <br/>
+          <List key={index}>
+          <ListItem className={classes.list}>
+          <div key={el.id}>
+        <Grid container>
+          <Grid item lg={3}>     
+        <img src={el.ItemImageA} alt={index}/>
+        <Hidden smDown>
+            {(el.ItemImageB) ? <img src={el.ItemImageB} alt={index}/> : null}
+        </Hidden>    
+            <p><strong>{el.ItemName}</strong></p>
+         </Grid>
+         
+         <Grid item lg={9}>
+         <Showpdf title={el.ItemName} 
+          description={el.ItemDescription}
+          pdf={el.ItemFile}/>   
+          <Hidden smDown>
+         <p>{el.ItemDescription}{' '}</p>   
+         </Hidden>
+         </Grid>
+        </Grid>       
           </div>
+          </ListItem>
+          <Divider />
+         </List>
         ))}
       </TabPanel>
       )
     });
+
       return (
         <div className={classes.root}>
           <Tabs

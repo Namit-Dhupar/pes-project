@@ -6,31 +6,30 @@
              "id": 1,
              "ItemName": "AST-C SERIES",
              "ItemImageA": "/Images/Row%201/AST-C%20SERIES.jpg",
-             "ItemImageB": null
+             "ItemImageB": null,
+             "ItemFile": "/Products/AST-10-Series-Centrifugal-Pump.pdf" ,
+             "ItemDescription": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged"
          },
          {
              "id": 2,
              "ItemName": "AST-P SERIES",
              "ItemImageA": "/Images/Row%201/AST-P%20SERIES.jpg",
-             "ItemImageB": null             
+             "ItemImageB": null,
+             "ItemDescription": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged"             
          },
          {
              "id": 3,
              "ItemName": "AST-SELF PRIMING",
              "ItemImageA": "/Images/Row%201/AST-SELF%20PRIMING.jpg",
-             "ItemImageB": null             
+             "ItemImageB": null,
+             "ItemDescription": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged"             
          },
          {
              "id": 4,
              "ItemName": "AST-XM I & III SERIES",
              "ItemImageA": "/Images/Row%201/AST-XM%20I%20&%20III%20SERIES.jpg",
-             "ItemImageB": null             
-         },
-         {
-             "id": 5,
-             "ItemName": "AST-XM II SERIES",
-             "ItemImageA": "/Images/Row%201/AST-XM%20II%20SERIES.jpg",
-             "ItemImageB": null             
+             "ItemImageB": null,
+             "ItemDescription": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged"             
          }
      ]
     },
@@ -38,28 +37,32 @@
      "ProductType": "Valves",   
      "Subtype":[
          {
-             "id": 6,
+             "id": 5,
              "ItemName": "PNUEMATIC VALVE",
              "ItemImageA": "/Images/Row%202/PNUEMATIC%20VALVES%201.jpg",
-             "ItemImageB": "/Images/Row%202/PNEUMATIC%20VALVES%202.jpg"             
+             "ItemImageB": "/Images/Row%202/PNEUMATIC%20VALVES%202.jpg"  ,
+             "ItemDescription": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged"           
+         },
+         {
+             "id": 6,
+             "ItemName": "TANKER VALVE",
+             "ItemImageA": "/Images/Row%203/TANKER%20VALVE.jpg",
+             "ItemImageB": null,
+             "ItemDescription": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged"
          },
          {
              "id": 7,
-             "ItemName": "TANKER VALVE",
-             "ItemImageA": "/Images/Row%203/TANKER%20VALVE.jpg",
-             "ItemImageB": null
+             "ItemName": "PLUG VALVE",
+             "ItemImageA": "/Images/Row%203/PLUG%20VALVE%201.jpg",
+             "ItemImageB": "/Images/Row%203/PLUG%20VALVE%202.jpg",
+             "ItemDescription": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged"
          },
          {
              "id": 8,
-             "ItemName": "PLUG VALVE",
-             "ItemImageA": "/Images/Row%203/PLUG%20VALVE%201.jpg",
-             "ItemImageB": "/Images/Row%203/PLUG%20VALVE%202.jpg"
-         },
-         {
-             "id": 9,
              "ItemName": "STEAM CONTROL VALVE",
              "ItemImageA": "/Images/Row%208/STEAM%20CONTROL%20VALVE%201.jpg",
-             "ItemImageB": "/Images/Row%208/STEAM%20CONTROL%20VALVE%202.jpg"
+             "ItemImageB": "/Images/Row%208/STEAM%20CONTROL%20VALVE%202.jpg",
+             "ItemDescription": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged"
          }
      ]
     }
