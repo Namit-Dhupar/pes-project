@@ -15,6 +15,15 @@ const useStyles = makeStyles((theme) => ({
     justifyContent: 'center',
     marginLeft: '16%',
     width: '70%'
+  },
+  navigation: {
+    position: 'absolute',
+    bottom: '1%',
+    left: '50%',
+    transform: 'translateX(-50%)',
+    transition: 'opacity ease-in-out 0.2s',
+    boxShadow: '0 30px 40px 0 rgba(16, 36, 94, 0.2)',
+    borderRadius: '4px'
   }
 }));
 
@@ -89,10 +98,21 @@ const SpringModal = (props) => {
         <Document
         file={props.pdf}
         onLoadSuccess={onDocumentLoadSuccess}>
-        {[numPages].map(page => (
-            <Page renderAnnotationLayer={true} height={630} pageNumber={page} />
-        ))}  
-        
+          <div>
+          <Page height={630} pageNumber={pageNumber} />
+         <div className={classes.navigation}> 
+         {(pageNumber > 1) ? 
+         <Button onClick={()=>setPageNumber(pageNumber-1)} variant="contained"
+         style={{backgroundColor:"#068DDB", color:"#ffffff"}}>
+         &#60;
+        </Button> : null}
+        {(pageNumber < numPages) ?
+        <Button onClick={()=>setPageNumber(pageNumber+1)} variant="contained"
+        style={{backgroundColor:"#068DDB", color:"#ffffff"}}>
+          &#62;
+       </Button> : null}  
+        </div>          
+        </div>        
       </Document>
       </div>
         </Fade>

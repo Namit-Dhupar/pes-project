@@ -7,7 +7,7 @@ ListItemText, Collapse} from '@material-ui/core';
 import MenuIcon from '@material-ui/icons/Menu';
 import AccountCircle from '@material-ui/icons/AccountCircle';
 import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
-import MoreIcon from '@material-ui/icons/MoreVert';
+// import MoreIcon from '@material-ui/icons/MoreVert';
 import CardTravelIcon from '@material-ui/icons/CardTravel';
 import HomeIcon from '@material-ui/icons/Home';
 import PhoneIcon from '@material-ui/icons/Phone';
@@ -92,9 +92,9 @@ const PrimarySearchAppBar = (props) => {
     setMobileMoreAnchorEl(null);
   };
 
-  const handleMobileMenuOpen = (event) => {
-    setMobileMoreAnchorEl(event.currentTarget);
-  };
+  // const handleMobileMenuOpen = (event) => {
+  //   setMobileMoreAnchorEl(event.currentTarget);
+  // };
 
   const container = window !== undefined ? () => window().document.body : undefined;
   
@@ -147,7 +147,7 @@ const PrimarySearchAppBar = (props) => {
           <Link to="/">
           <img className={classes.logo} src="/Images/Banner.png" alt="pes logo" />
           </Link>
-          <div className={classes.grow} />
+          {/* <div className={classes.grow} />
           <div className={classes.sectionDesktop}>
             <IconButton aria-label="show 4 new mails" color="inherit">
               <Badge badgeContent={0} color="secondary">
@@ -173,7 +173,7 @@ const PrimarySearchAppBar = (props) => {
             >
               <MoreIcon />
             </IconButton>
-          </div>
+          </div> */}
         </Toolbar>
       </AppBar>
       {renderMobileMenu}
