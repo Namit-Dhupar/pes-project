@@ -24,6 +24,9 @@ const useStyles = makeStyles((theme) => ({
     transition: 'opacity ease-in-out 0.2s',
     boxShadow: '0 30px 40px 0 rgba(16, 36, 94, 0.2)',
     borderRadius: '4px'
+  },
+  paper: {
+    height: '80%'
   }
 }));
 
@@ -98,8 +101,8 @@ const SpringModal = (props) => {
         <Document
         file={props.pdf}
         onLoadSuccess={onDocumentLoadSuccess}>
-          <div>
-          <Page height={630} pageNumber={pageNumber} />
+          <div className={classes.paper}>
+          <Page scale={0.75} pageNumber={pageNumber} />
          <div className={classes.navigation}> 
          {(pageNumber > 1) ? 
          <Button onClick={()=>setPageNumber(pageNumber-1)} variant="contained"
