@@ -1,6 +1,6 @@
 import React, {Fragment} from 'react';
 import Carousel from './UI/Carousel/Carousel';
-import {Grid, Button} from '@material-ui/core';
+import {Grid, Button, Box} from '@material-ui/core';
 import '../styles/homepage.scss';
 import {Link} from 'react-router-dom';
 
@@ -42,11 +42,11 @@ const HomePage = () => {
                 <h1>OUR POPULAR PRODUCTS</h1>
                 <h3>Our Latest Product</h3>
 
-                
+                <Box display="flex" justifyContent="center">
                 {/*PUMP PRODUCT */}
                 <Grid container className="Product">
                 <Grid item lg={3} xs={12}> 
-                <Link className="bard" to="/TALLY" style={{backgroundImage: "url(/Images/Puma-Pump.jpg)"}}>
+                <Link className="bard" to="#" style={{backgroundImage: "url(/Images/Puma-Pump.jpg)"}}>
                   <p>PUMPS</p>
                 <div>
                   <h1>Pumps</h1>
@@ -56,7 +56,7 @@ const HomePage = () => {
 
                  {/*TUBE PRODUCT */}
                  <Grid item lg={3} xs={12}> 
-                 <Link className="bard" to="/TALLY" style={{backgroundImage: "url(/Images/REFRIGERATION-SYSTEM.jpg)"}}>
+                 <Link className="bard" to="#" style={{backgroundImage: "url(/Images/REFRIGERATION-SYSTEM.jpg)"}}>
                   <p>TUBE & FITTINGS</p>
                 <div>
                   <h1>TUBE & FITTINGS</h1>
@@ -66,7 +66,7 @@ const HomePage = () => {
 
                  {/*HOMOGENIZER PRODUCT */}
                  <Grid item lg={3} xs={12}> 
-                 <Link className="bard" to="/TALLY" style={{backgroundImage: "url(/Images/HOMOGENIZER.jpg)"}}>
+                 <Link className="bard" to="#" style={{backgroundImage: "url(/Images/HOMOGENIZER.jpg)"}}>
                   <p>PIPE SUPPORT & ACCESSORIES</p>
                 <div>
                   <h1>PIPE SUPPORT & ACCESSORIES</h1>
@@ -76,7 +76,7 @@ const HomePage = () => {
 
                  {/*VALVES PRODUCT */}
                  <Grid item lg={3} xs={12}> 
-                 <Link className="bard" to="/TALLY" style={{backgroundImage: "url(/Images/BULK-COOLER.jpg)"}}>
+                 <Link className="bard" to="#" style={{backgroundImage: "url(/Images/BULK-COOLER.jpg)"}}>
                   <p>VALVE</p>
                 <div>
                   <h1>VALVE</h1>
@@ -84,6 +84,7 @@ const HomePage = () => {
                 </Link>
                </Grid>
                </Grid>
+               </Box>
                </div>
 
                <br />

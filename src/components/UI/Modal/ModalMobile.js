@@ -12,21 +12,16 @@ const useStyles = makeStyles((theme) => ({
   modal: {
     display: 'flex',
     alignItems: 'center',
-    justifyContent: 'center',
-    marginLeft: '16%',
-    width: '70%'
+    justifyContent: 'center'
   },
   navigation: {
     position: 'absolute',
-    bottom: '1%',
+    bottom: '5%',
     left: '50%',
     transform: 'translateX(-50%)',
     transition: 'opacity ease-in-out 0.2s',
     boxShadow: '0 30px 40px 0 rgba(16, 36, 94, 0.2)',
     borderRadius: '4px'
-  },
-  paper: {
-    height: '80%'
   }
 }));
 
@@ -97,12 +92,10 @@ const SpringModal = (props) => {
         }}
       >
         <Fade in={open}>
-        <div>
         <Document
         file={props.pdf}
         onLoadSuccess={onDocumentLoadSuccess}>
-          <div className={classes.paper}>
-          <Page scale={0.75} pageNumber={pageNumber} />
+          <Page height={550} pageNumber={pageNumber} /> 
          <div className={classes.navigation}> 
          {(pageNumber > 1) ? 
          <Button onClick={()=>setPageNumber(pageNumber-1)} variant="contained"
@@ -114,10 +107,8 @@ const SpringModal = (props) => {
         style={{backgroundColor:"#068DDB", color:"#ffffff"}}>
           &#62;
        </Button> : null}  
-        </div>          
-        </div>        
+        </div>               
       </Document>
-      </div>
         </Fade>
       </Modal>
     </div>

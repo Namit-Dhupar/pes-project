@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import ProductData from '../data/ProductData.json';
-import Showpdf from './UI/Modal/Modal';
+import Showpdffull from './UI/Modal/ModalFull';
+import Showpdfphone from './UI/Modal/ModalMobile';
 import { makeStyles } from '@material-ui/core/styles';
 import {Tabs, 
         Tab, 
@@ -82,10 +83,13 @@ const tabPanel = ProductData.map((product,index) => {
          </Grid>
          
          <Grid item lg={9}>
-         <Showpdf title={el.ItemName} 
-          description={el.ItemDescription}
-          pdf={el.ItemFile}/>   
+           <Hidden mdUp smUp>
+         <Showpdfphone title={el.ItemName} 
+          pdf={el.ItemFile}/> 
+          </Hidden>  
           <Hidden smDown>
+          <Showpdffull title={el.ItemName} 
+          pdf={el.ItemFile}/> 
          <p>{el.ItemDescription}{' '}</p>   
          </Hidden>
          </Grid>
