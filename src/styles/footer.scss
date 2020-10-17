@@ -1,10 +1,18 @@
 @import 'global';
 
-.footer{
+.footerBottom{
     background-color: $grey-blue;
     color: #ffffff;
-    font-size: 16px;
+    font-size: 14px;
     text-align: center;
+    padding: 20px;
+    display: block;
+}
+
+.footerTop{
+    background-color: $grey-blue;
+    color: #ffffff;
+    font-size: 20px;
     padding: 20px;
     display: block;
 }
