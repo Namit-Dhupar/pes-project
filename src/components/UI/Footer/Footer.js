@@ -21,20 +21,20 @@ const Footer = () =>{
         PRODUCT CATEGORIES
         <Divider />
         <ul style={{listStyleType: "none"}}>
-           <li style={{marginBottom: "5px"}}><a style={{color: "white"}} to='/ACC'>Pumps</a></li>
-           <li style={{marginBottom: "5px"}}><a style={{color: "white"}} to='/BCC'>Valves</a></li>
-           <li style={{marginBottom: "5px"}}><a style={{color: "white"}} to='/CCC'>Fitting</a></li>
-           <li style={{marginBottom: "5px"}}><a style={{color: "white"}} to='/CCC-%20Plus'>PHE</a></li>
+           <li style={{marginBottom: "5px"}}><a style={{color: "white", textDecoration: "none"}} href='/ACC'>Pumps</a></li>
+           <li style={{marginBottom: "5px"}}><a style={{color: "white", textDecoration: "none"}} href='/BCC'>Valves</a></li>
+           <li style={{marginBottom: "5px"}}><a style={{color: "white", textDecoration: "none"}} href='/CCC'>Fitting</a></li>
+           <li style={{marginBottom: "5px"}}><a style={{color: "white", textDecoration: "none"}} href='/CCC-%20Plus'>PHE</a></li>
        </ul>
         </Grid>
         <Grid item lg={4} md={12}>
         OUR SERVICES INCLUDES
         <Divider />
         <ul style={{listStyleType: "none"}}>
-           <li style={{marginBottom: "5px"}}><a style={{color: "white"}} to='/ACC'>Pharmaceuticals</a></li>
-           <li style={{marginBottom: "5px"}}><a style={{color: "white"}} to='/BCC'>Food</a></li>
-           <li style={{marginBottom: "5px"}}><a style={{color: "white"}} to='/CCC'>Dairy</a></li>
-           <li style={{marginBottom: "5px"}}><a style={{color: "white"}} to='/CCC-%20Plus'>Beverages</a></li>
+           <li style={{marginBottom: "5px"}}><a style={{color: "white", textDecoration: "none"}} href='/ACC'>Pharmaceuticals</a></li>
+           <li style={{marginBottom: "5px"}}><a style={{color: "white", textDecoration: "none"}} href='/BCC'>Food</a></li>
+           <li style={{marginBottom: "5px"}}><a style={{color: "white", textDecoration: "none"}} href='/CCC'>Dairy</a></li>
+           <li style={{marginBottom: "5px"}}><a style={{color: "white", textDecoration: "none"}} href='/CCC-%20Plus'>Beverages</a></li>
        </ul>
         </Grid>
         <Grid item lg={4} md={12}>
