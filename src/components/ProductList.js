@@ -43,8 +43,7 @@ const TabPanel = (props) => {
     root: {
       flexGrow: 1,
       backgroundColor: theme.palette.background.paper,
-      display: 'flex',
-      height: 924
+      display: 'flex'
     },
     tabs: {
       borderRight: `1px solid ${theme.palette.divider}`
@@ -71,7 +70,7 @@ const tabPanel = ProductData.map((product,index) => {
        <TabPanel className={classes.list} key={index} value={value} index={index}>
         {product.Subtype.map((el,index) => (
           <List key={index}>
-          <ListItem className={classes.list}>
+          <ListItem>
           <div key={el.id}>
         <Grid container>
           <Grid item lg={3}>     
@@ -80,20 +79,19 @@ const tabPanel = ProductData.map((product,index) => {
             {(el.ItemImageB) ? <img src={el.ItemImageB} alt={index}/> : null}
         </Hidden>    
             <p><strong>{el.ItemName}</strong></p>
-         </Grid>
-         
+         </Grid>         
          <Grid item lg={9}>
-           <Hidden mdUp smUp>
-         <Showpdfphone title={el.ItemName} 
-          pdf={el.ItemFile}/> 
-          </Hidden>  
           <Hidden smDown>
           <Showpdffull title={el.ItemName} 
           pdf={el.ItemFile}/> 
          <p>{el.ItemDescription}{' '}</p>   
          </Hidden>
+         <Hidden mdUp>
+         <Showpdfphone 
+          pdf={el.ItemFile}/> 
+          </Hidden>
          </Grid>
-        </Grid>       
+        </Grid>         
           </div>
           </ListItem>
           <Divider />

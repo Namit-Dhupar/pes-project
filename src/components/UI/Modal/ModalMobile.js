@@ -76,7 +76,7 @@ const SpringModal = (props) => {
 
   return (
     <div>
-        <Button variant="contained"
+        <Button variant="outlined"
          style={{backgroundColor:"#068DDB", color:"#ffffff"}}
          onClick={handleOpen}>
          Learn More
@@ -95,7 +95,7 @@ const SpringModal = (props) => {
         <Document
         file={props.pdf}
         onLoadSuccess={onDocumentLoadSuccess}>
-          <Page height={550} pageNumber={pageNumber} /> 
+          <Page height={590} pageNumber={pageNumber} /> 
          <div className={classes.navigation}> 
          {(pageNumber > 1) ? 
          <Button onClick={()=>setPageNumber(pageNumber-1)} variant="contained"
