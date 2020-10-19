@@ -1,6 +1,6 @@
 import React, {Fragment} from 'react';
 import Carousel from './UI/Carousel/Carousel';
-import {Grid, Button, Box} from '@material-ui/core';
+import {Grid, Button} from '@material-ui/core';
 import '../styles/homepage.scss';
 import {Link} from 'react-router-dom';
 
@@ -42,7 +42,6 @@ const HomePage = () => {
                 <h1>OUR POPULAR PRODUCTS</h1>
                 <h3>Our Latest Product</h3>
 
-                <Box display="flex" justifyContent="center">
                 {/*PUMP PRODUCT */}
                 <Grid container className="Product">
                 <Grid item lg={3} xs={12}> 
@@ -84,7 +83,6 @@ const HomePage = () => {
                 </Link>
                </Grid>
                </Grid>
-               </Box>
                </div>
 
                <br />

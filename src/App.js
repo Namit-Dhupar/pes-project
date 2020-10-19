@@ -1,5 +1,6 @@
 import React,{Fragment} from 'react';
 import Navbar from './components/UI/Navbar/Navbar';
+import ScrollIntoView from './components/UI/Scrolling/ScrollIntoView';
 import { BrowserRouter, Route } from 'react-router-dom';
 import { HomePage, ProductList, ContactPage, AboutUs, Capabilities} from './components';
 import ScrollTop from './components/UI/Scrolling/ScrollToTop';
@@ -12,13 +13,17 @@ function App(props) {
     <Fragment>
     <div id="back-to-top-anchor"></div>  
     <BrowserRouter>
+    <div>
+      <ScrollIntoView>
      <Navbar>
       <Route path="/" exact component={HomePage} />
       <Route path="/products" component={ProductList} />
       <Route path="/contact" component={ContactPage} />
       <Route path="/company/about" component={AboutUs} />
       <Route path="/company/capabilities" component={Capabilities} />
-     </Navbar> 
+     </Navbar>
+     </ScrollIntoView>
+     </div>
     </BrowserRouter>
     <ScrollTop {...props}>
     <Fab style={{backgroundColor: "#068DDB", color: "white"}} size="small" aria-label="scroll back to top">

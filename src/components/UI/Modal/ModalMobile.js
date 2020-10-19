@@ -95,6 +95,9 @@ const SpringModal = (props) => {
         <Document
         file={props.pdf}
         onLoadSuccess={onDocumentLoadSuccess}>
+          <Button variant="contained" size="small"
+         style={{backgroundColor:"#068DDB", color:"#ffffff"}}
+         onClick={handleClose}>X</Button>
           <Page height={590} pageNumber={pageNumber} /> 
          <div className={classes.navigation}> 
          {(pageNumber > 1) ? 
