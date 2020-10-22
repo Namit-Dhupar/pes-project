@@ -13,13 +13,21 @@ const ContactPage = () => {
   const [firstName, setfirstName] = useState("");
   const [lastName, setlastName] = useState("");
   const [Email, setEmail] = useState("");
+  const [Phone, setPhone] = useState("");
   const [Message, setMessage] = useState("");
+  const [Company, setCompany] = useState("");
+
+  const regexName = /^[a-zA-ZàáâäãåąčćęèéêëėįìíîïłńòóôöõøùúûüųūÿýżźñçčšžÀÁÂÄÃÅĄĆČĖĘÈÉÊËÌÍÎÏĮŁŃÒÓÔÖÕØÙÚÛÜŲŪŸÝŻŹÑßÇŒÆČŠŽ∂ð ,.'-]+$/;
+  const regexPhone = /^(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]?\d{3}[\s.-]?\d{4}$/;
+  // eslint-disable-next-line 
+  const regexEmail = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 
   const EmptyFields = () =>{
     setfirstName('');
     setlastName('');
     setEmail('');
     setMessage('');
+    setPhone('')
   }
 
   const MessageOnError = () => {
@@ -32,6 +40,18 @@ const ContactPage = () => {
     setSnackStatus(true);
     setSnackSeverity("success");
     setSnackMessage("Message sent successfully, You will hear back from us soon");
+  }
+
+  const MessageonPhone = () =>{
+    setSnackStatus(true);
+    setSnackSeverity("error");
+    setSnackMessage("Please enter a valid phone number");
+  }
+
+  const MessageOnMail = () =>{
+    setSnackStatus(true);
+    setSnackSeverity("error");
+    setSnackMessage("Please enter a valid Email")
   }
 
   const MessageOnEmailError = () => {
@@ -49,10 +69,21 @@ const ContactPage = () => {
 
   const HandleSubmit = (e) =>{
     e.preventDefault();
-    if(firstName==='' || lastName==='' || Email==='' || Message===''){
+    if(firstName==='' || lastName==='' || Email==='' || Message==='' || Phone==='' || Company === '')
+    {
       MessageOnError();
       return false;
     }
+    else
+     if(!regexPhone.test(Phone)){
+        MessageonPhone();
+        return false
+     }
+     else
+      if(!regexEmail.test(Email)){
+        MessageOnMail();
+        return false;
+      }
     emailjs.sendForm('service_ui2fxfe', 'template_tkfbzmb', e.target, 'user_EbpVBhTysz7uzWLDMINIC')
       .then((result) => {
           console.log(result.text);
@@ -83,7 +114,8 @@ const ContactPage = () => {
         <Grid item xs={12} sm={6}>
           <TextField
             required
-            onChange={e=>setfirstName(e.target.value)}
+            onChange={e=> (e.target.value === '' || regexName.test(e.target.value)) ?
+             setfirstName(e.target.value) : null}
             value={firstName}
             variant='outlined'
             id="firstName"
@@ -96,7 +128,8 @@ const ContactPage = () => {
         <Grid item xs={12} sm={6}>
           <TextField
             required
-            onChange={e=>setlastName(e.target.value)}
+            onChange={e=> (e.target.value === '' || regexName.test(e.target.value)) ?
+            setlastName(e.target.value) : null}
             variant='outlined'
             value={lastName}
             id="lastName"
@@ -109,7 +142,33 @@ const ContactPage = () => {
         <Grid item xs={12}>
           <TextField
             required
-            onChange={e=>setEmail(e.target.value)}
+            onChange={e=> setCompany(e.target.value)}
+            variant='outlined'
+            id="company"
+            value={Company}
+            name="company"
+            label="Company Name"
+            fullWidth
+            autoComplete="Company-Name"
+          />
+        </Grid>
+        <Grid item xs={12}>
+          <TextField
+            required
+            onChange={e=> setPhone(e.target.value)}
+            variant='outlined'
+            id="phone"
+            value={Phone}
+            name="phone"
+            label="Phone Number"
+            fullWidth
+            autoComplete="Phone-Number"
+          />
+        </Grid>
+        <Grid item xs={12}>
+          <TextField
+            required
+            onChange={e=> setEmail(e.target.value)}
             variant='outlined'
             value={Email}
             id="email"
@@ -137,7 +196,7 @@ const ContactPage = () => {
         <Button
         type="submit"
         variant="contained"
-        style={{backgroundColor: ' #068DDB', color: 'white'}}
+        style={{backgroundColor: ' #3c2344', color: 'white'}}
         endIcon={<SendIcon />}
         >
         Send Enquiry
@@ -162,14 +221,14 @@ const ContactPage = () => {
         <Grid item lg={6} sm={12}>
           <h3>PES Stainless Steel Pvt Ltd</h3>
           <p>C-2/11 PES Stainless Equipment, Rajouri Garden, New Delhi, Delhi 110027</p>
-          <iframe title="myFrame" className="map"
+          <iframe title="myFrame" className="sisterMap"
         src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14005.88789852091!2d77.1249931!3d28.6455835!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xaac431036489e3aa!2sPes%20Stainless%20Equipment!5e0!3m2!1sen!2sin!4v1602935892046!5m2!1sen!2sin" 
        frameBorder="0" allowFullScreen={true} aria-hidden="false" tabIndex="0"></iframe>
         </Grid>
         <Grid item lg={6} sm={12}>
           <h3>E N Project & Engg Industries Private Limited</h3>
           <p>Plot 41, Maruti Industrial Area, Sector 18, Gurugram, Haryana 122008</p>
-          <iframe title="myFrame" className="map"
+          <iframe title="myFrame" className="sisterMap"
         src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14026.784911056071!2d77.0636765!3d28.4886936!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xd644519c47de614!2sE%20N%20Project%20%26%20Engg%20Industries%20Private%20Limited!5e0!3m2!1sen!2sin!4v1602935994608!5m2!1sen!2sin" 
        frameBorder="0" allowFullScreen={true} aria-hidden="false" tabIndex="0"></iframe>
         </Grid>

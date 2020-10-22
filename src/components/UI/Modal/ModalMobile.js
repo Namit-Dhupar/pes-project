@@ -77,7 +77,7 @@ const SpringModal = (props) => {
   return (
     <div>
         <Button variant="outlined"
-         style={{backgroundColor:"#068DDB", color:"#ffffff"}}
+         style={{backgroundColor:"#3c2344", color:"#ffffff"}}
          onClick={handleOpen}>
          Learn More
         </Button>
@@ -96,18 +96,18 @@ const SpringModal = (props) => {
         file={props.pdf}
         onLoadSuccess={onDocumentLoadSuccess}>
           <Button variant="contained" size="small"
-         style={{backgroundColor:"#068DDB", color:"#ffffff"}}
+         style={{backgroundColor:"#3c2344", color:"#ffffff"}}
          onClick={handleClose}>X</Button>
           <Page height={590} pageNumber={pageNumber} /> 
          <div className={classes.navigation}> 
          {(pageNumber > 1) ? 
          <Button onClick={()=>setPageNumber(pageNumber-1)} variant="contained"
-         style={{backgroundColor:"#068DDB", color:"#ffffff"}}>
+         style={{backgroundColor:"#3c2344", color:"#ffffff"}}>
          &#60;
         </Button> : null}
         {(pageNumber < numPages) ?
         <Button onClick={()=>setPageNumber(pageNumber+1)} variant="contained"
-        style={{backgroundColor:"#068DDB", color:"#ffffff"}}>
+        style={{backgroundColor:"#3c2344", color:"#ffffff"}}>
           &#62;
        </Button> : null}  
         </div>               

@@ -4,8 +4,17 @@ import { Grid, Divider } from '@material-ui/core';
 import HomeIcon from '@material-ui/icons/Home';
 import PhoneIcon from '@material-ui/icons/Phone';
 import EmailIcon from '@material-ui/icons/Email';
+import { makeStyles } from '@material-ui/core/styles';
+
+const useStyles = makeStyles((theme) => ({
+    divider: {
+      backgroundColor: "white",
+      width: "350px"
+    }
+  }));
 
 const Footer = () =>{
+    const classes = useStyles();
     return (
         <div className="footerTop">
         <Grid container>
@@ -19,27 +28,29 @@ const Footer = () =>{
         </Grid>
         <Grid item lg={4} md={12}>
         PRODUCT CATEGORIES
-        <Divider />
+        <Divider className={classes.divider} />
         <ul style={{listStyleType: "none"}}>
-           <li style={{marginBottom: "5px"}}><a style={{color: "white", textDecoration: "none"}} href='/ACC'>Pumps</a></li>
-           <li style={{marginBottom: "5px"}}><a style={{color: "white", textDecoration: "none"}} href='/BCC'>Valves</a></li>
-           <li style={{marginBottom: "5px"}}><a style={{color: "white", textDecoration: "none"}} href='/CCC'>Fitting</a></li>
-           <li style={{marginBottom: "5px"}}><a style={{color: "white", textDecoration: "none"}} href='/CCC-%20Plus'>PHE</a></li>
+           <li style={{marginBottom: "5px"}}><a style={{color: "white", textDecoration: "none", cursor: "default"}} href='/products'>Pumps</a></li>
+           <li style={{marginBottom: "5px"}}><a style={{color: "white", textDecoration: "none", cursor: "default"}} href='/products'>Valves</a></li>
+           <li style={{marginBottom: "5px"}}><a style={{color: "white", textDecoration: "none", cursor: "default"}} href='/products'>Fitting</a></li>
+           <li style={{marginBottom: "5px"}}><a style={{color: "white", textDecoration: "none", cursor: "default"}} href='/products'>PHE</a></li>
+           <li style={{marginBottom: "5px"}}><a style={{color: "white", textDecoration: "none", cursor: "default"}} href='/products'>Accessories & More</a></li>
        </ul>
         </Grid>
         <Grid item lg={4} md={12}>
         OUR SERVICES INCLUDES
-        <Divider />
+        <Divider className={classes.divider} />
         <ul style={{listStyleType: "none"}}>
-           <li style={{marginBottom: "5px"}}><a style={{color: "white", textDecoration: "none"}} href='/ACC'>Pharmaceuticals</a></li>
-           <li style={{marginBottom: "5px"}}><a style={{color: "white", textDecoration: "none"}} href='/BCC'>Food</a></li>
-           <li style={{marginBottom: "5px"}}><a style={{color: "white", textDecoration: "none"}} href='/CCC'>Dairy</a></li>
-           <li style={{marginBottom: "5px"}}><a style={{color: "white", textDecoration: "none"}} href='/CCC-%20Plus'>Beverages</a></li>
+           <li style={{marginBottom: "5px"}}><a style={{color: "white", textDecoration: "none", cursor: "default"}} href='/company/about'>Pharmaceuticals</a></li>
+           <li style={{marginBottom: "5px"}}><a style={{color: "white", textDecoration: "none", cursor: "default"}} href='/company/about'>Food</a></li>
+           <li style={{marginBottom: "5px"}}><a style={{color: "white", textDecoration: "none", cursor: "default"}} href='/company/about'>Dairy</a></li>
+           <li style={{marginBottom: "5px"}}><a style={{color: "white", textDecoration: "none", cursor: "default"}} href='/company/about'>Beverages</a></li>
+           <li style={{marginBottom: "5px"}}><a style={{color: "white", textDecoration: "none", cursor: "default"}} href='/company/about'>Personal Care</a></li>
        </ul>
         </Grid>
         <Grid item lg={4} md={12}>
         OFFICE ADDRESS
-        <Divider />
+        <Divider className={classes.divider} />
           <ul style={{listStyleType: "none"}}>
           <li style={{marginBottom: "5px"}}><HomeIcon />&nbsp;&nbsp; 357 First Floor, FA-357, Radhey Shyam Mandir Marg, Block FA, Mansarover Garden, New Delhi, Delhi 110015</li>
           <li style={{marginBottom: "5px"}}><PhoneIcon />&nbsp;&nbsp;011-2541 7510</li>

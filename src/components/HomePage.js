@@ -114,7 +114,7 @@ const HomePage = () => {
                     dedicated team of professionals. You think it, we make it.</p>
                  <br />
                  <a style={{textDecoration:'none'}} href='/Catalogue.PDF' download='PES Brochure'>
-                <Button variant="contained" style={{backgroundColor:"#068DDB", color:"#ffffff", marginBottom:"2%"}}>
+                <Button variant="contained" style={{backgroundColor:"#3c2344", color:"#ffffff", marginBottom:"2%"}}>
                  Download Brochure
                  </Button></a>
                </div>

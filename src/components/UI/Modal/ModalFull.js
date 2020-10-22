@@ -8,7 +8,7 @@ pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/$
 const useStyles = makeStyles((theme) => ({
   appBar: {
     position: 'sticky',
-    backgroundColor: '#068DDB'
+    backgroundColor: '#3c2344'
   },
   title: {
     marginLeft: theme.spacing(2),
@@ -41,7 +41,7 @@ export default function FullScreenDialog(props) {
   return (
     <div>
       <Button variant="contained"
-         style={{backgroundColor:"#068DDB", color:"#ffffff"}}
+         style={{backgroundColor:"#3c2344", color:"#ffffff"}}
          onClick={handleClickOpen}>
          Learn More
         </Button>
@@ -57,7 +57,7 @@ export default function FullScreenDialog(props) {
         {(pageNumber > 1) ? 
          <Button
          onClick={()=>setPageNumber(pageNumber-1)} variant="contained"
-         style={{backgroundColor:"#068DDB", color:"#ffffff"}}>
+         style={{backgroundColor:"#3c2344", color:"#ffffff"}}>
          &#60;
         </Button> : null}
             <Typography variant="h6">
@@ -66,7 +66,7 @@ export default function FullScreenDialog(props) {
         {(pageNumber < numPages) ?
         <Button
          onClick={()=>setPageNumber(pageNumber+1)} variant="contained"
-         style={{backgroundColor:"#068DDB", color:"#ffffff"}}>
+         style={{backgroundColor:"#3c2344", color:"#ffffff"}}>
           &#62;
        </Button> : null}    
           </Toolbar>
