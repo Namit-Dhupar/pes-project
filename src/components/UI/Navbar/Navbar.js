@@ -5,9 +5,8 @@ import {AppBar, Toolbar, IconButton, Badge, MenuItem, Menu,
 Drawer, Divider, Hidden, List, ListItem, ListItemIcon, 
 ListItemText, Collapse} from '@material-ui/core';
 import MenuIcon from '@material-ui/icons/Menu';
-import AccountCircle from '@material-ui/icons/AccountCircle';
 import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
-// import MoreIcon from '@material-ui/icons/MoreVert';
+import MoreIcon from '@material-ui/icons/MoreVert';
 import CardTravelIcon from '@material-ui/icons/CardTravel';
 import HomeIcon from '@material-ui/icons/Home';
 import PhoneIcon from '@material-ui/icons/Phone';
@@ -92,9 +91,9 @@ const PrimarySearchAppBar = (props) => {
     setMobileMoreAnchorEl(null);
   };
 
-  // const handleMobileMenuOpen = (event) => {
-  //   setMobileMoreAnchorEl(event.currentTarget);
-  // };
+  const handleMobileMenuOpen = (event) => {
+    setMobileMoreAnchorEl(event.currentTarget);
+  };
 
   const container = window !== undefined ? () => window().document.body : undefined;
   
@@ -115,18 +114,7 @@ const PrimarySearchAppBar = (props) => {
             <ShoppingCartIcon />
           </Badge>
         </IconButton>
-        <p>My Cart</p>
-      </MenuItem>
-      <MenuItem>
-        <IconButton
-          aria-label="account of current user"
-          aria-controls="primary-search-account-menu"
-          aria-haspopup="true"
-          color="inherit"
-        >
-          <AccountCircle />
-        </IconButton>
-        <p>Profile</p>
+        <p>My Enquiries</p>
       </MenuItem>
     </Menu>
   );
@@ -147,20 +135,12 @@ const PrimarySearchAppBar = (props) => {
           <Link to="/">
           <img className={classes.logo} src="/Images/Banner.png" alt="pes logo" />
           </Link>
-          {/* <div className={classes.grow} />
+          <div className={classes.grow} />
           <div className={classes.sectionDesktop}>
             <IconButton aria-label="show 4 new mails" color="inherit">
               <Badge badgeContent={0} color="secondary">
                 <ShoppingCartIcon />
               </Badge>
-            </IconButton>
-            <IconButton
-              edge="end"
-              aria-label="account of current user"
-              aria-haspopup="true"
-              color="inherit"
-            >
-              <AccountCircle />
             </IconButton>
           </div>
           <div className={classes.sectionMobile}>
@@ -173,7 +153,7 @@ const PrimarySearchAppBar = (props) => {
             >
               <MoreIcon />
             </IconButton>
-          </div> */}
+          </div>
         </Toolbar>
       </AppBar>
       {renderMobileMenu}

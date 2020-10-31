@@ -26,7 +26,7 @@ function App(props) {
      </div>
     </BrowserRouter>
     <ScrollTop {...props}>
-    <Fab style={{backgroundColor: "#3c2344", color: "white"}} size="small" aria-label="scroll back to top">
+    <Fab style={{backgroundColor: "#ec1f1f", color: "white"}} size="small" aria-label="scroll back to top">
     <KeyboardArrowUpIcon />
     </Fab>
   </ScrollTop>

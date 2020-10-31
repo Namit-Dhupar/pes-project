@@ -5,30 +5,44 @@ import CloseIcon from '@material-ui/icons/Close';
 import { Document, pdfjs, Page } from 'react-pdf';
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
 
-const useStyles = makeStyles((theme) => ({
-  appBar: {
-    position: 'sticky',
-    backgroundColor: '#3c2344'
-  },
-  title: {
-    marginLeft: theme.spacing(2),
-    flex: 1,
-  }
-}));
-
 const Transition = React.forwardRef(function Transition(props, ref) {
   return <Slide direction="up" ref={ref} {...props} />;
 });
 
 export default function FullScreenDialog(props) {
-  const classes = useStyles();
   const [open, setOpen] = useState(false);
   const [numPages, setNumPages] = useState(null);
   const [pageNumber, setPageNumber] = useState(1);
+  const [toggle, setToggle] = useState(false);
+
+  const useStyles = makeStyles((theme) => ({
+    appBar: {
+      position: 'sticky',
+      backgroundColor: '#3c2344'
+    },
+    title: {
+      marginLeft: theme.spacing(2),
+      flex: 1,
+    },
+    enquiryButton: {
+      color: (toggle) ? '#ffffff' : '#3c2344',
+      marginLeft: '20px',
+      backgroundColor: (toggle) ? '#ec1f1f' : '#ffffff',
+      '&:hover': {
+        backgroundColor: (toggle) ? '#ec1f1f' : '#ffffff',
+      },
+    }
+  }));
+
+  const classes = useStyles();
 
   function onDocumentLoadSuccess({ numPages }) {
     setNumPages(numPages);
   }
+
+  const handleEnquiry = () => {
+    setToggle(!toggle);
+  };
 
   const handleClickOpen = () => {
     setOpen(true);
@@ -45,6 +59,11 @@ export default function FullScreenDialog(props) {
          onClick={handleClickOpen}>
          Learn More
         </Button>
+        <Button variant="outlined"
+          className={classes.enquiryButton}
+          onClick={handleEnquiry}>
+         {(toggle) ? 'Added To Enquiry' : 'Add To Enquiry' }
+         </Button>
       <Dialog fullScreen open={open} onClose={handleClose} TransitionComponent={Transition}>
         <AppBar className={classes.appBar}>
           <Toolbar>
