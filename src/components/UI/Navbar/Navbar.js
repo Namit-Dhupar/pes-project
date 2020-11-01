@@ -1,11 +1,10 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
 import { makeStyles, useTheme } from '@material-ui/core/styles';
-import {AppBar, Toolbar, IconButton, Badge, MenuItem, Menu,
+import {AppBar, Toolbar, IconButton, MenuItem, Menu,
 Drawer, Divider, Hidden, List, ListItem, ListItemIcon, 
 ListItemText, Collapse} from '@material-ui/core';
 import MenuIcon from '@material-ui/icons/Menu';
-import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
 import MoreIcon from '@material-ui/icons/MoreVert';
 import CardTravelIcon from '@material-ui/icons/CardTravel';
 import HomeIcon from '@material-ui/icons/Home';
@@ -13,6 +12,7 @@ import PhoneIcon from '@material-ui/icons/Phone';
 import BusinessIcon from '@material-ui/icons/Business';
 import ExpandLess from '@material-ui/icons/ExpandLess';
 import ExpandMore from '@material-ui/icons/ExpandMore';
+import ModalEnquiry from '../Modal/ModalEnquiry'
 
 const drawerWidth = 240;
 const useStyles = makeStyles((theme) => ({
@@ -109,12 +109,7 @@ const PrimarySearchAppBar = (props) => {
       onClose={handleMobileMenuClose}
     >
       <MenuItem>
-        <IconButton color="inherit">
-          <Badge badgeContent={0} color="secondary">
-            <ShoppingCartIcon />
-          </Badge>
-        </IconButton>
-        <p>My Enquiries</p>
+      <ModalEnquiry />
       </MenuItem>
     </Menu>
   );
@@ -137,11 +132,7 @@ const PrimarySearchAppBar = (props) => {
           </Link>
           <div className={classes.grow} />
           <div className={classes.sectionDesktop}>
-            <IconButton aria-label="show 4 new mails" color="inherit">
-              <Badge badgeContent={0} color="secondary">
-                <ShoppingCartIcon />
-              </Badge>
-            </IconButton>
+          <ModalEnquiry />
           </div>
           <div className={classes.sectionMobile}>
             <IconButton

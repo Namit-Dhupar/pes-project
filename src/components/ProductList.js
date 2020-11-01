@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import ProductData from '../data/ProductData.json';
+import { useSelector } from 'react-redux';
 import Showpdffull from './UI/Modal/ModalFull';
 import Showpdfphone from './UI/Modal/ModalMobile';
 import { makeStyles } from '@material-ui/core/styles';
@@ -59,13 +59,14 @@ const ProductList = () => {
     const handleChange = (event, newValue) => {
         setValue(newValue);
       };
+    const productState = useSelector(state => state.enquiry.products)  
 
-const tab = ProductData.map((product,index) => {
+const tab = productState.map((product,index) => {
       return(
         <Tab key={index} label={product.ProductType} {...a11yProps(index)} />
       )
     });
-const tabPanel = ProductData.map((product,index) => {
+const tabPanel = productState.map((product,index) => {
       return(
        <TabPanel className={classes.list} key={index} value={value} index={index}>
         {product.Subtype.map((el,index) => (
@@ -83,7 +84,7 @@ const tabPanel = ProductData.map((product,index) => {
          <Grid item lg={9}>
           <Hidden smDown>
           <Showpdffull title={el.ItemName} 
-          pdf={el.ItemFile}/> 
+          pdf={el.ItemFile} isEnq={el.isEnquired} id={el.id} /> 
          <p>{el.ItemDescription}{' '}</p>   
          </Hidden>
          <Hidden mdUp>

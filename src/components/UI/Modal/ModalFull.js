@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import { useDispatch } from 'react-redux';
+import { toggleFav } from '../../../store/actions/actions';
 import { makeStyles } from '@material-ui/core/styles';
 import {Button, Dialog, AppBar, Toolbar, IconButton, Typography, Slide, Box} from '@material-ui/core/';
 import CloseIcon from '@material-ui/icons/Close';
@@ -13,7 +15,7 @@ export default function FullScreenDialog(props) {
   const [open, setOpen] = useState(false);
   const [numPages, setNumPages] = useState(null);
   const [pageNumber, setPageNumber] = useState(1);
-  const [toggle, setToggle] = useState(false);
+  const dispatch = useDispatch();
 
   const useStyles = makeStyles((theme) => ({
     appBar: {
@@ -25,11 +27,11 @@ export default function FullScreenDialog(props) {
       flex: 1,
     },
     enquiryButton: {
-      color: (toggle) ? '#ffffff' : '#3c2344',
+      color: (props.isEnq) ? '#ffffff' : '#3c2344',
       marginLeft: '20px',
-      backgroundColor: (toggle) ? '#ec1f1f' : '#ffffff',
+      backgroundColor: (props.isEnq) ? '#ec1f1f' : '#ffffff',
       '&:hover': {
-        backgroundColor: (toggle) ? '#ec1f1f' : '#ffffff',
+        backgroundColor: (props.isEnq) ? '#ec1f1f' : '#ffffff',
       },
     }
   }));
@@ -41,7 +43,7 @@ export default function FullScreenDialog(props) {
   }
 
   const handleEnquiry = () => {
-    setToggle(!toggle);
+    dispatch(toggleFav(props.id));
   };
 
   const handleClickOpen = () => {
@@ -62,7 +64,7 @@ export default function FullScreenDialog(props) {
         <Button variant="outlined"
           className={classes.enquiryButton}
           onClick={handleEnquiry}>
-         {(toggle) ? 'Added To Enquiry' : 'Add To Enquiry' }
+         {(props.isEnq) ? 'Added To Enquiry' : 'Add To Enquiry' }
          </Button>
       <Dialog fullScreen open={open} onClose={handleClose} TransitionComponent={Transition}>
         <AppBar className={classes.appBar}>

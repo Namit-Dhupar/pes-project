@@ -8,7 +8,7 @@
              "ItemImageA": "/Images/Row%201/AST-XM-II%20SERIES.jpg",
              "ItemImageB": null,
              "ItemFile": "/Products/AST-XMII-1HP-Centrifugal-Pump.pdf",
-             "ItemDescription": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged"
+             "ItemDescription": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged" , "isEnquired": false
          },
          {
              "id": 2,
@@ -16,7 +16,7 @@
              "ItemImageA": "/Images/Row%201/AST-P%20SERIES.jpg",
              "ItemImageB": null,
              "ItemFile": "/Products/AST-PM-Series-Centrifugal-Pump.pdf",
-             "ItemDescription": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged"             
+             "ItemDescription": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged" , "isEnquired": false             
          },
          {
              "id": 3,
@@ -24,7 +24,7 @@
              "ItemImageA": "/Images/Row%201/AST-SELF%20PRIMING.jpg",
              "ItemImageB": null,
              "ItemFile": "/Products/AST-XMII-1HP-Centrifugal-Pump.pdf",
-             "ItemDescription": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged"             
+             "ItemDescription": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged" , "isEnquired": false             
          },
          {
              "id": 4,
@@ -32,7 +32,7 @@
              "ItemImageA": "/Images/Row%201/AST-XM%20I%20&%20III%20SERIES.jpg",
              "ItemImageB": null,
              "ItemFile": "/Products/AST-XMI-XMIII-Centrifugal-Pump.pdf",
-             "ItemDescription": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged"             
+             "ItemDescription": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged" , "isEnquired": false             
          }
      ]
     },
@@ -45,7 +45,7 @@
              "ItemImageA": "/Images/Row%202/PNUEMATIC%20VALVES%201.jpg",
              "ItemImageB": "/Images/Row%202/PNEUMATIC%20VALVES%202.jpg",
              "ItemFile": "/Products/Plug-Valve.pdf",
-             "ItemDescription": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged"           
+             "ItemDescription": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged" , "isEnquired": false           
          },
          {
              "id": 6,
@@ -53,7 +53,7 @@
              "ItemImageA": "/Images/Row%203/TANKER%20VALVE.jpg",
              "ItemImageB": null,
              "ItemFile": "/Products/Plug-Valve.pdf",
-             "ItemDescription": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged"
+             "ItemDescription": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged" , "isEnquired": false
          },
          {
              "id": 7,
@@ -61,7 +61,7 @@
              "ItemImageA": "/Images/Row%203/PLUG%20VALVE%201.jpg",
              "ItemImageB": "/Images/Row%203/PLUG%20VALVE%202.jpg",
              "ItemFile": "/Products/Plug-Valve.pdf",
-             "ItemDescription": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged"
+             "ItemDescription": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged" , "isEnquired": false
          },
          {
              "id": 8,
@@ -69,7 +69,7 @@
              "ItemImageA": "/Images/Row%208/STEAM%20CONTROL%20VALVE%201.jpg",
              "ItemImageB": "/Images/Row%208/STEAM%20CONTROL%20VALVE%202.jpg",
              "ItemFile": "/Products/AST-PM-Series-Centrifugal-Pump.pdf",
-             "ItemDescription": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged"
+             "ItemDescription": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged" , "isEnquired": false
          }
      ]
     },
@@ -82,7 +82,7 @@
              "ItemImageA": "/Images/Row%2011/NB%20FITTINGS%201.jpg",
              "ItemImageB": "/Images/Row%2011/NB%20FITTINGS%202.jpg",
              "ItemFile": "/Products/AST-PM-Series-Centrifugal-Pump.pdf",
-             "ItemDescription": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged"           
+             "ItemDescription": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged" , "isEnquired": false           
          },
          {
              "id": 10,
@@ -90,7 +90,7 @@
              "ItemImageA": "/Images/Row%2011/FERRULE%20FITTINGS.jpg",
              "ItemImageB": null,
              "ItemFile": "/Products/AST-PM-Series-Centrifugal-Pump.pdf",
-             "ItemDescription": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged"
+             "ItemDescription": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged" , "isEnquired": false
          },
          {
              "id": 11,
@@ -98,7 +98,7 @@
              "ItemImageA": "/Images/Row%2011/PNEUMATIC%20FITTINGS.jpg",
              "ItemImageB": null,
              "ItemFile": "/Products/AST-PM-Series-Centrifugal-Pump.pdf",
-             "ItemDescription": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged"
+             "ItemDescription": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged" , "isEnquired": false
          },
          {
              "id": 12,
@@ -106,7 +106,7 @@
              "ItemImageA": "/Images/Row%209/TUBE%20PRDUCTS%20&%20FITTINGS%201.jpg",
              "ItemImageB": null,
              "ItemFile": "/Products/AST-PM-Series-Centrifugal-Pump.pdf",
-             "ItemDescription": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged"
+             "ItemDescription": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged" , "isEnquired": false
          }
      ]
     },
@@ -119,7 +119,7 @@
              "ItemImageA": "/Images/Row%2012/LEVEL%20SENSOR%201.jpg",
              "ItemImageB": "/Images/Row%2012/LEVEL%20SENSOR%202.jpg",
              "ItemFile": "/Products/AST-PM-Series-Centrifugal-Pump.pdf",
-             "ItemDescription": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged"           
+             "ItemDescription": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged" , "isEnquired": false           
          },
          {
              "id": 14,
@@ -127,7 +127,7 @@
              "ItemImageA": "/Images/Row%206/TEMPRATURE%20SENSOR%201.jpg",
              "ItemImageB": "/Images/Row%206/TEMPRATURE%20SENSOR%202.jpg",
              "ItemFile": "/Products/AST-PM-Series-Centrifugal-Pump.pdf",
-             "ItemDescription": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged"
+             "ItemDescription": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged" , "isEnquired": false
          },
          {
              "id": 15,
@@ -135,7 +135,7 @@
              "ItemImageA": "/Images/Row%206/TEMPRATURE%20SENSOR%203.jpg",
              "ItemImageB": "/Images/Row%206/TEMPRATURE%20SENSOR%204.jpg",
              "ItemFile": "/Products/AST-PM-Series-Centrifugal-Pump.pdf",
-             "ItemDescription": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged"
+             "ItemDescription": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged" , "isEnquired": false
          },
          {
              "id": 16,
@@ -143,7 +143,7 @@
              "ItemImageA": "/Images/Row%206/TEMPRATURE%20SENSOR%205.jpg",
              "ItemImageB": null,
              "ItemFile": "/Products/AST-PM-Series-Centrifugal-Pump.pdf",
-             "ItemDescription": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged"
+             "ItemDescription": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged" , "isEnquired": false
          }
      ]
     },
@@ -156,7 +156,7 @@
              "ItemImageA": "/Images/Row%207/PLATE%20HEAT%20EXCHANGER%201.jpg",
              "ItemImageB": null,
              "ItemFile": "/Products/PHE-Catalogue.pdf",
-             "ItemDescription": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged"           
+             "ItemDescription": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged" , "isEnquired": false           
          },
          {
              "id": 18,
@@ -164,7 +164,7 @@
              "ItemImageA": "/Images/Row%207/PLATE%20HEAT%20EXCHANGER%20%202.jpg",
              "ItemImageB": null,
              "ItemFile": "/Products/PHE-Catalogue.pdf",
-             "ItemDescription": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged"
+             "ItemDescription": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged" , "isEnquired": false
          },
          {
              "id": 19,
@@ -172,7 +172,7 @@
              "ItemImageA": "/Images/Row%207/PLATE%20HEAT%20EXCHANGER%203.jpg",
              "ItemImageB": null,
              "ItemFile": "/Products/PHE-Catalogue.pdf",
-             "ItemDescription": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged"
+             "ItemDescription": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged" , "isEnquired": false
          },
          {
              "id": 20,
@@ -180,7 +180,7 @@
              "ItemImageA": "/Images/Row%207/PLATE%20HEAT%20EXCHANGER%204.jpg",
              "ItemImageB": "/Images/Row%207/PLATE%20HEAT%20EXCHANGER%20%205.jpg",
              "ItemFile": "/Products/PHE-Catalogue.pdf",
-             "ItemDescription": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged"
+             "ItemDescription": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged" , "isEnquired": false
          }
      ]
     },
@@ -193,7 +193,7 @@
              "ItemImageA": "/Images/Row%2010/DISC%20FILTER.jpg",
              "ItemImageB": null,
              "ItemFile": "/Products/Filters-Catalogue.pdf",
-             "ItemDescription": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged"           
+             "ItemDescription": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged" , "isEnquired": false           
          },
          {
              "id": 22,
@@ -201,7 +201,7 @@
              "ItemImageA": "/Images/Row%2010/DUPLEX%20FILTER.jpg",
              "ItemImageB": null,
              "ItemFile": "/Products/Filters-Catalogue.pdf",
-             "ItemDescription": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged"
+             "ItemDescription": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged" , "isEnquired": false
          },
          {
              "id": 23,
@@ -209,7 +209,7 @@
              "ItemImageA": "/Images/Row%2010/INLINE%20FILTER%201.jpg",
              "ItemImageB": "/Images/Row%2010/INLINE%20FILTER%202.jpg",
              "ItemFile": "/Products/Filters-Catalogue.pdf",
-             "ItemDescription": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged"
+             "ItemDescription": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged" , "isEnquired": false
          },
          {
              "id": 24,
@@ -217,7 +217,7 @@
              "ItemImageA": "/Images/Row%2010/Y%20TYPE%20STRAINER%201.jpg",
              "ItemImageB": "/Images/Row%2010/Y%20TYPE%20STRAINER%202.jpg",
              "ItemFile": "/Products/AST-PM-Series-Centrifugal-Pump.pdf",
-             "ItemDescription": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged"
+             "ItemDescription": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged" , "isEnquired": false
          }
      ]
     },
@@ -230,7 +230,7 @@
              "ItemImageA": "/Images/Row%2012/FLOW%20METER%201.jpg",
              "ItemImageB": "/Images/Row%2012/FLOW%20METER%202.jpg",
              "ItemFile": "/Products/AST-PM-Series-Centrifugal-Pump.pdf",
-             "ItemDescription": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged"           
+             "ItemDescription": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged" , "isEnquired": false           
          },
          {
              "id": 26,
@@ -238,7 +238,7 @@
              "ItemImageA": "/Images/Row%2012/CONDUCTIVITY%20METER%201.jpg",
              "ItemImageB": "/Images/Row%2012/CONDUCTIVITY%20METER%202.jpg",
              "ItemFile": "/Products/AST-PM-Series-Centrifugal-Pump.pdf",
-             "ItemDescription": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged"
+             "ItemDescription": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged" , "isEnquired": false
          },
          {
              "id": 27,
@@ -246,7 +246,7 @@
              "ItemImageA": "/Images/Row%2011/FLANGES.jpg",
              "ItemImageB": null,
              "ItemFile": "/Products/AST-PM-Series-Centrifugal-Pump.pdf",
-             "ItemDescription": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged"
+             "ItemDescription": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged" , "isEnquired": false
          },
          {
              "id": 28,
@@ -254,7 +254,7 @@
              "ItemImageA": "/Images/Row%209/CLAMPS.jpg",
              "ItemImageB": null,
              "ItemFile": "/Products/AST-PM-Series-Centrifugal-Pump.pdf",
-             "ItemDescription": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged"
+             "ItemDescription": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged" , "isEnquired": false
          }
      ]
     },
@@ -267,7 +267,7 @@
              "ItemImageA": "/Images/Row%203/SIGHT%20GLASS%201.jpg",
              "ItemImageB": "/Images/Row%203/SIGHT%20GLASS%202.jpg",
              "ItemFile": "/Products/AST-PM-Series-Centrifugal-Pump.pdf",
-             "ItemDescription": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged"           
+             "ItemDescription": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged" , "isEnquired": false           
          },
          {
              "id": 30,
@@ -275,7 +275,7 @@
              "ItemImageA": "/Images/Row%203/SIGHT%20GLASS%203.jpg",
              "ItemImageB": "/Images/Row%205/SIGHT%20GLASS%204.jpg",
              "ItemFile": "/Products/AST-PM-Series-Centrifugal-Pump.pdf",
-             "ItemDescription": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged"
+             "ItemDescription": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged" , "isEnquired": false
          },
          {
              "id": 31,
@@ -283,7 +283,7 @@
              "ItemImageA": "/Images/Row%205/AIR%20VENT%201.jpg",
              "ItemImageB": "/Images/Row%205/AIR%20VENT%202.jpg",
              "ItemFile": "/Products/AST-PM-Series-Centrifugal-Pump.pdf",
-             "ItemDescription": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged"
+             "ItemDescription": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged" , "isEnquired": false
          },
          {
              "id": 32,
@@ -291,7 +291,7 @@
              "ItemImageA": "/Images/Row%205/CIP%20NOZZLES.jpg",
              "ItemImageB": null,
              "ItemFile": "/Products/AST-PM-Series-Centrifugal-Pump.pdf",
-             "ItemDescription": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged"
+             "ItemDescription": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged" , "isEnquired": false
          }
      ]
     },
@@ -304,7 +304,7 @@
              "ItemImageA": "/Images/Row%209/UNION%201.jpg",
              "ItemImageB": null,
              "ItemFile": "/Products/AST-PM-Series-Centrifugal-Pump.pdf",
-             "ItemDescription": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged"           
+             "ItemDescription": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged" , "isEnquired": false           
          },
          {
              "id": 34,
@@ -312,7 +312,7 @@
              "ItemImageA": "/Images/Row%202/BFV%20WITH%20ACTUATOR%201.jpg",
              "ItemImageB": "/Images/Row%202/BFV%20WITH%20ACTUATOR%202.jpg",
              "ItemFile": "/Products/AST-PM-Series-Centrifugal-Pump.pdf",
-             "ItemDescription": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged"
+             "ItemDescription": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged" , "isEnquired": false
          },
          {
              "id": 35,
@@ -320,7 +320,7 @@
              "ItemImageA": "/Images/Row%204/AGITATOR.jpg",
              "ItemImageB": null,
              "ItemFile": "/Products/AST-PM-Series-Centrifugal-Pump.pdf",
-             "ItemDescription": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged"
+             "ItemDescription": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged" , "isEnquired": false
          },
          {
              "id": 36,
@@ -328,7 +328,7 @@
              "ItemImageA": "/Images/Row%204/MANHOLE%201.jpg",
              "ItemImageB": "/Images/Row%204/MANHOLE%202.jpg",
              "ItemFile": "/Products/AST-PM-Series-Centrifugal-Pump.pdf",
-             "ItemDescription": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged"
+             "ItemDescription": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged" , "isEnquired": false
          }
      ]
     },
@@ -341,7 +341,7 @@
              "ItemImageA": "/Images/Row%204/TANK%20ACCESSORIES.jpg",
              "ItemImageB": null,
              "ItemFile": "/Products/AST-PM-Series-Centrifugal-Pump.pdf",
-             "ItemDescription": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged"           
+             "ItemDescription": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged" , "isEnquired": false           
          },
          {
              "id": 38,
@@ -349,7 +349,7 @@
              "ItemImageA": "/Images/Row%204/BALL%20FEETS.jpg",
              "ItemImageB": null,
              "ItemFile": "/Products/AST-PM-Series-Centrifugal-Pump.pdf",
-             "ItemDescription": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged"
+             "ItemDescription": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged" , "isEnquired": false
          }
      ]
     },
@@ -362,7 +362,7 @@
              "ItemImageA": "/Images/Row%208/BV.jpg",
              "ItemImageB": null,
              "ItemFile": "/Products/AST-PM-Series-Centrifugal-Pump.pdf",
-             "ItemDescription": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged"           
+             "ItemDescription": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged" , "isEnquired": false           
          },
          {
              "id": 40,
@@ -370,7 +370,7 @@
              "ItemImageA": "/Images/Row%208/DV.jpg",
              "ItemImageB": null,
              "ItemFile": "/Products/AST-PM-Series-Centrifugal-Pump.pdf",
-             "ItemDescription": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged"
+             "ItemDescription": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged" , "isEnquired": false
          },
          {
              "id": 41,
@@ -378,7 +378,7 @@
              "ItemImageA": "/Images/Row%208/SC.jpg",
              "ItemImageB": null,
              "ItemFile": "/Products/AST-PM-Series-Centrifugal-Pump.pdf",
-             "ItemDescription": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged"
+             "ItemDescription": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged" , "isEnquired": false
          },
          {
              "id": 42,
@@ -386,7 +386,7 @@
              "ItemImageA": "/Images/Row%208/RV.jpg",
              "ItemImageB": "/Images/Row%208/NRV.jpg",
              "ItemFile": "/Products/AST-PM-Series-Centrifugal-Pump.pdf",
-             "ItemDescription": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged"
+             "ItemDescription": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged" , "isEnquired": false
          }
      ]
     }
