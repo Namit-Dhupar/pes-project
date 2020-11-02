@@ -59,7 +59,7 @@ const ProductList = () => {
     const handleChange = (event, newValue) => {
         setValue(newValue);
       };
-    const productState = useSelector(state => state.enquiry.products)  
+    const productState = useSelector(state => state.enquiry.products)
 
 const tab = productState.map((product,index) => {
       return(
