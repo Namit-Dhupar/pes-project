@@ -9,7 +9,7 @@ const EnquiryReducer = (state = initialState, action) => {
   var updatedPes;
     switch(action.type){
         case TOGGLE_FAV:
-          const st = state.products.map(el => {
+          state.products.map(el => {
           const prodIndex = el.Subtype.findIndex(p => p.id === action.productId);
           const updatedProducts = el.Subtype;
           const newFavStatus = (prodIndex !== -1) ? !el.Subtype[prodIndex].isEnquired : null;
@@ -20,9 +20,9 @@ const EnquiryReducer = (state = initialState, action) => {
           updatedPes = updatedProducts.filter((index) => index !== -1)
           return updatedPes;
         });
-        
+
         return{
-          products: Object.assign({}, state , st).products
+          products: [...state.products]
         }
 
           default:
