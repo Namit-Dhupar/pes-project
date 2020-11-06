@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
+import { useSelector } from 'react-redux';
 import {Link} from 'react-router-dom';
 import { makeStyles, useTheme } from '@material-ui/core/styles';
 import {AppBar, Toolbar, IconButton, MenuItem, Menu,
@@ -66,6 +67,16 @@ const useStyles = makeStyles((theme) => ({
   nolink: {
     textDecoration: 'none',
     color: '#000000'
+  },
+  dot: {
+    position: 'absolute',
+    marginTop: '-11px',
+    marginLeft: '-5px',
+    height: '6px',
+    width: '6px',
+    backgroundColor: '#ec1f1f',
+    borderRadius: '50%',
+    display: 'inline-block'
   }
 }));
 
@@ -73,10 +84,18 @@ const PrimarySearchAppBar = (props) => {
   const { window } = props;
   const classes = useStyles();
   const theme = useTheme();
-  const [mobileMoreAnchorEl, setMobileMoreAnchorEl] = React.useState(null);
-  const [mobileOpen, setMobileOpen] = React.useState(false);
-  const [open, setOpen] = React.useState(true);
+  const [mobileMoreAnchorEl, setMobileMoreAnchorEl] = useState(null);
+  const [isDot, setisDot] = useState(false)
+  const [mobileOpen, setMobileOpen] = useState(false);
+  const [open, setOpen] = useState(true);
+  const enquiredProducts = useSelector(state => state.enquiry.products);
 
+  useEffect(() => {
+    const badgeLength = [].concat.apply([], enquiredProducts.map((el) =>el.Subtype.filter(p => p.isEnquired === true)));
+    (badgeLength.length > 0) ? setisDot(true) : setisDot(false);
+  }, [enquiredProducts])
+
+ 
   const isMobileMenuOpen = Boolean(mobileMoreAnchorEl);
 
   const handleClick = () => {
@@ -109,7 +128,9 @@ const PrimarySearchAppBar = (props) => {
       onClose={handleMobileMenuClose}
     >
       <MenuItem>
-      <ModalEnquiry />
+      <div onClick={handleMobileMenuClose}>
+      <ModalEnquiry/>
+      </div>
       </MenuItem>
     </Menu>
   );
@@ -135,6 +156,7 @@ const PrimarySearchAppBar = (props) => {
           <ModalEnquiry />
           </div>
           <div className={classes.sectionMobile}>
+          
             <IconButton
               aria-label="show more"
               aria-controls={mobileMenuId}
@@ -142,6 +164,7 @@ const PrimarySearchAppBar = (props) => {
               onClick={handleMobileMenuOpen}
               color="inherit"
             >
+             {isDot ? <span className={classes.dot}></span> : null} 
               <MoreIcon />
             </IconButton>
           </div>

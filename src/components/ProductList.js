@@ -89,7 +89,7 @@ const tabPanel = productState.map((product,index) => {
          </Hidden>
          <Hidden mdUp>
          <Showpdfphone 
-          pdf={el.ItemFile}/> 
+          pdf={el.ItemFile} isEnq={el.isEnquired} id={el.id}/> 
           </Hidden>
          </Grid>
         </Grid>         
