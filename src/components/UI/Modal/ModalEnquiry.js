@@ -102,7 +102,7 @@ const useStyles = makeStyles((theme) => ({
               </Typography>
             </Toolbar>
           </AppBar>
-          {(enquiredList[0].length > 0) ? enquiredList : 
+          {([].concat.apply([],enquiredList).length > 0) ? enquiredList : 
           <Fragment>
           <img className={classes.emptyCart} src="/Images/Empty_Cart.png" alt="Empty Cart" />
           <div style={{textAlign: "center"}}>
