@@ -12,9 +12,9 @@ import {Dialog,
         Badge, 
         List, 
         ListItem,
-        Divider,
-        Button} from '@material-ui/core/';
+        Divider} from '@material-ui/core/';
 import CloseIcon from '@material-ui/icons/Close';
+import CancelIcon from '@material-ui/icons/Cancel';
 import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
 
 const useStyles = makeStyles((theme) => ({
@@ -27,7 +27,7 @@ const useStyles = makeStyles((theme) => ({
       flex: 1,
     },
     enquiryButton: {
-      color: '#3c2344',
+      color: '#ec1f1f',
       marginLeft: 'auto'
     },
     emptyCart: {
@@ -76,11 +76,7 @@ const useStyles = makeStyles((theme) => ({
             {(pes.ItemImageB) ? <img src={pes.ItemImageB} alt={index}/> : null}
         </Hidden>    
             <p style={{marginLeft: '12px'}}><strong>{pes.ItemName}</strong></p>
-        <Button variant="outlined"
-         className={classes.enquiryButton}
-         onClick={()=>{dispatch(toggleFav(pes.id))}}>
-         Remove from Enquiry
-        </Button>
+        <CancelIcon onClick={()=>{dispatch(toggleFav(pes.id))}} className={classes.enquiryButton} />
       </ListItem>
       <Divider />
       </List>
