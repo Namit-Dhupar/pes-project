@@ -1,5 +1,6 @@
 import React, { useState, forwardRef, useEffect, Fragment } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
+import {Link} from 'react-router-dom';
 import { toggleFav } from '../../../store/actions/actions';
 import { makeStyles } from '@material-ui/core/styles';
 import {Dialog,
@@ -12,10 +13,12 @@ import {Dialog,
         Badge, 
         List, 
         ListItem,
-        Divider} from '@material-ui/core/';
+        Divider,
+        Button} from '@material-ui/core/';
 import CloseIcon from '@material-ui/icons/Close';
 import CancelIcon from '@material-ui/icons/Cancel';
 import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
+import AddShoppingCartIcon from '@material-ui/icons/AddShoppingCart';
 
 const useStyles = makeStyles((theme) => ({
     appBar: {
@@ -38,6 +41,17 @@ const useStyles = makeStyles((theme) => ({
       },
       marginLeft: "35%", 
       marginTop: "10%"
+    },
+    checkoutButton: {
+      backgroundColor:"#ec1f1f",
+      color:"#ffffff",
+      '&:hover': {
+        backgroundColor: '#ec1f1f'
+      },
+    },
+    checkoutLink: {
+      margin: "0 3% 3% auto", 
+      textDecoration: "none"
     }
   }));
   
@@ -102,7 +116,7 @@ const useStyles = makeStyles((theme) => ({
               </Typography>
             </Toolbar>
           </AppBar>
-          {([].concat.apply([],enquiredList).length > 0) ? enquiredList : 
+          {(badgeLength > 0) ? enquiredList : 
           <Fragment>
           <img className={classes.emptyCart} src="/Images/Empty_Cart.png" alt="Empty Cart" />
           <div style={{textAlign: "center"}}>
@@ -111,6 +125,15 @@ const useStyles = makeStyles((theme) => ({
            </div>
            </Fragment>
           }
+          {(badgeLength > 0) ?
+          <Link to="/contact" className={classes.checkoutLink}>
+          <Button variant="contained"
+          className={classes.checkoutButton}
+          onClick={handleClose}
+          endIcon={<AddShoppingCartIcon />}>
+           Checkout
+          </Button>
+          </Link> : null}
         </Dialog>
       </div>
     );
