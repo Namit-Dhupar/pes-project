@@ -1,4 +1,4 @@
-import React, { useState, forwardRef, useEffect } from 'react';
+import React, { useState, forwardRef, useEffect, Fragment } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { toggleFav } from '../../../store/actions/actions';
 import { makeStyles } from '@material-ui/core/styles';
@@ -29,6 +29,15 @@ const useStyles = makeStyles((theme) => ({
     enquiryButton: {
       color: '#3c2344',
       marginLeft: 'auto'
+    },
+    emptyCart: {
+      width: "30%",
+      height: "20%",
+      [theme.breakpoints.up('sm')]: {
+        height: '35%',
+      },
+      marginLeft: "35%", 
+      marginTop: "10%"
     }
   }));
   
@@ -97,7 +106,15 @@ const useStyles = makeStyles((theme) => ({
               </Typography>
             </Toolbar>
           </AppBar>
-          {enquiredList}
+          {(enquiredList[0].length > 0) ? enquiredList : 
+          <Fragment>
+          <img className={classes.emptyCart} src="/Images/Empty_Cart.png" alt="Empty Cart" />
+          <div style={{textAlign: "center"}}>
+           <h2>YOUR ENQUIRY LIST IS EMPTY</h2>
+           <h4 style={{color: "#9a9a9a"}}>Please Go to our Products page to find lots of interesting items</h4>
+           </div>
+           </Fragment>
+          }
         </Dialog>
       </div>
     );
