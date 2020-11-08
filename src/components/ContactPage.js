@@ -1,7 +1,10 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import emailjs from 'emailjs-com'
+import { useSelector } from 'react-redux';
+import Generatepdf from './UI/pdfmodule/Generatepdf';
 import '../styles/contacts.scss';
 import { TextField, Grid, Button, Divider } from '@material-ui/core/';
+import GetAppIcon from '@material-ui/icons/GetApp';
 import SendIcon from '@material-ui/icons/Send';
 import ShowMessage from './UI/Snackbar/Snackbar';
 
@@ -16,11 +19,19 @@ const ContactPage = () => {
   const [Phone, setPhone] = useState("");
   const [Message, setMessage] = useState("");
   const [Company, setCompany] = useState("");
+  const [generate, setgenerate] = useState(false);
+  const [allowDownload, setallowDownload] = useState("");
+  const enquiredProducts = useSelector(state => state.enquiry.products);
 
   const regexName = /^[a-zA-ZàáâäãåąčćęèéêëėįìíîïłńòóôöõøùúûüųūÿýżźñçčšžÀÁÂÄÃÅĄĆČĖĘÈÉÊËÌÍÎÏĮŁŃÒÓÔÖÕØÙÚÛÜŲŪŸÝŻŹÑßÇŒÆČŠŽ∂ð ,.'-]+$/;
   const regexPhone = /^(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]?\d{3}[\s.-]?\d{4}$/;
   // eslint-disable-next-line 
   const regexEmail = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+
+  useEffect(() => {
+    const badgeLength = [].concat.apply([], enquiredProducts.map((el) =>el.Subtype.filter(p => p.isEnquired === true)));
+    setallowDownload(badgeLength.length);
+  }, [enquiredProducts])
 
   const EmptyFields = () =>{
     setfirstName('');
@@ -67,6 +78,10 @@ const ContactPage = () => {
     setSnackStatus(false);
   };
 
+  const toggleGenerate = () => {
+    setgenerate(!generate);
+  }
+
   const HandleSubmit = (e) =>{
     e.preventDefault();
     if(firstName==='' || lastName==='' || Email==='' || Message==='' || Phone==='' || Company === '')
@@ -93,6 +108,26 @@ const ContactPage = () => {
           console.log(error.text);
           MessageOnEmailError();
       });
+  }
+
+  const handleEnquirySubmit = (e) => {
+    e.preventDefault();
+    if(firstName==='' || lastName==='' || Email==='' || Phone==='' || Company === '')
+    {
+      MessageOnError();
+      return false;
+    }
+    else
+     if(!regexPhone.test(Phone)){
+        MessageonPhone();
+        return false
+     }
+     else
+      if(!regexEmail.test(Email)){
+        MessageOnMail();
+        return false;
+      }
+      toggleGenerate();
   }
 
     return (
@@ -192,7 +227,7 @@ const ContactPage = () => {
           variant="outlined"
         />
         </Grid>
-        <Grid item xs={12}>
+        <Grid item lg={6} xs={12}>
         <Button
         type="submit"
         variant="contained"
@@ -202,6 +237,18 @@ const ContactPage = () => {
         Send Enquiry
       </Button>
       </Grid>
+      {allowDownload > 0 ? 
+       <Grid item lg={6} xs={12}>
+       <Button
+         onClick={handleEnquirySubmit}
+         variant="contained"
+         style={{backgroundColor: ' #ec1f1f', color: 'white'}}
+         endIcon={<GetAppIcon />}
+         >
+         Download Enquiry
+       </Button>
+       </Grid> : null 
+      }
       </Grid>
     </form>
         </div>
@@ -232,7 +279,18 @@ const ContactPage = () => {
         src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14026.784911056071!2d77.0636765!3d28.4886936!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xd644519c47de614!2sE%20N%20Project%20%26%20Engg%20Industries%20Private%20Limited!5e0!3m2!1sen!2sin!4v1602935994608!5m2!1sen!2sin" 
        frameBorder="0" allowFullScreen={true} aria-hidden="false" tabIndex="0"></iframe>
         </Grid>
-      </Grid>
+        {allowDownload > 0 ? 
+        <Grid item sm={12} className="enquiry">
+          <Generatepdf firstName={firstName} 
+          Company={Company} 
+          Phone={Phone} 
+          Email={Email} 
+          lastName={lastName}
+          generate={generate}
+          makeGeneratable={toggleGenerate}/>
+        </Grid> : null 
+       }
+      </Grid> 
       </div>
     )
 }

@@ -59,7 +59,7 @@ const useStyles = makeStyles((theme) => ({
     return <Slide direction="up" ref={ref} {...props} />;
   });
   
-  const ModalEnquiry = ({parentCallback}) => {
+  const ModalEnquiry = () => {
     const classes = useStyles();
     const [open, setOpen] = useState(false);
     const [badgeLength, setbadgeLength] = useState(0)
