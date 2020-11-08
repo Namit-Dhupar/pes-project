@@ -60,10 +60,8 @@ const Generatepdf = (props) => {
 
     useEffect(() => {
     const makeGeneratable = props.makeGeneratable;
-    console.log("Generate " + props.generate)
     if(props.generate === true){
       Pdf.createPdf(bodyRef.current)
-      console.log("Success");
       makeGeneratable();
     }
     }, [props.generate, props.makeGeneratable])
