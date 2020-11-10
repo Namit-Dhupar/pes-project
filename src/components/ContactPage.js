@@ -1,5 +1,4 @@
 import React, {useState, useEffect} from 'react';
-import emailjs from 'emailjs-com'
 import { useSelector } from 'react-redux';
 import Generatepdf from './UI/pdfmodule/Generatepdf';
 import '../styles/contacts.scss';
@@ -38,7 +37,8 @@ const ContactPage = () => {
     setlastName('');
     setEmail('');
     setMessage('');
-    setPhone('')
+    setPhone('');
+    setCompany('');
   }
 
   const MessageOnError = () => {
@@ -82,6 +82,32 @@ const ContactPage = () => {
     setgenerate(!generate);
   }
 
+  function sendMail() {
+    window.Email.send({
+      SecureToken : "32c831be-ec17-46b2-8e05-fd167211981e",
+      To : 'namitmatrix@gmail.com',
+      From : "namitmatrix@gmail.com",
+      Subject : `New Enquiry from ${firstName} ${lastName} from website`,
+      Body : `<html>
+              <p>${Message}</p>
+              <br />
+              <p>___________________</p>
+              <p>E-mail ID: ${Email}</p>
+              <p>Phone Number:${Phone}</p>
+              <p>Company Name: ${Company}</p></iframe></p>
+              </html>
+              `,         
+   }).then(message => {
+     if(message === "OK"){
+      MessageOnSuccess();
+      EmptyFields();
+     }
+     else {
+      MessageOnEmailError();
+     }
+   });
+   }
+
   const HandleSubmit = (e) =>{
     e.preventDefault();
     if(firstName==='' || lastName==='' || Email==='' || Message==='' || Phone==='' || Company === '')
@@ -99,15 +125,8 @@ const ContactPage = () => {
         MessageOnMail();
         return false;
       }
-    emailjs.sendForm('service_ui2fxfe', 'template_tkfbzmb', e.target, 'user_EbpVBhTysz7uzWLDMINIC')
-      .then((result) => {
-          console.log(result.text);
-          MessageOnSuccess();
-          EmptyFields();        
-      }, (error) => {
-          console.log(error.text);
-          MessageOnEmailError();
-      });
+      sendMail();
+    // emailjs.sendForm('service_ui2fxfe', 'template_tkfbzmb', e.target, 'user_EbpVBhTysz7uzWLDMINIC')
   }
 
   const handleEnquirySubmit = (e) => {
@@ -227,6 +246,7 @@ const ContactPage = () => {
           variant="outlined"
         />
         </Grid>
+        {allowDownload > 0 ? 
         <Grid item lg={6} xs={12}>
         <Button
         type="submit"
@@ -237,6 +257,17 @@ const ContactPage = () => {
         Send Enquiry
       </Button>
       </Grid>
+      : <Grid item lg={6} xs={12}>
+        <Button
+        type="submit"
+        variant="contained"
+        style={{backgroundColor: ' #3c2344', color: 'white'}}
+        endIcon={<SendIcon />}
+        >
+        Send Message
+      </Button>
+      </Grid>
+      }
       {allowDownload > 0 ? 
        <Grid item lg={6} xs={12}>
        <Button
