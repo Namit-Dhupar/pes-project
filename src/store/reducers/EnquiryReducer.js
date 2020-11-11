@@ -2,7 +2,7 @@ import ProductData from '../../data/ProductData.json';
 import { TOGGLE_FAV } from '../actions/actions';
 
 const initialState = {
-    products: ProductData,
+    products: ProductData
 };
 
 const EnquiryReducer = (state = initialState, action) => {
@@ -25,8 +25,8 @@ const EnquiryReducer = (state = initialState, action) => {
           products: [...state.products]
         }
 
-          default:
-            return state;       
+        default:
+         return state;       
         }
       
 };

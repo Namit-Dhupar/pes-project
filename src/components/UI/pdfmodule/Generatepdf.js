@@ -72,12 +72,18 @@ const Generatepdf = (props) => {
 
     useEffect(() => {
     const makeGeneratable = props.makeGeneratable;
+    const makeGeneratableUri = props.makeGeneratableUri;
     if(props.generate === true){
       Pdf.createPdf(bodyRef.current)
       makeGeneratable();
     }
-    }, [props.generate, props.makeGeneratable])
-   
+    else if(props.generateUri === true){
+      Pdf.createBase64(bodyRef.current);
+      makeGeneratableUri();
+    }
+    }, [props.generate, props.makeGeneratable, props.generateUri, props.makeGeneratableUri])
+
+  
     return (
       <Container ref={bodyRef}>
         <div id="page_1">

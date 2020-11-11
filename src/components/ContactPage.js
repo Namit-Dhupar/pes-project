@@ -19,9 +19,10 @@ const ContactPage = () => {
   const [Message, setMessage] = useState("");
   const [Company, setCompany] = useState("");
   const [generate, setgenerate] = useState(false);
+  const [generateUri, setgenerateUri] = useState(false);
   const [allowDownload, setallowDownload] = useState("");
   const enquiredProducts = useSelector(state => state.enquiry.products);
-
+  
   const regexName = /^[a-zA-ZàáâäãåąčćęèéêëėįìíîïłńòóôöõøùúûüųūÿýżźñçčšžÀÁÂÄÃÅĄĆČĖĘÈÉÊËÌÍÎÏĮŁŃÒÓÔÖÕØÙÚÛÜŲŪŸÝŻŹÑßÇŒÆČŠŽ∂ð ,.'-]+$/;
   const regexPhone = /^(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]?\d{3}[\s.-]?\d{4}$/;
   // eslint-disable-next-line 
@@ -39,6 +40,7 @@ const ContactPage = () => {
     setMessage('');
     setPhone('');
     setCompany('');
+    localStorage.removeItem("Base64");
   }
 
   const MessageOnError = () => {
@@ -68,7 +70,7 @@ const ContactPage = () => {
   const MessageOnEmailError = () => {
     setSnackStatus(true);
     setSnackSeverity("error");
-    setSnackMessage("Something went wrong, Please Try Again");
+    setSnackMessage("Server can't respond, You can download the enquiry and mail us at info@pesgroup.co.in");
   }
 
   const handleSnackClose = (event, reason) => {
@@ -77,6 +79,10 @@ const ContactPage = () => {
     }
     setSnackStatus(false);
   };
+
+  const togglegenerateUri = () => {
+    setgenerateUri(!generateUri);
+  }
 
   const toggleGenerate = () => {
     setgenerate(!generate);
@@ -96,7 +102,13 @@ const ContactPage = () => {
               <p>Phone Number:${Phone}</p>
               <p>Company Name: ${Company}</p></iframe></p>
               </html>
-              `,         
+              `,                 
+      Attachments : (allowDownload > 0) ? [
+	    {
+	    	name : "Enquiry.pdf",
+	    	data : "data:application/pdf;base64,"+localStorage.getItem("Base64")
+      }] 
+      : ''               
    }).then(message => {
      if(message === "OK"){
       MessageOnSuccess();
@@ -125,8 +137,9 @@ const ContactPage = () => {
         MessageOnMail();
         return false;
       }
-      sendMail();
-    // emailjs.sendForm('service_ui2fxfe', 'template_tkfbzmb', e.target, 'user_EbpVBhTysz7uzWLDMINIC')
+      togglegenerateUri();
+      setTimeout(function() { sendMail(); }, 1000);
+      
   }
 
   const handleEnquirySubmit = (e) => {
@@ -318,6 +331,8 @@ const ContactPage = () => {
           Email={Email} 
           lastName={lastName}
           generate={generate}
+          generateUri={generateUri}
+          makeGeneratableUri={togglegenerateUri}
           makeGeneratable={toggleGenerate}/>
         </Grid> : null 
        }
