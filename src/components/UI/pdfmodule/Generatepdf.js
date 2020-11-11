@@ -58,16 +58,16 @@ const Generatepdf = (props) => {
       return fulldate
     }
 
-    function getCurrentFinancialYear() {
-      var fiscalyear = "";
-      var today = new Date();
-      if ((today.getMonth() + 1) <= 3) {
-        fiscalyear = (today.getFullYear() - 1).toString().substr(-2) + "-" + today.getFullYear().toString().substr(-2)
-      } else {
-        fiscalyear = today.getFullYear().toString().substr(-2) + "-" + (today.getFullYear() + 1).toString().substr(-2)
-      }
-      return fiscalyear
-    }
+    // function getCurrentFinancialYear() {
+    //   var fiscalyear = "";
+    //   var today = new Date();
+    //   if ((today.getMonth() + 1) <= 3) {
+    //     fiscalyear = (today.getFullYear() - 1).toString().substr(-2) + "-" + today.getFullYear().toString().substr(-2)
+    //   } else {
+    //     fiscalyear = today.getFullYear().toString().substr(-2) + "-" + (today.getFullYear() + 1).toString().substr(-2)
+    //   }
+    //   return fiscalyear
+    // }
     
 
     useEffect(() => {
@@ -92,7 +92,7 @@ const Generatepdf = (props) => {
         <div className="dclr" />
         <table cellPadding={0} cellSpacing={0} className="t0">
           <tbody><tr>
-        <td className="tr0 td0"><p className="p0 ft0">Ref. No. : <nobr>---/{getCurrentFinancialYear()}/PES/----</nobr></p></td>
+         <td className="tr0 td0"><p className="p0 ft0">Ref. No. : <nobr>{props.ReqNo}</nobr></p></td>
               <td className="tr0 td1"><p className="p0 ft0">Date: <strong>{getDate()}</strong></p></td>
             </tr>
           </tbody></table>

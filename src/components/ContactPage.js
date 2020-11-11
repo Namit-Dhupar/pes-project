@@ -16,6 +16,7 @@ const ContactPage = () => {
   const [lastName, setlastName] = useState("");
   const [Email, setEmail] = useState("");
   const [Phone, setPhone] = useState("");
+  const [enqno, setenqno] = useState("")
   const [Message, setMessage] = useState("");
   const [Company, setCompany] = useState("");
   const [generate, setgenerate] = useState(false);
@@ -41,6 +42,7 @@ const ContactPage = () => {
     setPhone('');
     setCompany('');
     localStorage.removeItem("Base64");
+    localStorage.removeItem("EnqNo");
   }
 
   const MessageOnError = () => {
@@ -86,6 +88,7 @@ const ContactPage = () => {
 
   const toggleGenerate = () => {
     setgenerate(!generate);
+    setenqno(localStorage.getItem("EnqNo"));
   }
 
   function sendMail() {
@@ -105,7 +108,7 @@ const ContactPage = () => {
               `,                 
       Attachments : (allowDownload > 0) ? [
 	    {
-	    	name : "Enquiry.pdf",
+	    	name : `${localStorage.getItem("EnqNo")}.pdf`,
 	    	data : "data:application/pdf;base64,"+localStorage.getItem("Base64")
       }] 
       : ''               
@@ -333,7 +336,8 @@ const ContactPage = () => {
           generate={generate}
           generateUri={generateUri}
           makeGeneratableUri={togglegenerateUri}
-          makeGeneratable={toggleGenerate}/>
+          makeGeneratable={toggleGenerate}
+          ReqNo={enqno}/>
         </Grid> : null 
        }
       </Grid> 

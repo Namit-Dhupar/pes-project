@@ -20,7 +20,8 @@
     "react-router-dom": "^5.2.0",
     "react-scripts": "3.4.3",
     "react-spring": "^8.0.27",
-    "redux": "^4.0.5"
+    "redux": "^4.0.5",
+    "voucher-code-generator": "^1.1.1"
   },
   "scripts": {
     "start": "react-scripts start",
