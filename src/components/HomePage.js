@@ -109,7 +109,7 @@ const HomePage = () => {
                <div className="Download">
                  <br />
                  <h2>CREATE OWN BUSINESS WITH OUR IDEAS</h2>
-                 <p>We undertake turkey projects for dairy, candy, juices, chocolate industry and 
+                 <p>We undertake turnkey projects for dairy, candy, juices, chocolate industry and 
                    like and are dedicated to provide you the best product with our expertise and
                     dedicated team of professionals. You think it, we make it.</p>
                  <br />

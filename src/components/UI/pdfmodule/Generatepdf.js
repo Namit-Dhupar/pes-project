@@ -1,9 +1,11 @@
-import React, { createRef, useEffect } from 'react';
+import React, { createRef, useEffect, useState } from 'react';
 import {Table, TableBody, TableCell, TableContainer, TableHead, TableRow, Paper, Container} from '@material-ui/core';
 import { useSelector } from 'react-redux';
 import { withStyles, makeStyles } from '@material-ui/core/styles';
 import '../../../styles/filepdf.scss';
 import Pdf from '../../../utils/PdfGen';
+import voucher_codes from 'voucher-code-generator';
+
 
 const StyledTableCell = withStyles((theme) => ({
     head: {
@@ -38,6 +40,7 @@ const bodyRef = createRef();
 const Generatepdf = (props) => {
     const classes = useStyles();
     const enquiredProducts = useSelector(state => state.enquiry.products);
+    const [Code, setCode] = useState('');
     const enquiredTable = [].concat.apply([], enquiredProducts.map((el) =>el.Subtype.filter(p => p.isEnquired === true))).map((pes,index) => {
       return(
         <StyledTableRow key={index}>
@@ -58,23 +61,33 @@ const Generatepdf = (props) => {
       return fulldate
     }
 
-    // function getCurrentFinancialYear() {
-    //   var fiscalyear = "";
-    //   var today = new Date();
-    //   if ((today.getMonth() + 1) <= 3) {
-    //     fiscalyear = (today.getFullYear() - 1).toString().substr(-2) + "-" + today.getFullYear().toString().substr(-2)
-    //   } else {
-    //     fiscalyear = today.getFullYear().toString().substr(-2) + "-" + (today.getFullYear() + 1).toString().substr(-2)
-    //   }
-    //   return fiscalyear
-    // }
+    function getCurrentFinancialYear() {
+      var fiscalyear = "";
+      var today = new Date();
+      if ((today.getMonth() + 1) <= 3) {
+        fiscalyear = (today.getFullYear() - 1).toString().substr(-2) + "-" + today.getFullYear().toString().substr(-2)
+      } else {
+        fiscalyear = today.getFullYear().toString().substr(-2) + "-" + (today.getFullYear() + 1).toString().substr(-2)
+      }
+      return fiscalyear
+    }
     
+  //   function generateCode() {
+  //     const code = voucher_codes.generate({
+  //     length: 5,
+  //     count: 1,
+  //     charset: voucher_codes.charset("alphabetic"),
+  //     prefix: "PES/",
+  //     postfix: "/"+getCurrentFinancialYear()
+  //   });
+  //   return code;
+  // }
 
     useEffect(() => {
     const makeGeneratable = props.makeGeneratable;
     const makeGeneratableUri = props.makeGeneratableUri;
     if(props.generate === true){
-      Pdf.createPdf(bodyRef.current)
+      Pdf.createPdf(bodyRef.current);
       makeGeneratable();
     }
     else if(props.generateUri === true){
@@ -82,7 +95,17 @@ const Generatepdf = (props) => {
       makeGeneratableUri();
     }
     }, [props.generate, props.makeGeneratable, props.generateUri, props.makeGeneratableUri])
-
+    
+    useEffect(()=>{
+      const code = voucher_codes.generate({
+        length: 5,
+        count: 1,
+        charset: voucher_codes.charset("alphabetic"),
+        prefix: "PES/",
+        postfix: "/"+getCurrentFinancialYear()
+      });
+      setCode(code);
+    }, [])
   
     return (
       <Container ref={bodyRef}>
@@ -92,7 +115,7 @@ const Generatepdf = (props) => {
         <div className="dclr" />
         <table cellPadding={0} cellSpacing={0} className="t0">
           <tbody><tr>
-         <td className="tr0 td0"><p className="p0 ft0">Ref. No. : <nobr>{props.ReqNo}</nobr></p></td>
+    <td className="tr0 td0"><p className="p0 ft0">Ref. No. : <nobr>{Code}</nobr></p></td>
               <td className="tr0 td1"><p className="p0 ft0">Date: <strong>{getDate()}</strong></p></td>
             </tr>
           </tbody></table>

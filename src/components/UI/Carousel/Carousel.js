@@ -77,7 +77,7 @@ function Banner(props) {
 const items = [
     {
         Name: "EXPORTER",
-        Caption: "Equipment for Pharmacueticals, Diary, Toffee, Candy",
+        Caption: "Equipments for Pharmacueticals, Diary, Toffee, Candy",
         contentPosition: "left",
         Items: [
             {
