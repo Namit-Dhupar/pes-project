@@ -52,7 +52,9 @@ const ContactPage = () => {
   const MessageOnSuccess = () => {
     setSnackStatus(true);
     setSnackSeverity("success");
-    setSnackMessage("Message sent successfully, You will hear back from us soon");
+    (allowDownload > 0) ?
+    setSnackMessage("Enquiry sent successfully, We recommend that you DOWNLOAD ENQUIRY for future reference")
+    : setSnackMessage("Message sent successfully, You will hear back from us soon");
   }
 
   const MessageonPhone = () =>{
