@@ -72,17 +72,6 @@ const Generatepdf = (props) => {
       return fiscalyear
     }
     
-  //   function generateCode() {
-  //     const code = voucher_codes.generate({
-  //     length: 5,
-  //     count: 1,
-  //     charset: voucher_codes.charset("alphabetic"),
-  //     prefix: "PES/",
-  //     postfix: "/"+getCurrentFinancialYear()
-  //   });
-  //   return code;
-  // }
-
     useEffect(() => {
     const makeGeneratable = props.makeGeneratable;
     const makeGeneratableUri = props.makeGeneratableUri;

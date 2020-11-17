@@ -1,12 +1,9 @@
-import React, { useState, useEffect } from 'react';
-import { useSelector } from 'react-redux';
+import React, { useState } from 'react';
 import {Link} from 'react-router-dom';
 import { makeStyles, useTheme } from '@material-ui/core/styles';
-import {AppBar, Toolbar, IconButton, MenuItem, Menu,
-Drawer, Divider, Hidden, List, ListItem, ListItemIcon, 
-ListItemText, Collapse} from '@material-ui/core';
+import {AppBar, Toolbar, IconButton, Drawer, Divider, Hidden, List, ListItem, ListItemIcon, 
+Menu, MenuItem, ListItemText, Collapse, Button, Grid} from '@material-ui/core';
 import MenuIcon from '@material-ui/icons/Menu';
-import MoreIcon from '@material-ui/icons/MoreVert';
 import CardTravelIcon from '@material-ui/icons/CardTravel';
 import HomeIcon from '@material-ui/icons/Home';
 import PhoneIcon from '@material-ui/icons/Phone';
@@ -38,6 +35,7 @@ const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.up('md')]: {
       display: 'flex',
     },
+    fontWeight: "bold"
   },
   sectionMobile: {
     display: 'flex',
@@ -84,19 +82,18 @@ const PrimarySearchAppBar = (props) => {
   const { window } = props;
   const classes = useStyles();
   const theme = useTheme();
-  const [mobileMoreAnchorEl, setMobileMoreAnchorEl] = useState(null);
-  const [isDot, setisDot] = useState(false)
+  const [anchorEl, setAnchorEl] = React.useState(null);
+  const openComp = Boolean(anchorEl);
   const [mobileOpen, setMobileOpen] = useState(false);
   const [open, setOpen] = useState(true);
-  const enquiredProducts = useSelector(state => state.enquiry.products);
 
-  useEffect(() => {
-    const badgeLength = [].concat.apply([], enquiredProducts.map((el) =>el.Subtype.filter(p => p.isEnquired === true)));
-    (badgeLength.length > 0) ? setisDot(true) : setisDot(false);
-  }, [enquiredProducts])
+  const handleMenu = (event) => {
+    setAnchorEl(event.currentTarget);
+  };
 
- 
-  const isMobileMenuOpen = Boolean(mobileMoreAnchorEl);
+  const handleClose = () => {
+    setAnchorEl(null);
+  };
 
   const handleClick = () => {
     setOpen(!open);
@@ -106,35 +103,9 @@ const PrimarySearchAppBar = (props) => {
     setMobileOpen(!mobileOpen);
   };
 
-  const handleMobileMenuClose = () => {
-    setMobileMoreAnchorEl(null);
-  };
-
-  const handleMobileMenuOpen = (event) => {
-    setMobileMoreAnchorEl(event.currentTarget);
-  };
 
   const container = window !== undefined ? () => window().document.body : undefined;
   
-  const mobileMenuId = 'primary-search-account-menu-mobile';
-  const renderMobileMenu = (
-    <Menu
-      anchorEl={mobileMoreAnchorEl}
-      anchorOrigin={{ vertical: 'top', horizontal: 'right' }}
-      id={mobileMenuId}
-      keepMounted
-      transformOrigin={{ vertical: 'top', horizontal: 'right' }}
-      open={isMobileMenuOpen}
-      onClose={handleMobileMenuClose}
-    >
-      <MenuItem>
-      <div onClick={handleMobileMenuClose}>
-      <ModalEnquiry/>
-      </div>
-      </MenuItem>
-    </Menu>
-  );
-
   return (
     <div className={classes.grow}>
        <AppBar className={classes.appBar}>
@@ -153,24 +124,46 @@ const PrimarySearchAppBar = (props) => {
           </Link>
           <div className={classes.grow} />
           <div className={classes.sectionDesktop}>
+          <Grid container>
+          <Button color="inherit">
+          <Link to="/" className={classes.nolink}>
+            Home
+          </Link>  
+          </Button>
+          <Button color="inherit" onClick={handleMenu}>Company <ExpandMore /></Button>
+          <Menu
+                id="menu-appbar"
+                anchorEl={anchorEl}
+                anchorOrigin={{
+                  vertical: 'top',
+                  horizontal: 'right',
+                }}
+                keepMounted
+                transformOrigin={{
+                  vertical: 'top',
+                  horizontal: 'right',
+                }}
+                open={openComp}
+                onClose={handleClose}
+              >
+                <Link to="/company/about" className={classes.nolink}> 
+                <MenuItem onClick={handleClose}>About Us</MenuItem>
+                </Link>
+                <Link to="/company/capabilities" className={classes.nolink}> 
+                <MenuItem onClick={handleClose}>Capabilities</MenuItem>
+                </Link>
+              </Menu>
+          <Link to="/products" className={classes.nolink}>
+          <Button color="inherit">Products</Button>
+          </Link>
+          <Link to="/contact" className={classes.nolink}>
+          <Button color="inherit">Contact Us</Button>
+          </Link>
+          </Grid>
+          </div>
           <ModalEnquiry />
-          </div>
-          <div className={classes.sectionMobile}>
-          
-            <IconButton
-              aria-label="show more"
-              aria-controls={mobileMenuId}
-              aria-haspopup="true"
-              onClick={handleMobileMenuOpen}
-              color="inherit"
-            >
-             {isDot ? <span className={classes.dot}></span> : null} 
-              <MoreIcon />
-            </IconButton>
-          </div>
         </Toolbar>
       </AppBar>
-      {renderMobileMenu}
       <nav className={classes.drawer} aria-label="mailbox folders">
         {/* The implementation can be swapped with js to avoid SEO duplication of links. */}
         <Hidden smUp implementation="css">
