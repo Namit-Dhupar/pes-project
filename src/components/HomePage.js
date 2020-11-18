@@ -91,7 +91,11 @@ const HomePage = () => {
                 <h1>OUR CLIENT</h1>
                 <p className="title">We are providing our products and services to some of the very esteemed clients in 
                 the industry who are satisfied with our products and after sales service. Here are the few:</p>
+                <Grid container>
+                  <Grid item xs={12}>
                 <ClientCarousel />
+                </Grid>
+                </Grid>
                </div>
                <br />
                <div className="Download">

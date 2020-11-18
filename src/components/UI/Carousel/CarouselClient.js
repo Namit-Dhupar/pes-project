@@ -1,81 +1,110 @@
-import React from 'react';
-import Carousel from 'react-material-ui-carousel';
-import autoBind from 'auto-bind';
-import {   
-    CardMedia    
-} from '@material-ui/core'
+import React, { useEffect, useState } from "react";
+import Marquee from "react-marquee-slider";
+import styled from "styled-components";
+import times from "lodash/times";
+import { withSize } from "react-sizeme";
+import { nanoid } from "nanoid";
 
-import '../../../styles/SecondExample.scss';
+import FullWidth from "./FullWidth";
 
-function Project(props) {
-    return (
-        <CardMedia
-        className="Project"
-        image={props.item.Image}
-    >
-        </CardMedia>
-    )
-}
+const Photo = styled.img`
+  width: ${(props) => props.scale * 300}px;
+  height: ${(props) => props.scale * 150}px;
+  border-radius: 4px;
+  box-shadow: 0 7px 20px 0 rgba(0, 0, 0, 0.12);
+  object-fit: cover;
+  object-position: top;
+  margin-left: ${(props) => (props.offset === "true" ? props.scale * 7 : props.scale * 87)}px;
+  margin-right: ${(props) => (props.offset === "true" ? props.scale * 80 : 0)}px;
+`;
 
-const items = [
-    {
-        Image: "/Images/Clients/Client1.jpeg"
-    },
-    {
-        Image: "/Images/Clients/Client2.jpeg"
-    },
-    {
-        Image: "/Images/Clients/Client3.jpeg"
-    },
-    {
-        Image: "/Images/Clients/Client4.jpeg"
-    },
-    {
-        Image: "/Images/Clients/Client5.jpeg"
-    },
-    {
-        Image: "/Images/Clients/Client6.jpeg"
-    }
-]
+const photos = [
+  '/Images/Clients/Abb.jpeg',
+  '/Images/Clients/abbott-logo.png',
+  '/Images/Clients/Allana.jpeg',
+  '/Images/Clients/Amul.jpeg',
+  '/Images/Clients/Bovis.jpeg',
+  '/Images/Clients/Buhler.jpeg',
+  '/Images/Clients/Cadbury.jpeg',
+  '/Images/Clients/CocaCola.jpeg',
+  '/Images/Clients/Cremica.jpeg',
+  '/Images/Clients/dabur2.jpg',
+  '/Images/Clients/DSgroup.jpeg',
+  '/Images/Clients/dukes-logo1.png',
+  '/Images/Clients/schrieber.png',
+  '/Images/Clients/Finolex.jpeg',
+  '/Images/Clients/frooti.png',
+  '/Images/Clients/gea.jpeg',
+  '/Images/Clients/gsk.jpeg',
+  '/Images/Clients/ITC1.jpeg',
+  '/Images/Clients/Kraft.jpeg',
+  '/Images/Clients/laval.jpeg',
+  '/Images/Clients/lipton1.jpg',
+  '/Images/Clients/MDLZ-logo-col.jpg',
+  '/Images/Clients/mother-logo-big1.jpg',
+  '/Images/Clients/Nestle.jpeg',
+  '/Images/Clients/Nirulas-1.png',
+  '/Images/Clients/Osram.jpg',
+  '/Images/Clients/Pepsi.jpeg',
+  '/Images/Clients/Perfetti.jpeg',
+  '/Images/Clients/06-ranbaxy-logo.jpg',
+  '/Images/Clients/Riddhi.jpeg',
+  '/Images/Clients/Rockwell.jpeg',
+  '/Images/Clients/Schnieder.jpeg',
+  '/Images/Clients/siemens-logo_large.png',
+  '/Images/Clients/United.jpeg',
+  '/Images/Clients/Yakult.jpeg',
+  '/Images/Clients/York.jpeg'
+];
 
-export default class MyProjectsExample extends React.Component {
-    constructor(props) {
-        super(props);
+const People = ({ size }) => {
+  const [key, setKey] = useState(nanoid());
 
-        this.state = {
-            autoPlay: true,
-            timer: 500,
-            animation: "slide",
-            indicators: true,
-            timeout: 500,
-            navButtonsAlwaysVisible: true
-        }
+  useEffect(() => {
+    setKey(nanoid());
+  }, [size, size.width]);
 
-        autoBind(this);
-    }
+  let scale = 0.5;
 
+  if (size && size.width > 800) {
+    scale = 0.65;
+  }
 
-    render() {
-        return (
-            <div style={{width:"100%"}}>
-                <Carousel
-                    className="SecondExample"
-                    autoPlay={this.state.autoPlay}
-                    timer={this.state.timer}
-                    animation={this.state.animation}
-                    indicators={this.state.indicators}
-                    timeout={this.state.timeout}
-                    navButtonsAlwaysVisible={this.state.navButtonsAlwaysVisible}
+  if (size && size.width > 1100) {
+    scale = 0.8;
+  }
 
-                >
-                    {
-                        items.map((item, index) => {
-                            return <Project item={item} key={index} />
-                        })
-                    }
-                </Carousel>
+  if (size && size.width > 1400) {
+    scale = 1;
+  }
 
-            </div>
-        )
-    }
-}
+  return (
+    <FullWidth>
+      <div style={{ height: scale * 200 }}>
+        <Marquee key={key} velocity={25}>
+          {times(21, Number).map((id) => (
+            <Photo src={photos[id]} alt="" key={`marquee-example-people-${id}`} scale={scale} />
+          ))}
+        </Marquee>
+      </div>
+
+      <div style={{ height: scale * 60 }} />
+
+      <div style={{ height: scale * 200 }}>
+        <Marquee key={key} velocity={50}>
+          {times(18, Number).map((id) => (
+            <Photo
+              src={photos[id + 18]}
+              alt=""
+              key={`marquee-example-people-${id + 18}`}
+              offset="true"
+              scale={scale}
+            />
+          ))}
+        </Marquee>
+      </div>
+    </FullWidth>
+  );
+};
+
+export default withSize()(People);
