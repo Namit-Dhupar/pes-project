@@ -30,19 +30,6 @@ const useStyles = makeStyles((theme) => ({
   menuButton: {
     marginRight: theme.spacing(2),
   },
-  sectionDesktop: {
-    display: 'none',
-    [theme.breakpoints.up('md')]: {
-      display: 'flex',
-    },
-    fontWeight: "bold"
-  },
-  sectionMobile: {
-    display: 'flex',
-    [theme.breakpoints.up('md')]: {
-      display: 'none',
-    },
-  },
   // necessary for content to be below app bar
   toolbar: theme.mixins.toolbar,
   drawerPaper: {
@@ -56,7 +43,7 @@ const useStyles = makeStyles((theme) => ({
   logo: {
     width: '100%',
     [theme.breakpoints.up('sm')]: {
-      width: '45%',
+      width: '85%',
     },
   },
   nested: {
@@ -65,16 +52,6 @@ const useStyles = makeStyles((theme) => ({
   nolink: {
     textDecoration: 'none',
     color: '#000000'
-  },
-  dot: {
-    position: 'absolute',
-    marginTop: '-11px',
-    marginLeft: '-5px',
-    height: '6px',
-    width: '6px',
-    backgroundColor: '#ec1f1f',
-    borderRadius: '50%',
-    display: 'inline-block'
   }
 }));
 
@@ -110,6 +87,7 @@ const PrimarySearchAppBar = (props) => {
     <div className={classes.grow}>
        <AppBar className={classes.appBar}>
         <Toolbar>
+        <Hidden mdUp>
         <IconButton
             color="inherit"
             aria-label="open drawer"
@@ -119,11 +97,12 @@ const PrimarySearchAppBar = (props) => {
           >
             <MenuIcon />
           </IconButton>
+          </Hidden>
+          <div className={classes.grow} />
           <Link to="/">
           <img className={classes.logo} src="/Images/Banner.png" alt="pes logo" />
           </Link>
-          <div className={classes.grow} />
-          <div className={classes.sectionDesktop}>
+          <Hidden smDown>
           <Grid container>
           <Button color="inherit">
           <Link to="/" className={classes.nolink}>
@@ -156,11 +135,17 @@ const PrimarySearchAppBar = (props) => {
           <Link to="/products" className={classes.nolink}>
           <Button color="inherit">Products</Button>
           </Link>
+          <Link to="/products" className={classes.nolink}>
+          <Button color="inherit">Projects</Button>
+          </Link>
+          <Link to="/contact" className={classes.nolink}>
+          <Button color="inherit">Services</Button>
+          </Link>
           <Link to="/contact" className={classes.nolink}>
           <Button color="inherit">Contact Us</Button>
           </Link>
           </Grid>
-          </div>
+          </Hidden>
           <ModalEnquiry />
         </Toolbar>
       </AppBar>

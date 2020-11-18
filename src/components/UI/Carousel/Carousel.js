@@ -1,6 +1,7 @@
 import React from 'react';
 import Carousel from "react-material-ui-carousel";
 import autoBind from "auto-bind";
+import {Link} from 'react-router-dom';
 import '../../../styles/example.scss';
 import {
     Card,
@@ -9,7 +10,8 @@ import {
     Typography,
     Grid,
     Zoom,
-    Slide
+    Slide,
+    Button
 } from '@material-ui/core';
 
 function Banner(props) {
@@ -30,7 +32,12 @@ function Banner(props) {
                 <Typography className="Caption">
                     {props.item.Caption}
                 </Typography>
-            </Slide>    
+            </Slide>
+            <Link to="/products" style={{textDecoration:"none"}}>
+            <Button variant="outlined" className="ViewButton">
+                    View Now
+                </Button>
+            </Link>        
             </CardContent>
         </Grid>
     )
@@ -76,8 +83,8 @@ function Banner(props) {
 
 const items = [
     {
-        Name: "EXPORTER",
-        Caption: "Equipments for Pharmacueticals, Diary, Toffee, Candy",
+        Name: "PUMPS",
+        Caption: "Check out our line of pumps",
         contentPosition: "left",
         Items: [
             {
@@ -91,8 +98,8 @@ const items = [
         ]
     },
     {
-        Name: "MANUFACTURES",
-        Caption: "Equipments for Juices, Edible Oil, Food Processing, Breweries, Soft Drink..",
+        Name: "SIGHT GLASSES",
+        Caption: "Check out our line of Sight Glasses",
         contentPosition: "right",
         Items: [
             {
@@ -106,8 +113,23 @@ const items = [
         ]
     },
     {
-        Name: "ENGINEERS",
-        Caption: "Equipments for Soft Drink, Confectionery, Perfumery, Live Stock etc.",
+        Name: "Boiler & Flanges",
+        Caption: "View in Products Page.",
+        contentPosition: "middle",
+        Items: [
+            {
+                Name: "Flanges",
+                Image: "/Images/clamps.png"
+            },
+            {
+                Name: "Boilers",
+                Image: "/Images/Boiler.png"
+            }
+        ]
+    },
+    {
+        Name: "AND MORE",
+        Caption: "View in Products Page.",
         contentPosition: "middle",
         Items: [
             {
