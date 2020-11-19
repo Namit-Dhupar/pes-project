@@ -39,7 +39,7 @@ const photos = [
   '/Images/Clients/ITC1.jpeg',
   '/Images/Clients/Kraft.jpeg',
   '/Images/Clients/laval.jpeg',
-  '/Images/Clients/lipton1.jpg',
+  '/Images/Clients/lipton.png',
   '/Images/Clients/MDLZ-logo-col.jpg',
   '/Images/Clients/mother-logo-big1.jpg',
   '/Images/Clients/Nestle.jpeg',
@@ -49,12 +49,12 @@ const photos = [
   '/Images/Clients/Perfetti.jpeg',
   '/Images/Clients/06-ranbaxy-logo.jpg',
   '/Images/Clients/Riddhi.jpeg',
-  '/Images/Clients/Rockwell.jpeg',
-  '/Images/Clients/Schnieder.jpeg',
+  '/Images/Clients/rockwell.png',
+  '/Images/Clients/Schneider.png',
   '/Images/Clients/siemens-logo_large.png',
   '/Images/Clients/United.jpeg',
   '/Images/Clients/Yakult.jpeg',
-  '/Images/Clients/York.jpeg'
+  '/Images/Clients/york.webp'
 ];
 
 const People = ({ size }) => {
@@ -91,7 +91,7 @@ const People = ({ size }) => {
       <div style={{ height: scale * 60 }} />
 
       <div style={{ height: scale * 200 }}>
-        <Marquee key={key} velocity={50}>
+        <Marquee key={key} velocity={25}>
           {times(18, Number).map((id) => (
             <Photo
               src={photos[id + 18]}
