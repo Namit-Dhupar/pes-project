@@ -136,10 +136,7 @@ const PrimarySearchAppBar = (props) => {
           <Button color="inherit">Products</Button>
           </Link>
           <Link to="/products" className={classes.nolink}>
-          <Button color="inherit">Projects</Button>
-          </Link>
-          <Link to="/contact" className={classes.nolink}>
-          <Button color="inherit">Services</Button>
+          <Button color="inherit">Projects & Services</Button>
           </Link>
           <Link to="/contact" className={classes.nolink}>
           <Button color="inherit">Contact Us</Button>

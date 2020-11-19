@@ -28,7 +28,7 @@ const photos = [
   '/Images/Clients/Cadbury.jpeg',
   '/Images/Clients/CocaCola.jpeg',
   '/Images/Clients/Cremica.jpeg',
-  '/Images/Clients/dabur2.jpg',
+  '/Images/Clients/dabur.png',
   '/Images/Clients/DSgroup.jpeg',
   '/Images/Clients/dukes-logo1.png',
   '/Images/Clients/schrieber.png',
