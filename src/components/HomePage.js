@@ -28,7 +28,7 @@ const HomePage = () => {
                   focus on Dairy, Food & Beverage Industries.</p>
                 </Grid>
                 <Grid item lg={6} xs={12}>   
-                <img className="AboutImage" src="/Images/Projects/Proj1.jpg" alt="Pump Sample" />
+                <img className="AboutImage" src="/Images/home.jpg" alt="Pump Sample" />
                 </Grid>
                 </Grid>
                 <br />
