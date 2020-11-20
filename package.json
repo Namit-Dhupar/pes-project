@@ -15,6 +15,7 @@
     "node-sass": "^4.14.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
+    "react-grid-gallery": "^0.5.5",
     "react-marquee-slider": "^1.1.2",
     "react-material-ui-carousel": "^1.8.2",
     "react-pdf": "^5.0.0",

@@ -51,11 +51,11 @@ const Footer = () =>{
         OUR SERVICES INCLUDES
         <Divider className={classes.divider} />
         <ul style={{listStyleType: "none"}}>
-           <li className={classes.linkStyle}><a className={classes.anchorStyle} href='/company/about'>Pharmaceuticals</a></li>
-           <li className={classes.linkStyle}><a className={classes.anchorStyle} href='/company/about'>Food</a></li>
-           <li className={classes.linkStyle}><a className={classes.anchorStyle} href='/company/about'>Dairy</a></li>
-           <li className={classes.linkStyle}><a className={classes.anchorStyle} href='/company/about'>Beverages</a></li>
-           <li className={classes.linkStyle}><a className={classes.anchorStyle} href='/company/about'>Personal Care</a></li>
+           <li className={classes.linkStyle}><a className={classes.anchorStyle} href='/services'>Pharmaceuticals</a></li>
+           <li className={classes.linkStyle}><a className={classes.anchorStyle} href='/services'>Food</a></li>
+           <li className={classes.linkStyle}><a className={classes.anchorStyle} href='/services'>Dairy</a></li>
+           <li className={classes.linkStyle}><a className={classes.anchorStyle} href='/services'>Beverages</a></li>
+           <li className={classes.linkStyle}><a className={classes.anchorStyle} href='/services'>Personal Care</a></li>
        </ul>
         </Grid>
         <Grid item lg={4} md={12}>

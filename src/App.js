@@ -2,7 +2,7 @@ import React,{Fragment} from 'react';
 import Navbar from './components/UI/Navbar/Navbar';
 import ScrollIntoView from './components/UI/Scrolling/ScrollIntoView';
 import { BrowserRouter, Route } from 'react-router-dom';
-import { HomePage, ProductList, ContactPage, AboutUs, Capabilities} from './components';
+import { HomePage, ProductList, ContactPage, AboutUs, Capabilities, Projects, Services} from './components';
 import ScrollTop from './components/UI/Scrolling/ScrollToTop';
 import Footer from './components/UI/Footer/Footer';
 import Fab from '@material-ui/core/Fab';
@@ -21,6 +21,8 @@ function App(props) {
       <Route path="/contact" component={ContactPage} />
       <Route path="/company/about" component={AboutUs} />
       <Route path="/company/capabilities" component={Capabilities} />
+      <Route path="/projects" component={Projects} />
+      <Route path="/services" component={Services} />
      </Navbar>
      </ScrollIntoView>
      </div>

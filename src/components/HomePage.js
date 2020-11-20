@@ -25,17 +25,10 @@ const HomePage = () => {
               <p>Today <strong>PES</strong> is an ISO 9001 : 2000 Certified Company registered under Small Scale 
                   Industries in Delhi is a major player in providing the advance Technical services, 
                   economic solution to our valued Cutomers, the farmers / rural people with main 
-                  focus on Dairy, Food & Beverage Industries.PES & our Group Co’s have have large 
-                  Customers references globally like a few : Nestle India,  Mondelez  (Cadbury),
-                  ITC,  Perfetti, Dumex, Glaxo SmithKline Beecham,  Coca Cola, Pepsi, Yakult,
-                  Danone, Amul, Mother Dairy, J.K Dairies (LVP & Umang Dairy), Ananada Gp.
-                  (Gopaljee Dairy), Namastey Dairy,  State & Co-op. Dairies, Military Farms,
-                  Tetra Pak,  Alfa Laval, Abbott Healthcare, Gea Process, Johnson controls. 
-                  Roquette Riddhi Siddhi Corn Processing Ltd., Fozen Food plants like Allana Gp.
-                  and many more…</p>
+                  focus on Dairy, Food & Beverage Industries.</p>
                 </Grid>
                 <Grid item lg={6} xs={12}>   
-                <img className="AboutImage" src="/Images/AST-P-1.jpg" alt="Pump Sample" />
+                <img className="AboutImage" src="/Images/Projects/Proj1.jpg" alt="Pump Sample" />
                 </Grid>
                 </Grid>
                 <br />
@@ -57,9 +50,9 @@ const HomePage = () => {
                  {/*TUBE PRODUCT */}
                  <Grid item lg={3} xs={12}> 
                  <Link className="bard" to="#" style={{backgroundImage: "url(/Images/REFRIGERATION-SYSTEM.jpg)"}}>
-                  <p>TUBE & FITTINGS</p>
+                  <p>REFRIGERATION SYSTEM</p>
                 <div>
-                  <h1>TUBE & FITTINGS</h1>
+                  <h1>REFRIGERATION SYSTEM</h1>
                 </div>   
                 </Link>
                 </Grid>
@@ -67,9 +60,9 @@ const HomePage = () => {
                  {/*HOMOGENIZER PRODUCT */}
                  <Grid item lg={3} xs={12}> 
                  <Link className="bard" to="#" style={{backgroundImage: "url(/Images/HOMOGENIZER.jpg)"}}>
-                  <p>PIPE SUPPORT & ACCESSORIES</p>
+                  <p>HOMOGENIZER</p>
                 <div>
-                  <h1>PIPE SUPPORT & ACCESSORIES</h1>
+                  <h1>HOMOGENIZER</h1>
                 </div>   
                 </Link>
                 </Grid>
@@ -77,9 +70,9 @@ const HomePage = () => {
                  {/*VALVES PRODUCT */}
                  <Grid item lg={3} xs={12}> 
                  <Link className="bard" to="#" style={{backgroundImage: "url(/Images/BULK-COOLER.jpg)"}}>
-                  <p>VALVE</p>
+                  <p>BULK COOLER</p>
                 <div>
-                  <h1>VALVE</h1>
+                  <h1>BULK COOLER</h1>
                 </div>   
                 </Link>
                </Grid>
@@ -88,7 +81,7 @@ const HomePage = () => {
 
                <br />
                 <div className="heading">
-                <h1>OUR CLIENT</h1>
+                <h1>OUR CLIENTS</h1>
                 <p className="title">We are providing our products and services to some of the very esteemed clients in 
                 the industry who are satisfied with our products and after sales service. Here are the few:</p>
                 <Grid container>

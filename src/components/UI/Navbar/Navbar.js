@@ -10,6 +10,8 @@ import PhoneIcon from '@material-ui/icons/Phone';
 import BusinessIcon from '@material-ui/icons/Business';
 import ExpandLess from '@material-ui/icons/ExpandLess';
 import ExpandMore from '@material-ui/icons/ExpandMore';
+import WorkIcon from '@material-ui/icons/Work';
+import RoomServiceIcon from '@material-ui/icons/RoomService';
 import ModalEnquiry from '../Modal/ModalEnquiry'
 
 const drawerWidth = 240;
@@ -135,8 +137,11 @@ const PrimarySearchAppBar = (props) => {
           <Link to="/products" className={classes.nolink}>
           <Button color="inherit">Products</Button>
           </Link>
-          <Link to="/products" className={classes.nolink}>
-          <Button color="inherit">Projects & Services</Button>
+          <Link to="/projects" className={classes.nolink}>
+          <Button color="inherit">Projects</Button>
+          </Link>
+          <Link to="/services" className={classes.nolink}>
+          <Button color="inherit">Services</Button>
           </Link>
           <Link to="/contact" className={classes.nolink}>
           <Button color="inherit">Contact Us</Button>
@@ -197,6 +202,20 @@ const PrimarySearchAppBar = (props) => {
         <ListItem button>
            <ListItemIcon><CardTravelIcon /></ListItemIcon>
            <ListItemText primary="Products" />
+        </ListItem>
+        </Link>
+
+        <Link onClick={handleDrawerToggle} to="/projects" className={classes.nolink}>
+        <ListItem button>
+           <ListItemIcon><WorkIcon /></ListItemIcon>
+           <ListItemText primary="Projects" />
+        </ListItem>
+        </Link>
+
+        <Link onClick={handleDrawerToggle} to="/services" className={classes.nolink}>
+        <ListItem button>
+           <ListItemIcon><RoomServiceIcon /></ListItemIcon>
+           <ListItemText primary="Services" />
         </ListItem>
         </Link>
 
