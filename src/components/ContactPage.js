@@ -1,4 +1,5 @@
 import React, {useState, useEffect} from 'react';
+import {Link} from 'react-router-dom';
 import { useSelector } from 'react-redux';
 import Generatepdf from './UI/pdfmodule/Generatepdf';
 import '../styles/contacts.scss';
@@ -53,7 +54,7 @@ const ContactPage = () => {
     setSnackStatus(true);
     setSnackSeverity("success");
     (allowDownload > 0) ?
-    setSnackMessage("Enquiry sent successfully, We recommend that you DOWNLOAD ENQUIRY for future reference")
+    setSnackMessage("Enquiry sent successfully, You will hear back from us soon")
     : setSnackMessage("Message sent successfully, You will hear back from us soon");
   }
 
@@ -296,6 +297,19 @@ const ContactPage = () => {
          Download Enquiry
        </Button>
        </Grid> : null 
+      }
+      {allowDownload > 0 ? 
+      <div style={{fontSize:"15px"}}>
+       <p><strong>Note:</strong> Please make sure you <span style={{color: '#ec1f1f'}}> Download Enquiry </span>
+        before sending it to us for future reference</p>
+       </div>
+       : <div style={{fontSize:"15px"}}>
+       <p><strong>Note:</strong></p>
+       <ol>
+         <li>You can <strong>Enquire</strong> about the products by going to our <Link to="/products"> Products </Link> page and click on <span style={{color: '#ec1f1f'}}>Add to Enquiry</span></li>
+         <li>Once done, click on the Cart Icon on the top right corner of the screen</li>
+       </ol>
+       </div>
       }
       </Grid>
     </form>
