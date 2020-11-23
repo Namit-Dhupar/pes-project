@@ -62,7 +62,7 @@ const Footer = () =>{
         OFFICE ADDRESS
         <Divider className={classes.divider} />
           <ul style={{listStyleType: "none"}}>
-          <li className={classes.linkStyle}><HomeIcon />&nbsp;&nbsp; 357 First Floor, FA-357, Radhey Shyam Mandir Marg, Block FA, Mansarover Garden, New Delhi, Delhi 110015</li>
+          <li className={classes.linkStyle}><HomeIcon />&nbsp;&nbsp; FA-357, Mansarover Garden, Radhey Shyam Mandir Marg, New Delhi, Delhi 110015</li>
           <li className={classes.linkStyle}><PhoneIcon />&nbsp;&nbsp;011-2541 7510, 2546 6316</li>
           <li className={classes.linkStyle}><EmailIcon />&nbsp;&nbsp;info@pesgroup.co.in</li>
           </ul>

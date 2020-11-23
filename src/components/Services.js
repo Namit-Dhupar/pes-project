@@ -1,62 +1,11 @@
 import React, { Fragment } from 'react';
-import { makeStyles } from '@material-ui/core/styles';
-import { GridList, GridListTile } from '@material-ui/core';
-
-const useStyles = makeStyles((theme) => ({
-  root: {
-    display: 'flex',
-    flexWrap: 'wrap',
-    justifyContent: 'space-around',
-    overflow: 'hidden',
-    backgroundColor: theme.palette.background.paper,
-  },
-  gridList: {
-    width: 500,
-    height: 648,
-  },
-}));
-
-const tileData = 
-[
-    {
-      img: '/Images/Services/Serv1.jpg',
-      title: 'Pharma',      
-      cols: 1,
-    },
-    {
-        img: '/Images/Services/Serv2.jpg',
-        title: 'Food',        
-        cols: 1,
-    },
-    {
-        img: '/Images/Services/Serve4.jpg',
-        title: 'Personal Care',        
-        cols: 1,
-    },
-    {
-        img: '/Images/Services/Serv5.jpg',
-        title: 'Beverages',        
-        cols: 1,
-    }
-]
 
 const Services = () => {
-  
-const classes = useStyles();
 
   return (
       <Fragment>
     <h1>Services</h1>
     <p><strong>PES Provides the broadest sanitary portfolio in the market</strong></p>
-    <div className={classes.root}>
-      <GridList cellHeight={320} className={classes.gridList} cols={2}>
-        {tileData.map((tile) => (
-          <GridListTile key={tile.img} cols={tile.cols || 1}>
-            <img src={tile.img} alt={tile.title} />
-          </GridListTile>
-        ))}
-      </GridList>
-    </div>
     <h2>CUSTOM MACHINING</h2>
     <p>Our network of manufacturing services includes: cutting, machining and turning, forging, 
         roll forming, tube/pipe bending, plate processing, slitting, and welding operations. If 

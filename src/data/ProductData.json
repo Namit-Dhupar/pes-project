@@ -8,34 +8,35 @@
              "ItemImageA": "/Images/Row%201/AST-XM-II%20SERIES.jpg",
              "ItemImageB": null,            
              "ItemFile": "/Products/AST-XMII-1HP-Centrifugal-Pump.pdf",
-             "ItemDescription": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged" , "isEnquired": false
+             "ItemDescription": "AST-XMII Centrifugal Pump Design Pump casing and shaft of acid-resistant steel 1.4404. Impeller of Studbolts and nuts for pump casing of stainless steel 1.4301. Seals are made of EPDM. Applications The XM centrifugal pump is specially designed for food, chemical, pharmaceutical and other industries where acid resistant steel is resistant to the products to be pumped.",
+             "isEnquired": false
          },
          {
              "id": 2,
              "ItemName": "AST-P SERIES",
              "ItemImageA": "/Images/Row%201/AST-P%20SERIES.jpg",
-             "ItemImageB": null,
-            
+             "ItemImageB": null,            
              "ItemFile": "/Products/AST-PM-Series-Centrifugal-Pump.pdf",
-             "ItemDescription": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged" , "isEnquired": false             
+             "ItemDescription": "The PM centrifugal pump is specially designed for food, chemical, pharmaceutical and other industries where acid resistant steel is resistant to the products to be pumped.", 
+             "isEnquired": false             
          },
          {
              "id": 3,
              "ItemName": "AST-SELF PRIMING",
              "ItemImageA": "/Images/Row%201/AST-SELF%20PRIMING.jpg",
-             "ItemImageB": null,
-            
+             "ItemImageB": null,            
              "ItemFile": "/Products/AST-XMII-1HP-Centrifugal-Pump.pdf",
-             "ItemDescription": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged" , "isEnquired": false             
+             "ItemDescription": "Shaft Seals The AST-10 pump is equipped with either an external single or a flushed shaft seal. The secondary seal of the flushed seal is a long lasting lip seal. Product wetted seals of Nitrile, Fluorinated rubber or FEP. E. Rotating seal ring material in Silicon Carbide.", 
+             "isEnquired": false             
          },
          {
              "id": 4,
              "ItemName": "AST-XM I & III SERIES",
              "ItemImageA": "/Images/Row%201/AST-XM%20I%20&%20III%20SERIES.jpg",
-             "ItemImageB": null,
-            
+             "ItemImageB": null,            
              "ItemFile": "/Products/AST-XMI-XMIII-Centrifugal-Pump.pdf",
-             "ItemDescription": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged" , "isEnquired": false             
+             "ItemDescription": "Seals are made of EPDM. Applications The XM centrifugal pump is specially designed for food, chemical, pharmaceutical and other industries where acid resistant steel is resistant to the products to be pumped.",
+             "isEnquired": false             
          }
      ]
     },
@@ -44,121 +45,89 @@
      "Subtype":[
          {
              "id": 5,
-             "ItemName": "PNUEMATIC VALVE",
-             "ItemImageA": "/Images/Row%202/PNUEMATIC%20VALVES%201.jpg",
-             "ItemImageB": "/Images/Row%202/PNEUMATIC%20VALVES%202.jpg",
-            
-             "ItemFile": "/Products/Plug-Valve.pdf",
-             "ItemDescription": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged" , "isEnquired": false           
+             "ItemName": "TANKER VALVE",
+             "ItemImageA": "/Images/Row%203/TANKER%20VALVE.jpg",
+             "ItemImageB": null,            
+             "ItemFile": "/Products/Tanker-valve-info.pdf",
+             "ItemDescription": "TANKER VALVE Application Used for undertaking repair, Service & Replacement Standard Design Special Version of plug valve with flange at one end makes it easy to remove the valve body without needing to dismantle piping set-ups Materials Steel parts",
+             "isEnquired": false
          },
          {
              "id": 6,
-             "ItemName": "TANKER VALVE",
-             "ItemImageA": "/Images/Row%203/TANKER%20VALVE.jpg",
-             "ItemImageB": null,
-            
+             "ItemName": "PLUG VALVE",
+             "ItemImageA": "/Images/Row%203/PLUG%20VALVE%201.jpg",
+             "ItemImageB": "/Images/Row%203/PLUG%20VALVE%202.jpg",            
              "ItemFile": "/Products/Plug-Valve.pdf",
-             "ItemDescription": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged" , "isEnquired": false
+             "ItemDescription": "ASTRA 2 way & 3 way Plug Valve Application The stainless steel plug cock is used in the food and chemical industries and in other installations where a hygienically finished closing device with minimum pressure drop is required.", 
+             "isEnquired": false
          },
          {
              "id": 7,
-             "ItemName": "PLUG VALVE",
-             "ItemImageA": "/Images/Row%203/PLUG%20VALVE%201.jpg",
-             "ItemImageB": "/Images/Row%203/PLUG%20VALVE%202.jpg",
-            
-             "ItemFile": "/Products/Plug-Valve.pdf",
-             "ItemDescription": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged" , "isEnquired": false
+             "ItemName": "BUTTERFLY VALVE",
+             "ItemImageA": "/Images/Row%202/BFV%20WITH%20ACTUATOR%202.jpg",
+             "ItemImageB": null,            
+             "ItemFile": "/Products/Butterfly-Valve-info.pdf",
+             "ItemDescription": " Butterfly valves are used for ON/OFF applications ideal for the use with low and medium viscosity liquid.", 
+             "isEnquired": false
          },
          {
-             "id": 8,
-             "ItemName": "STEAM CONTROL VALVE",
-             "ItemImageA": "/Images/Row%208/STEAM%20CONTROL%20VALVE%201.jpg",
-             "ItemImageB": "/Images/Row%208/STEAM%20CONTROL%20VALVE%202.jpg",
-            
-             "ItemFile": "/Products/AST-PM-Series-Centrifugal-Pump.pdf",
-             "ItemDescription": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged" , "isEnquired": false
-         }
+            "id": 8,
+            "ItemName": "CHECK VALVES (NRV)",
+            "ItemImageA": "/Images/Row%208/NRV.jpg",
+            "ItemImageB": null,            
+            "ItemFile": "/Products/Regular-Valve-Info.pdf",
+            "ItemDescription": "Regulating Valves Application Regulating valves are used to control flow volume/rate by adjusting stem turn. These are designed for use in blending, weighing, filling System and Bottling Materials", 
+            "isEnquired": false
+        },
+        {
+            "id": 9,
+            "ItemName": "REGULATING VALVES (RV)",
+            "ItemImageA": "/Images/Row%208/RV.jpg",
+            "ItemImageB": null,            
+            "ItemFile": "/Products/Regular-Valve-Info.pdf",
+            "ItemDescription": "Regulating Valves Application Regulating valves are used to control flow volume/rate by adjusting stem turn. These are designed for use in blending, weighing, filling System and Bottling Materials", 
+            "isEnquired": false
+        },
+        {
+            "id": 10,
+            "ItemName": "SAMPLING VALVES",
+            "ItemImageA": "/Images/Row%208/SC.jpg",
+            "ItemImageB": null,            
+            "ItemFile": "/Products/Sampling-Valves-info.pdf",
+            "ItemDescription": "SAMPLING VALVES Application They are special valves designed to ensure effective sterilization before and after taking sample.", 
+            "isEnquired": false
+        }
      ]
     },
     {
      "ProductType": "Fittings",   
      "Subtype":[
          {
-             "id": 9,
+             "id": 11,
              "ItemName": "NB FITTINGS",
              "ItemImageA": "/Images/Row%2011/NB%20FITTINGS%201.jpg",
-             "ItemImageB": "/Images/Row%2011/NB%20FITTINGS%202.jpg",
-            
-             "ItemFile": "/Products/AST-PM-Series-Centrifugal-Pump.pdf",
-             "ItemDescription": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged" , "isEnquired": false           
-         },
-         {
-             "id": 10,
-             "ItemName": "FERRULE FITTINGS",
-             "ItemImageA": "/Images/Row%2011/FERRULE%20FITTINGS.jpg",
-             "ItemImageB": null,
-            
-             "ItemFile": "/Products/AST-PM-Series-Centrifugal-Pump.pdf",
-             "ItemDescription": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged" , "isEnquired": false
-         },
-         {
-             "id": 11,
-             "ItemName": "PNEUMATIC FITTINGS",
-             "ItemImageA": "/Images/Row%2011/PNEUMATIC%20FITTINGS.jpg",
-             "ItemImageB": null,
-            
-             "ItemFile": "/Products/AST-PM-Series-Centrifugal-Pump.pdf",
-             "ItemDescription": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged" , "isEnquired": false
+             "ItemImageB": "/Images/Row%2011/NB%20FITTINGS%202.jpg",            
+             "ItemFile": "/Products/Fittings-Union-info.pdf",
+             "ItemDescription": "All Fittings are machined on modern CNC, lathe and milling machines in control environment ensuring right milling machines in controlled environment ensuring right diameters, wall thickness and dimension accuracy making them easy to install suitable for welding operation", 
+             "isEnquired": false           
          },
          {
              "id": 12,
              "ItemName": "TUBE PRODUCTS & FITTINGS",
              "ItemImageA": "/Images/Row%209/TUBE%20PRDUCTS%20&%20FITTINGS%201.jpg",
-             "ItemImageB": null,
-            
-             "ItemFile": "/Products/AST-PM-Series-Centrifugal-Pump.pdf",
-             "ItemDescription": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged" , "isEnquired": false
-         }
-     ]
-    },
-    {
-     "ProductType": "Sensors",   
-     "Subtype":[
-         {
-             "id": 13,
-             "ItemName": "LEVEL SENSOR",
-             "ItemImageA": "/Images/Row%2012/LEVEL%20SENSOR%201.jpg",
-             "ItemImageB": "/Images/Row%2012/LEVEL%20SENSOR%202.jpg",
-            
-             "ItemFile": "/Products/AST-PM-Series-Centrifugal-Pump.pdf",
-             "ItemDescription": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged" , "isEnquired": false           
+             "ItemImageB": null,            
+             "ItemFile": "/Products/Fittings-Union-info.pdf",
+             "ItemDescription": "All Fittings are machined on modern CNC, lathe and milling machines in control environment ensuring right milling machines in controlled environment ensuring right diameters, wall thickness and dimension accuracy making them easy to install suitable for welding operation", 
+             "isEnquired": false
          },
          {
-             "id": 14,
-             "ItemName": "TEMPRATURE SENSOR A",
-             "ItemImageA": "/Images/Row%206/TEMPRATURE%20SENSOR%201.jpg",
-             "ItemImageB": "/Images/Row%206/TEMPRATURE%20SENSOR%202.jpg",
-            
-             "ItemFile": "/Products/AST-PM-Series-Centrifugal-Pump.pdf",
-             "ItemDescription": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged" , "isEnquired": false
-         },
-         {
-             "id": 15,
-             "ItemName": "TEMPRATURE SENSOR B",
-             "ItemImageA": "/Images/Row%206/TEMPRATURE%20SENSOR%203.jpg",
-             "ItemImageB": "/Images/Row%206/TEMPRATURE%20SENSOR%204.jpg",
-            
-             "ItemFile": "/Products/AST-PM-Series-Centrifugal-Pump.pdf",
-             "ItemDescription": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged" , "isEnquired": false
-         },
-         {
-             "id": 16,
-             "ItemName": "TEMPRATURE SENSOR C",
-             "ItemImageA": "/Images/Row%206/TEMPRATURE%20SENSOR%205.jpg",
-             "ItemImageB": null,
-            
-             "ItemFile": "/Products/AST-PM-Series-Centrifugal-Pump.pdf",
-             "ItemDescription": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged" , "isEnquired": false
+            "id": 13,
+            "ItemName": "UNION",
+             "ItemImageA": "/Images/Row%209/UNION%201.jpg",
+             "ItemImageB": null,            
+             "ItemFile": "/Products/Fittings-Union-info.pdf",
+             "ItemDescription": "All Fittings are machined on modern CNC, lathe and milling machines in control environment ensuring right milling machines in controlled environment ensuring right diameters, wall thickness and dimension accuracy making them easy to install suitable for welding operation", 
+             "isEnquired": false           
          }
      ]
     },
@@ -166,40 +135,40 @@
      "ProductType": "Plate Heat Exchangers",   
      "Subtype":[
          {
-             "id": 17,
+             "id": 14,
              "ItemName": "PLATE HEAT EXCHANGER A",
              "ItemImageA": "/Images/Row%207/PLATE%20HEAT%20EXCHANGER%201.jpg",
-             "ItemImageB": null,
-            
+             "ItemImageB": null,            
              "ItemFile": "/Products/PHE-Catalogue.pdf",
-             "ItemDescription": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged" , "isEnquired": false           
+             "ItemDescription": "The frame consists of a fixed frame plate, a movable pressure plate, an upper carrying bar, a lower guiding bar, a support column and tightening bolts with nuts. The corrugation of the plates provides a passage between the plates, supports each plate against the adjacent one and enhances the turbulence, resulting inefficient heat transfer.", 
+             "isEnquired": false           
          },
          {
-             "id": 18,
+             "id": 15,
              "ItemName": "PLATE HEAT EXCHANGER B",
              "ItemImageA": "/Images/Row%207/PLATE%20HEAT%20EXCHANGER%20%202.jpg",
-             "ItemImageB": null,
-            
+             "ItemImageB": null,            
              "ItemFile": "/Products/PHE-Catalogue.pdf",
-             "ItemDescription": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged" , "isEnquired": false
+             "ItemDescription": "The frame consists of a fixed frame plate, a movable pressure plate, an upper carrying bar, a lower guiding bar, a support column and tightening bolts with nuts. The corrugation of the plates provides a passage between the plates, supports each plate against the adjacent one and enhances the turbulence, resulting inefficient heat transfer.", 
+             "isEnquired": false
          },
          {
-             "id": 19,
+             "id": 16,
              "ItemName": "PLATE HEAT EXCHANGER C",
              "ItemImageA": "/Images/Row%207/PLATE%20HEAT%20EXCHANGER%203.jpg",
-             "ItemImageB": null,
-            
+             "ItemImageB": null,            
              "ItemFile": "/Products/PHE-Catalogue.pdf",
-             "ItemDescription": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged" , "isEnquired": false
+             "ItemDescription": "The frame consists of a fixed frame plate, a movable pressure plate, an upper carrying bar, a lower guiding bar, a support column and tightening bolts with nuts. The corrugation of the plates provides a passage between the plates, supports each plate against the adjacent one and enhances the turbulence, resulting inefficient heat transfer.", 
+             "isEnquired": false
          },
          {
-             "id": 20,
+             "id": 17,
              "ItemName": "PLATE HEAT EXCHANGER D",
              "ItemImageA": "/Images/Row%207/PLATE%20HEAT%20EXCHANGER%204.jpg",
-             "ItemImageB": "/Images/Row%207/PLATE%20HEAT%20EXCHANGER%20%205.jpg",
-            
+             "ItemImageB": "/Images/Row%207/PLATE%20HEAT%20EXCHANGER%20%205.jpg",            
              "ItemFile": "/Products/PHE-Catalogue.pdf",
-             "ItemDescription": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged" , "isEnquired": false
+             "ItemDescription": "The frame consists of a fixed frame plate, a movable pressure plate, an upper carrying bar, a lower guiding bar, a support column and tightening bolts with nuts. The corrugation of the plates provides a passage between the plates, supports each plate against the adjacent one and enhances the turbulence, resulting inefficient heat transfer.", 
+             "isEnquired": false
          }
      ]
     },
@@ -207,228 +176,132 @@
      "ProductType": "Filter & Strainer",   
      "Subtype":[
          {
-             "id": 21,
+             "id": 18,
              "ItemName": "DISC FILTER",
              "ItemImageA": "/Images/Row%2010/DISC%20FILTER.jpg",
-             "ItemImageB": null,
-            
+             "ItemImageB": null,            
              "ItemFile": "/Products/Filters-Catalogue.pdf",
-             "ItemDescription": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged" , "isEnquired": false           
+             "ItemDescription": "ASTRA FILTERS Application Suitable for angular filter, straight filter and have a wide range of applications in the food-processing, cosmetics , chemical industries and pharmaceutical industry. Operating principle Perforated filter: basically consists of a filter body with an inlet and an outlet for the product.", 
+             "isEnquired": false           
          },
          {
-             "id": 22,
+             "id": 19,
              "ItemName": "DUPLEX FILTER",
              "ItemImageA": "/Images/Row%2010/DUPLEX%20FILTER.jpg",
-             "ItemImageB": null,
-            
+             "ItemImageB": null,            
              "ItemFile": "/Products/Filters-Catalogue.pdf",
-             "ItemDescription": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged" , "isEnquired": false
+             "ItemDescription": "ASTRA FILTERS Application Suitable for angular filter, straight filter and have a wide range of applications in the food-processing, cosmetics , chemical industries and pharmaceutical industry. Operating principle Perforated filter: basically consists of a filter body with an inlet and an outlet for the product.", 
+             "isEnquired": false
+         },
+         {
+             "id": 20,
+             "ItemName": "INLINE FILTER",
+             "ItemImageA": "/Images/Row%2010/INLINE%20FILTER%201.jpg",
+             "ItemImageB": "/Images/Row%2010/INLINE%20FILTER%202.jpg",            
+             "ItemFile": "/Products/Filters-Catalogue.pdf",
+             "ItemDescription": "ASTRA FILTERS Application Suitable for angular filter, straight filter and have a wide range of applications in the food-processing, cosmetics , chemical industries and pharmaceutical industry. Operating principle Perforated filter: basically consists of a filter body with an inlet and an outlet for the product.", 
+             "isEnquired": false
+         },
+         {
+             "id": 21,
+             "ItemName": "Y TYPE STRAINER",
+             "ItemImageA": "/Images/Row%2010/Y%20TYPE%20STRAINER%201.jpg",
+             "ItemImageB": "/Images/Row%2010/Y%20TYPE%20STRAINER%202.jpg",            
+             "ItemFile": "/Products/Filters-Catalogue.pdf",
+             "ItemDescription": "ASTRA FILTERS Application Suitable for angular filter, straight filter and have a wide range of applications in the food-processing, cosmetics , chemical industries and pharmaceutical industry. Operating principle Perforated filter: basically consists of a filter body with an inlet and an outlet for the product.", 
+             "isEnquired": false
+         }
+     ]
+    },
+    {
+     "ProductType": "Flanges & Clamps",   
+     "Subtype":[
+         {
+             "id": 22,
+             "ItemName": "FLANGES",
+             "ItemImageA": "/Images/Row%2011/FLANGES.jpg",
+             "ItemImageB": null,            
+             "ItemFile": "/Products/AST-PM-Series-Centrifugal-Pump.pdf",
+             "ItemDescription": "", 
+             "isEnquired": false
          },
          {
              "id": 23,
-             "ItemName": "INLINE FILTER",
-             "ItemImageA": "/Images/Row%2010/INLINE%20FILTER%201.jpg",
-             "ItemImageB": "/Images/Row%2010/INLINE%20FILTER%202.jpg",
-            
-             "ItemFile": "/Products/Filters-Catalogue.pdf",
-             "ItemDescription": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged" , "isEnquired": false
-         },
-         {
-             "id": 24,
-             "ItemName": "Y TYPE STRAINER",
-             "ItemImageA": "/Images/Row%2010/Y%20TYPE%20STRAINER%201.jpg",
-             "ItemImageB": "/Images/Row%2010/Y%20TYPE%20STRAINER%202.jpg",
-            
-             "ItemFile": "/Products/AST-PM-Series-Centrifugal-Pump.pdf",
-             "ItemDescription": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged" , "isEnquired": false
-         }
-     ]
-    },
-    {
-     "ProductType": "Meter, Flanges & Clamps",   
-     "Subtype":[
-         {
-             "id": 25,
-             "ItemName": "FLOW METER",
-             "ItemImageA": "/Images/Row%2012/FLOW%20METER%201.jpg",
-             "ItemImageB": "/Images/Row%2012/FLOW%20METER%202.jpg",
-            
-             "ItemFile": "/Products/AST-PM-Series-Centrifugal-Pump.pdf",
-             "ItemDescription": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged" , "isEnquired": false           
-         },
-         {
-             "id": 26,
-             "ItemName": "CONDUCTIVITY METER",
-             "ItemImageA": "/Images/Row%2012/CONDUCTIVITY%20METER%201.jpg",
-             "ItemImageB": "/Images/Row%2012/CONDUCTIVITY%20METER%202.jpg",
-            
-             "ItemFile": "/Products/AST-PM-Series-Centrifugal-Pump.pdf",
-             "ItemDescription": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged" , "isEnquired": false
-         },
-         {
-             "id": 27,
-             "ItemName": "FLANGES",
-             "ItemImageA": "/Images/Row%2011/FLANGES.jpg",
-             "ItemImageB": null,
-            
-             "ItemFile": "/Products/AST-PM-Series-Centrifugal-Pump.pdf",
-             "ItemDescription": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged" , "isEnquired": false
-         },
-         {
-             "id": 28,
              "ItemName": "CLAMPS",
              "ItemImageA": "/Images/Row%209/CLAMPS.jpg",
-             "ItemImageB": null,
-            
+             "ItemImageB": null,            
              "ItemFile": "/Products/AST-PM-Series-Centrifugal-Pump.pdf",
-             "ItemDescription": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged" , "isEnquired": false
+             "ItemDescription": "", 
+             "isEnquired": false
          }
      ]
     },
     {
-     "ProductType": "Sight Glass, Vents & Nozzle",   
+     "ProductType": "TANK ACCESSORIES",   
      "Subtype":[
          {
-             "id": 29,
-             "ItemName": "SIGHT GLASS A",
-             "ItemImageA": "/Images/Row%203/SIGHT%20GLASS%201.jpg",
-             "ItemImageB": "/Images/Row%203/SIGHT%20GLASS%202.jpg",
-            
-             "ItemFile": "/Products/AST-PM-Series-Centrifugal-Pump.pdf",
-             "ItemDescription": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged" , "isEnquired": false           
-         },
-         {
-             "id": 30,
-             "ItemName": "SIGHT GLASS B",
-             "ItemImageA": "/Images/Row%203/SIGHT%20GLASS%203.jpg",
-             "ItemImageB": "/Images/Row%205/SIGHT%20GLASS%204.jpg",
-            
-             "ItemFile": "/Products/AST-PM-Series-Centrifugal-Pump.pdf",
-             "ItemDescription": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged" , "isEnquired": false
-         },
-         {
-             "id": 31,
-             "ItemName": "AIR VENT",
-             "ItemImageA": "/Images/Row%205/AIR%20VENT%201.jpg",
-             "ItemImageB": "/Images/Row%205/AIR%20VENT%202.jpg",
-            
-             "ItemFile": "/Products/AST-PM-Series-Centrifugal-Pump.pdf",
-             "ItemDescription": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged" , "isEnquired": false
-         },
-         {
-             "id": 32,
-             "ItemName": "CIP NOZZLES",
-             "ItemImageA": "/Images/Row%205/CIP%20NOZZLES.jpg",
-             "ItemImageB": null,
-            
-             "ItemFile": "/Products/AST-PM-Series-Centrifugal-Pump.pdf",
-             "ItemDescription": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged" , "isEnquired": false
-         }
-     ]
-    },
-    {
-     "ProductType": "Union, Actuator, Agitator & Manhole",   
-     "Subtype":[
-         {
-             "id": 33,
-             "ItemName": "UNION",
-             "ItemImageA": "/Images/Row%209/UNION%201.jpg",
-             "ItemImageB": null,
-            
-             "ItemFile": "/Products/AST-PM-Series-Centrifugal-Pump.pdf",
-             "ItemDescription": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged" , "isEnquired": false           
-         },
-         {
-             "id": 34,
-             "ItemName": "BFV WITH ACTUATOR",
-             "ItemImageA": "/Images/Row%202/BFV%20WITH%20ACTUATOR%201.jpg",
-             "ItemImageB": "/Images/Row%202/BFV%20WITH%20ACTUATOR%202.jpg",
-            
-             "ItemFile": "/Products/AST-PM-Series-Centrifugal-Pump.pdf",
-             "ItemDescription": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged" , "isEnquired": false
-         },
-         {
-             "id": 35,
-             "ItemName": "AGITATOR",
-             "ItemImageA": "/Images/Row%204/AGITATOR.jpg",
-             "ItemImageB": null,
-            
-             "ItemFile": "/Products/AST-PM-Series-Centrifugal-Pump.pdf",
-             "ItemDescription": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged" , "isEnquired": false
-         },
-         {
-             "id": 36,
-             "ItemName": "MANHOLE",
-             "ItemImageA": "/Images/Row%204/MANHOLE%201.jpg",
-             "ItemImageB": "/Images/Row%204/MANHOLE%202.jpg",
-            
-             "ItemFile": "/Products/AST-PM-Series-Centrifugal-Pump.pdf",
-             "ItemDescription": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged" , "isEnquired": false
-         }
-     ]
-    },
-    {
-     "ProductType": "Other Accessories",   
-     "Subtype":[
-         {
-             "id": 37,
-             "ItemName": "TANK ACCESSORIES",
-             "ItemImageA": "/Images/Row%204/TANK%20ACCESSORIES.jpg",
-             "ItemImageB": null,
-            
-             "ItemFile": "/Products/AST-PM-Series-Centrifugal-Pump.pdf",
-             "ItemDescription": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged" , "isEnquired": false           
-         },
-         {
-             "id": 38,
+             "id": 24,
              "ItemName": "BALL FEETS",
              "ItemImageA": "/Images/Row%204/BALL%20FEETS.jpg",
-             "ItemImageB": null,
-            
-             "ItemFile": "/Products/AST-PM-Series-Centrifugal-Pump.pdf",
-             "ItemDescription": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged" , "isEnquired": false
-         }
-     ]
-    },
-    {
-     "ProductType": "And More",   
-     "Subtype":[
-         {
-             "id": 39,
-             "ItemName": "BV",
-             "ItemImageA": "/Images/Row%208/BV.jpg",
-             "ItemImageB": null,
-            
-             "ItemFile": "/Products/AST-PM-Series-Centrifugal-Pump.pdf",
-             "ItemDescription": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged" , "isEnquired": false           
+             "ItemImageB": null,            
+             "ItemFile": "/Products/Ball-Feet-Info.pdf",
+             "ItemDescription": "BALL FEETS Application Tank legs are provided at bottom with adjustable feet fabricated with from SS rods, they help leveling tanks for stability for adjusting variance in floor slope.", 
+             "isEnquired": false
          },
          {
-             "id": 40,
-             "ItemName": "DV",
-             "ItemImageA": "/Images/Row%208/DV.jpg",
-             "ItemImageB": null,
-            
-             "ItemFile": "/Products/AST-PM-Series-Centrifugal-Pump.pdf",
-             "ItemDescription": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged" , "isEnquired": false
-         },
-         {
-             "id": 41,
-             "ItemName": "SC",
-             "ItemImageA": "/Images/Row%208/SC.jpg",
-             "ItemImageB": null,
-            
-             "ItemFile": "/Products/AST-PM-Series-Centrifugal-Pump.pdf",
-             "ItemDescription": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged" , "isEnquired": false
-         },
-         {
-             "id": 42,
-             "ItemName": "RV & NRV",
-             "ItemImageA": "/Images/Row%208/RV.jpg",
-             "ItemImageB": "/Images/Row%208/NRV.jpg",
-            
-             "ItemFile": "/Products/AST-PM-Series-Centrifugal-Pump.pdf",
-             "ItemDescription": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged" , "isEnquired": false
-         }
+            "id": 25,
+            "ItemName": "AGITATOR",
+            "ItemImageA": "/Images/Row%204/AGITATOR.jpg",
+            "ItemImageB": null,           
+            "ItemFile": "/Products/Agitator-Info.pdf",
+            "ItemDescription": "AGITATORS Overview Agitators are after thorough understanding of tank size, use and third dynamics for optimal hygiene and low energy consumption for sanitary applications.", 
+            "isEnquired": false
+        },
+        {
+            "id": 26,
+            "ItemName": "MANHOLE",
+            "ItemImageA": "/Images/Row%204/MANHOLE%201.jpg",
+            "ItemImageB": "/Images/Row%204/MANHOLE%202.jpg",           
+            "ItemFile": "/Products/Manhole-info.pdf",
+            "ItemDescription": "MANHOLE  Application Manholes are available with EDPM/NBR for sanitary purposes.", 
+            "isEnquired": false
+        },
+        {
+            "id": 27,
+            "ItemName": "SIGHT GLASS TYPE A",
+            "ItemImageA": "/Images/Row%203/SIGHT%20GLASS%201.jpg",
+            "ItemImageB": "/Images/Row%203/SIGHT%20GLASS%202.jpg",           
+            "ItemFile": "/Products/Sight-Glass-Info.pdf",
+            "ItemDescription": "SIGHT GLASSES Application Sight Glasses are provided with suitable thickness and tougher glass, SS, monting flanges etc. ", 
+            "isEnquired": false           
+        },
+        {
+            "id": 28,
+            "ItemName": "SIGHT GLASS TYPE B",
+            "ItemImageA": "/Images/Row%203/SIGHT%20GLASS%203.jpg",
+            "ItemImageB": "/Images/Row%205/SIGHT%20GLASS%204.jpg",           
+            "ItemFile": "/Products/Sight-Glass-Info.pdf",
+            "ItemDescription": "SIGHT GLASSES Application Sight Glasses are provided with suitable thickness and tougher glass, SS, monting flanges etc.", 
+            "isEnquired": false
+        },
+        {
+            "id": 29,
+            "ItemName": "CIP SPRAY BALL",
+            "ItemImageA": "/Images/Row%205/CIP%20NOZZLES.jpg",
+            "ItemImageB": null,           
+            "ItemFile": "/Products/Spray-Ball.pdf",
+            "ItemDescription": "ASTRA Spray Ball Application The Spray Ball is an efficient replacement for traditional static spray balls as it uses low volumes of liquid at low pressure. Working principle The flow of the cleaning media causes the head of the Spray Ball to rotate, with fan jets laying out a swirling pattern throughout the vessel.", 
+            "isEnquired": false
+        },
+        {
+            "id": 30,
+            "ItemName": "ROTARY CIP SPRAY BALL",
+            "ItemImageA": "/Images/Row%205/CIP%20NOZZLES.jpg",
+            "ItemImageB": null,           
+            "ItemFile": "/Products/Rotary-Spray-Ball.pdf",
+            "ItemDescription": "The Spray Ball is an efficient replacement for traditional static spray balls as it uses low volumes of liquid at low pressure. The device, particularly well-suited to sanitary applications", 
+            "isEnquired": false
+        }
      ]
     }
 ]   

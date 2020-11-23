@@ -5,6 +5,7 @@ import Generatepdf from './UI/pdfmodule/Generatepdf';
 import '../styles/contacts.scss';
 import { TextField, Grid, Button, Divider } from '@material-ui/core/';
 import GetAppIcon from '@material-ui/icons/GetApp';
+import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
 import SendIcon from '@material-ui/icons/Send';
 import ShowMessage from './UI/Snackbar/Snackbar';
 
@@ -301,13 +302,13 @@ const ContactPage = () => {
       {allowDownload > 0 ? 
       <div style={{fontSize:"15px"}}>
        <p><strong>Note:</strong> Please make sure you <span style={{color: '#ec1f1f'}}> Download Enquiry </span>
-        before sending it to us for future reference</p>
+        before sending it to us for future reference.</p>
        </div>
        : <div style={{fontSize:"15px"}}>
        <p><strong>Note:</strong></p>
        <ol>
-         <li>You can <strong>Enquire</strong> about the products by going to our <Link to="/products"> Products </Link> page and click on <span style={{color: '#ec1f1f'}}>Add to Enquiry</span></li>
-         <li>Once done, click on the Cart Icon on the top right corner of the screen</li>
+         <li>You can <strong>Enquire</strong> about the products by going to our <Link to="/products"> Products </Link> page and click on <span style={{color: '#ec1f1f'}}>Add to Enquiry</span>.</li>
+         <li>Once done, click on the Cart(< ShoppingCartIcon style={{fontSize: "inherit"}}/>) Icon on the top right corner of the screen and checkout.</li>
        </ol>
        </div>
       }
@@ -328,7 +329,7 @@ const ContactPage = () => {
       <h2 style={{textAlign: 'center'}}>Our Sister Companies</h2>
       <Grid container>
         <Grid item lg={6} sm={12}>
-          <h3>PES Stainless Steel Pvt Ltd</h3>
+          <h3>PES Stainless Equipment Steel Pvt Ltd</h3>
           <p>C-2/11 PES Stainless Equipment, Rajouri Garden, New Delhi, Delhi 110027</p>
           <iframe title="myFrame" className="sisterMap"
         src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14005.88789852091!2d77.1249931!3d28.6455835!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xaac431036489e3aa!2sPes%20Stainless%20Equipment!5e0!3m2!1sen!2sin!4v1602935892046!5m2!1sen!2sin" 

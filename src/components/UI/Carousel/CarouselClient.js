@@ -25,7 +25,6 @@ const photos = [
   '/Images/Clients/Amul.jpeg',
   '/Images/Clients/Bovis.jpeg',
   '/Images/Clients/Buhler.jpeg',
-  '/Images/Clients/Cadbury.jpeg',
   '/Images/Clients/CocaCola.jpeg',
   '/Images/Clients/Cremica.jpeg',
   '/Images/Clients/dabur.png',
@@ -37,7 +36,6 @@ const photos = [
   '/Images/Clients/gea.jpeg',
   '/Images/Clients/gsk.jpeg',
   '/Images/Clients/ITC1.jpeg',
-  '/Images/Clients/Kraft.jpeg',
   '/Images/Clients/laval.jpeg',
   '/Images/Clients/lipton.png',
   '/Images/Clients/MDLZ-logo-col.jpg',
@@ -82,7 +80,7 @@ const People = ({ size }) => {
     <FullWidth>
       <div style={{ height: scale * 200 }}>
         <Marquee key={key} velocity={25}>
-          {times(21, Number).map((id) => (
+          {times(20, Number).map((id) => (
             <Photo src={photos[id]} alt="" key={`marquee-example-people-${id}`} scale={scale} />
           ))}
         </Marquee>
@@ -94,9 +92,9 @@ const People = ({ size }) => {
         <Marquee key={key} velocity={25}>
           {times(18, Number).map((id) => (
             <Photo
-              src={photos[id + 18]}
+              src={photos[id + 16]}
               alt=""
-              key={`marquee-example-people-${id + 18}`}
+              key={`marquee-example-people-${id + 17}`}
               offset="true"
               scale={scale}
             />
