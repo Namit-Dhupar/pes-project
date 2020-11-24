@@ -254,16 +254,16 @@
             "ItemImageA": "/Images/Row%204/AGITATOR.jpg",
             "ItemImageB": null,           
             "ItemFile": "/Products/Agitator-Info.pdf",
-            "ItemDescription": "AGITATORS Overview Agitators are after thorough understanding of tank size, use and third dynamics for optimal hygiene and low energy consumption for sanitary applications.", 
+            "ItemDescription": "Agitators are after thorough understanding of tank size, use and third dynamics for optimal hygiene and low energy consumption for sanitary applications.", 
             "isEnquired": false
         },
         {
             "id": 26,
             "ItemName": "MANHOLE",
             "ItemImageA": "/Images/Row%204/MANHOLE%201.jpg",
-            "ItemImageB": "/Images/Row%204/MANHOLE%202.jpg",           
+            "ItemImageB": null,           
             "ItemFile": "/Products/Manhole-info.pdf",
-            "ItemDescription": "MANHOLE  Application Manholes are available with EDPM/NBR for sanitary purposes.", 
+            "ItemDescription": " Manholes are available with EDPM/NBR for sanitary purposes. Being a quality oriented organization, we are involved in providing supreme quality range of Stainless Steel Manhole Cover.", 
             "isEnquired": false
         },
         {
@@ -272,7 +272,7 @@
             "ItemImageA": "/Images/Row%203/SIGHT%20GLASS%201.jpg",
             "ItemImageB": "/Images/Row%203/SIGHT%20GLASS%202.jpg",           
             "ItemFile": "/Products/Sight-Glass-Info.pdf",
-            "ItemDescription": "SIGHT GLASSES Application Sight Glasses are provided with suitable thickness and tougher glass, SS, monting flanges etc. ", 
+            "ItemDescription": "Sight Glasses are provided with suitable thickness and tougher glass, SS, monting flanges etc. Inline sight glasses are fitted with unions and bolt ends to see the actual flow of product. It’s provided with cylindrical tougher glass for safety and easy visibility.", 
             "isEnquired": false           
         },
         {
@@ -281,7 +281,7 @@
             "ItemImageA": "/Images/Row%203/SIGHT%20GLASS%203.jpg",
             "ItemImageB": "/Images/Row%205/SIGHT%20GLASS%204.jpg",           
             "ItemFile": "/Products/Sight-Glass-Info.pdf",
-            "ItemDescription": "SIGHT GLASSES Application Sight Glasses are provided with suitable thickness and tougher glass, SS, monting flanges etc.", 
+            "ItemDescription": "Sight Glasses are provided with suitable thickness and tougher glass, SS, monting flanges etc. Inline sight glasses are fitted with unions and bolt ends to see the actual flow of product. It’s provided with cylindrical tougher glass for safety and easy visibility.", 
             "isEnquired": false
         },
         {
@@ -290,7 +290,7 @@
             "ItemImageA": "/Images/Row%205/CIP%20NOZZLES.jpg",
             "ItemImageB": null,           
             "ItemFile": "/Products/Spray-Ball.pdf",
-            "ItemDescription": "ASTRA Spray Ball Application The Spray Ball is an efficient replacement for traditional static spray balls as it uses low volumes of liquid at low pressure. Working principle The flow of the cleaning media causes the head of the Spray Ball to rotate, with fan jets laying out a swirling pattern throughout the vessel.", 
+            "ItemDescription": "The Spray Ball is an efficient replacement for traditional static spray balls as it uses low volumes of liquid at low pressure. Working principle The flow of the cleaning media causes the head of the Spray Ball to rotate, with fan jets laying out a swirling pattern throughout the vessel.", 
             "isEnquired": false
         },
         {
