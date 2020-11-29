@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import { useSelector } from 'react-redux';
+import { useSelector, useDispatch } from 'react-redux';
+import { selectedhp, selectedsize, selectedmoc, selectedtext } from '../store/actions/actions';
 import Showpdffull from './UI/Modal/ModalFull';
 import Showpdfphone from './UI/Modal/ModalMobile';
 import { makeStyles } from '@material-ui/core/styles';
@@ -56,9 +57,7 @@ const TabPanel = (props) => {
 const ProductList = () => {
     const classes = useStyles();
     const [value, setValue] = useState(0);
-    const [radioValueHP, setradioValueHP] = useState('');
-    const [radioValueSize, setradioValueSize] = useState('');
-    const [radioValueMOC, setradioValueMOC] = useState('');
+    const dispatch = useDispatch();
     const handleChange = (event, newValue) => {
         setValue(newValue);
       };
@@ -88,13 +87,14 @@ const tabPanel = productState.map((product,index) => {
           <Hidden smDown>
           <Showpdffull title={el.ItemName} 
           pdf={el.ItemFile} isEnq={el.isEnquired} id={el.id} /> 
-          {el.isEnquired ?
+      {el.isEnquired ?
       <FormControl style={{marginTop: "10px"}} component="fieldset">
       {el.ItemHPKW ? 
       <div>
-      <FormLabel>Hp/Kw</FormLabel>
-      <RadioGroup row aria-label="position" value={radioValueHP} name="position"
-      onChange={e => setradioValueHP(e.target.value)} defaultValue="top"> 
+      <FormLabel>HP/kW:</FormLabel>
+      <RadioGroup row aria-label="position" value={el.SelectedHP} name="position"
+      onChange={e => dispatch(selectedhp(el.id, e.target.value))}
+      defaultValue="top"> 
       {el.ItemHPKW.map((Hp,i)=>(
       <FormControlLabel
       key={i}
@@ -109,8 +109,8 @@ const tabPanel = productState.map((product,index) => {
       :
       <div>
       <FormLabel>Size(mm)</FormLabel>
-      <RadioGroup row aria-label="position" value={radioValueSize} name="position"
-      onChange={e => setradioValueSize(e.target.value)} defaultValue="top"> 
+      <RadioGroup row aria-label="position" name="position" value={el.SelectedSize}
+      onChange={e => dispatch(selectedsize(el.id, e.target.value))} defaultValue="top"> 
       {el.ItemSize.map((Size,i)=>(
       <FormControlLabel
       key={i}
@@ -124,8 +124,8 @@ const tabPanel = productState.map((product,index) => {
       </div>
       }
         <FormLabel>MOC</FormLabel>
-      <RadioGroup row aria-label="position2" name="position2" value={radioValueMOC}
-      onChange={e => e.target.value(setradioValueMOC)} defaultValue="top2">
+      <RadioGroup row aria-label="position2" name="position2" value={el.SelectedMOC} 
+      onChange={e => dispatch(selectedmoc(el.id, e.target.value))} defaultValue="top2">
       {el.ItemMOC.map((MOC,i)=>(      
         <FormControlLabel
           key={i}
@@ -136,12 +136,17 @@ const tabPanel = productState.map((product,index) => {
         />
         ))} 
         </RadioGroup>
-        <FormLabel>Other Details</FormLabel>
+      <FormLabel>{el.SelectedSize === "Custom Size" ? 
+      <span>Other Details & Your Custom Size</span>
+      : <span>Other Details</span>}</FormLabel>
         <TextField
           required
           fullWidth
+          onChange={function(e){
+            e.preventDefault();
+            dispatch(selectedtext(el.id, e.target.value));
+          }}
           value={el.ItemMessage}
-          name="Text"
           multiline
           rows={3}
           variant="outlined"
@@ -149,12 +154,78 @@ const tabPanel = productState.map((product,index) => {
        </FormControl>
        : null
       }
-       
          <p>{el.ItemDescription}{' '}</p>   
          </Hidden>
          <Hidden mdUp>
          <Showpdfphone 
           pdf={el.ItemFile} isEnq={el.isEnquired} id={el.id}/> 
+          {el.isEnquired ?
+      <FormControl style={{marginTop: "10px"}} component="fieldset">
+      {el.ItemHPKW ? 
+      <div>
+      <FormLabel>HP/kW:</FormLabel>
+      <RadioGroup row aria-label="position" value={el.SelectedHP} name="position"
+      onChange={e => dispatch(selectedhp(el.id, e.target.value))}
+      defaultValue="top"> 
+      {el.ItemHPKW.map((Hp,i)=>(
+      <FormControlLabel
+      key={i}
+      value={Hp}
+      control={<Radio color="primary" />}
+      label={Hp}
+      labelPlacement="start"
+    />      
+      ))} 
+      </RadioGroup>     
+      </div>
+      :
+      <div>
+      <FormLabel>Size(mm)</FormLabel>
+      <RadioGroup row aria-label="position" name="position" value={el.SelectedSize}
+      onChange={e => dispatch(selectedsize(el.id, e.target.value))} defaultValue="top"> 
+      {el.ItemSize.map((Size,i)=>(
+      <FormControlLabel
+      key={i}
+      value={Size}
+      control={<Radio color="primary" />}
+      label={Size}
+      labelPlacement="start"
+    />      
+      ))} 
+      </RadioGroup>
+      </div>
+      }
+        <FormLabel>MOC</FormLabel>
+      <RadioGroup row aria-label="position2" name="position2" value={el.SelectedMOC} 
+      onChange={e => dispatch(selectedmoc(el.id, e.target.value))} defaultValue="top2">
+      {el.ItemMOC.map((MOC,i)=>(      
+        <FormControlLabel
+          key={i}
+          value={MOC}
+          control={<Radio color="secondary" />}
+          label={MOC}
+          labelPlacement="start"
+        />
+        ))} 
+        </RadioGroup>
+      <FormLabel>{el.SelectedSize === "Custom Size" ? 
+      <span>Other Details & Your Custom Size</span>
+      : <span>Other Details</span>}</FormLabel>
+        <TextField
+          required
+          fullWidth
+          onChange={function(e){
+            e.preventDefault();
+            dispatch(selectedtext(el.id, e.target.value));
+          }}
+          value={el.ItemMessage}
+          multiline
+          rows={3}
+          variant="outlined"
+        />
+       </FormControl>
+       : null
+      }
           </Hidden>
          </Grid>
         </Grid>         

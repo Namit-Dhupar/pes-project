@@ -90,6 +90,19 @@ const useStyles = makeStyles((theme) => ({
             {(pes.ItemImageB) ? <img src={pes.ItemImageB} alt={index}/> : null}
         </Hidden>    
             <p style={{marginLeft: '12px'}}><strong>{pes.ItemName}</strong></p>
+            {pes.SelectedHP ? 
+            <p style={{marginLeft: '24px'}}><strong><span style={{color: '#ec1f1f'}}>HP/kW:</span> {pes.SelectedHP},</strong></p>
+            : pes.SelectedSize ? 
+            <p style={{marginLeft: '24px'}}><strong><span style={{color: '#ec1f1f'}}>SIZE(MM):</span> {pes.SelectedSize},</strong></p>
+            : null
+            }
+            { pes.SelectedMOC ?  
+            <p style={{marginLeft: '12px'}}><strong><span style={{color: '#ec1f1f'}}>MOC:</span> {pes.SelectedMOC},</strong></p>
+            : null}
+            <br/>
+            { pes.ItemMessage ?  
+            <p style={{marginLeft: '12px'}}><strong><span style={{color: '#ec1f1f'}}>OTHER DETAILS:</span> {pes.ItemMessage}</strong></p>
+            : null} 
         <CancelIcon onClick={()=>{dispatch(toggleFav(pes.id))}} className={classes.enquiryButton} />
       </ListItem>
       <Divider />

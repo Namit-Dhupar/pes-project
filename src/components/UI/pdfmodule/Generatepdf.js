@@ -48,6 +48,17 @@ const Generatepdf = (props) => {
                {index + 1}
             </StyledTableCell>
       <StyledTableCell>{pes.ItemName}</StyledTableCell>
+      <StyledTableCell>
+        {pes.SelectedHP ?
+        <span><b>HP/kW: </b>{pes.SelectedHP}</span>
+       : pes.SelectedSize ?<span><b>SIZE: </b>{pes.SelectedSize}</span> : null}
+        <br/>
+       {pes.SelectedMOC ?
+        <span><b>MOC: </b>{pes.SelectedMOC}</span>: null}
+        <br/>
+        {pes.ItemMessage ?
+        <span><b>OTHER DETAILS: </b>{pes.ItemMessage}</span> : null}
+      </StyledTableCell>
         </StyledTableRow>
       )
     });
@@ -133,6 +144,7 @@ const Generatepdf = (props) => {
             <TableRow>
               <StyledTableCell>S. No</StyledTableCell>
               <StyledTableCell>Item Name</StyledTableCell>
+              <StyledTableCell>Configuration</StyledTableCell>            
             </TableRow>
           </TableHead>
           <TableBody>
