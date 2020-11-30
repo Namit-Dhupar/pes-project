@@ -39,7 +39,7 @@ const photos = [
   '/Images/Clients/laval.jpeg',
   '/Images/Clients/lipton.png',
   '/Images/Clients/MDLZ-logo-col.jpg',
-  '/Images/Clients/mother-logo-big1.jpg',
+  '/Images/Clients/mother-dairy.png',
   '/Images/Clients/Nestle.jpeg',
   '/Images/Clients/Nirulas-1.png',
   '/Images/Clients/Osram.jpg',

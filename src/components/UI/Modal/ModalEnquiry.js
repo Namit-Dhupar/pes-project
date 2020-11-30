@@ -14,7 +14,7 @@ import {Dialog,
         List, 
         ListItem,
         Divider,
-        Button} from '@material-ui/core/';
+        Button, Grid} from '@material-ui/core/';
 import CloseIcon from '@material-ui/icons/Close';
 import CancelIcon from '@material-ui/icons/Cancel';
 import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
@@ -85,24 +85,33 @@ const useStyles = makeStyles((theme) => ({
       el.Subtype.filter(prod => prod.isEnquired === true).map((pes,index) => (
         <List key={index}>     
       <ListItem>
-      <img src={pes.ItemImageA} alt={index}/>
+      <Grid container>
+          <Grid item xs={4}> 
+          <p style={{marginLeft: '12px'}}><strong>{pes.ItemName}</strong></p>   
+         <img src={pes.ItemImageA} alt={index}/>
         <Hidden smDown>
             {(pes.ItemImageB) ? <img src={pes.ItemImageB} alt={index}/> : null}
         </Hidden>    
-            <p style={{marginLeft: '12px'}}><strong>{pes.ItemName}</strong></p>
+            </Grid>
+            <Grid item xs={4}>
             {pes.SelectedHP ? 
-            <p style={{marginLeft: '24px'}}><strong><span style={{color: '#ec1f1f'}}>HP/kW:</span> {pes.SelectedHP},</strong></p>
+            <p style={{marginLeft: '24px'}}><strong><span style={{color: '#ec1f1f'}}>HP/kW:</span> {pes.SelectedHP}</strong></p>
             : pes.SelectedSize ? 
-            <p style={{marginLeft: '24px'}}><strong><span style={{color: '#ec1f1f'}}>SIZE(MM):</span> {pes.SelectedSize},</strong></p>
+            <p style={{marginLeft: '24px'}}><strong><span style={{color: '#ec1f1f'}}>SIZE(MM):</span> {pes.SelectedSize}</strong></p>
             : null
             }
+            </Grid>
+            <Grid item xs={4}>
             { pes.SelectedMOC ?  
-            <p style={{marginLeft: '12px'}}><strong><span style={{color: '#ec1f1f'}}>MOC:</span> {pes.SelectedMOC},</strong></p>
+            <p style={{marginLeft: '12px'}}><strong><span style={{color: '#ec1f1f'}}>MOC:</span> {pes.SelectedMOC}</strong></p>
             : null}
-            <br/>
+            </Grid>
+            <Grid item xs={12}>
             { pes.ItemMessage ?  
             <p style={{marginLeft: '12px'}}><strong><span style={{color: '#ec1f1f'}}>OTHER DETAILS:</span> {pes.ItemMessage}</strong></p>
             : null} 
+            </Grid>
+            </Grid>
         <CancelIcon onClick={()=>{dispatch(toggleFav(pes.id))}} className={classes.enquiryButton} />
       </ListItem>
       <Divider />

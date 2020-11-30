@@ -307,7 +307,7 @@ const ContactPage = () => {
        : <div style={{fontSize:"15px"}}>
        <p><strong>Note:</strong></p>
        <ol>
-         <li>You can <strong>Enquire</strong> about the products by going to our <Link to="/products"> Products </Link> page and click on <span style={{color: '#ec1f1f'}}>Add to Enquiry</span>.</li>
+         <li>You can <strong>Enquire</strong> about the products by going to our <Link to="/products"> Products </Link> page and click on <span style={{color: '#ec1f1f'}}>Add to Enquiry</span> and then choose <b>Size/HP, MOC and additional query</b> for that particular product.</li><br/>
          <li>Once done, click on the Cart(< ShoppingCartIcon style={{fontSize: "inherit"}}/>) Icon on the top right corner of the screen and checkout.</li>
        </ol>
        </div>
