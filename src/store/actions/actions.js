@@ -3,6 +3,7 @@ export const SELECTED_HP = 'SELECTED_HP';
 export const SELECTED_SIZE = 'SELECTED_SIZE';
 export const SELECTED_MOC = 'SELECTED_MOC';
 export const SELECTED_TEXT = 'SELECTED_TEXT';
+export const RESET = 'RESET';
 
 export const toggleFav = id => {
     return{
@@ -40,5 +41,11 @@ export const selectedtext = (id, value) => {
         type: SELECTED_TEXT,
         productId: id,
         value: value
+    }
+}
+
+export const reset = () => {
+    return{
+        type: RESET
     }
 }

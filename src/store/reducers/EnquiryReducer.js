@@ -1,5 +1,6 @@
 import ProductData from '../../data/ProductData.json';
-import { TOGGLE_FAV, SELECTED_HP, SELECTED_SIZE, SELECTED_MOC, SELECTED_TEXT } from '../actions/actions';
+import initProductData from '../../data/initdata.json';
+import { TOGGLE_FAV, SELECTED_HP, SELECTED_SIZE, SELECTED_MOC, SELECTED_TEXT, RESET } from '../actions/actions';
 
 const initialState = {
     products: ProductData
@@ -87,9 +88,13 @@ const EnquiryReducer = (state = initialState, action) => {
           return{
             products: [...state.products]
           }
+          case RESET:
+              return{
+                  products: initProductData
+              }
 
-        default:
-         return state;       
+          default:
+           return state;       
         }
       
 };
