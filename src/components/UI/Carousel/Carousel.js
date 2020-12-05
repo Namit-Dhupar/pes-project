@@ -53,9 +53,9 @@ function Banner(props) {
                     image={item.Image}
                     title={item.Name}
                 >
-                    <Typography className="MediaCaption">
+                    {/* <Typography className="MediaCaption">
                         {item.Name}
-                    </Typography>
+                    </Typography> */}
                 </CardMedia>
 
             </Grid>
@@ -84,6 +84,7 @@ function Banner(props) {
 const items = [
     {
         Name: "PUMPS",
+        Type: "PRODUCTS",
         Caption: "Check out our line of pumps",
         contentPosition: "left",
         Items: [
@@ -98,47 +99,98 @@ const items = [
         ]
     },
     {
-        Name: "SIGHT GLASSES",
-        Caption: "Check out our line of Sight Glasses",
-        contentPosition: "right",
+        Name: "TANK ACCESSORIES",
+        Type: "PRODUCTS",
+        Caption: "Check out our line of Tank Accessories",
+        contentPosition: "middle",
         Items: [
             {
                 Name: "Sight Glass I",
-                Image: "/Images/Sight-Glass-1.jpg"
+                Image: "/Images/Sight1.png"
             },
             {
                 Name: "Sight Glass II",
-                Image: "/Images/Sight-Glass-2.jpg"
+                Image: "/Images/Sight2.png"
             }
         ]
     },
     {
-        Name: "Boiler & Flanges",
+        Name: "VALVES",
+        Type: "PRODUCTS",
+        Caption: "Check out our line of Valves",
+        contentPosition: "right",
+        Items: [
+            {
+                Name: "Plug Valve",
+                Image: "/Images/Valve1.jpg"
+            },
+            {
+                Name: "Butterfly Valve",
+                Image: "/Images/Valve2.png"
+            }
+        ]
+    },
+    {
+        Name: "PIPE FITTINGS",
+        Type: "PRODUCTS",
+        Caption: "Check out our line of Fittings",
+        contentPosition: "left",
+        Items: [
+            {
+                Name: "Fitting 1",
+                Image: "/Images/fitting1.jpg"
+            },
+            {
+                Name: "Fitting 2",
+                Image: "/Images/fitting2.jpg"
+            }
+        ]
+    },
+    {
+        Name: "PLATE HEAT EXCHANGERS",
+        Type: "PRODUCTS",
         Caption: "View in Products Page.",
-        contentPosition: "middle",
+        contentPosition: "right",
         Items: [
             {
                 Name: "Flanges",
-                Image: "/Images/clamps.png"
+                Image: "/Images/PHE1.webp"
             },
             {
                 Name: "Boilers",
-                Image: "/Images/Boiler.png"
+                Image: "/Images/PHE2.jpg"
             }
         ]
     },
     {
-        Name: "AND MORE",
-        Caption: "View in Products Page.",
-        contentPosition: "middle",
+        Name: "SKID MODULE",
+        Type: "PROJECTS",
+        Caption: "View in Projects Page.",
+        contentPosition: "left",
         Items: [
             {
-                Name: "Refrigiration System",
-                Image: "/Images/REFRIGERATION-SYSTEM.jpg"
+                Name: "Stud",
+                Image: "Images/Capabilities/Cap5.jpg"
             },
             {
                 Name: "Homogenizer",
-                Image: "/Images/HOMOGENIZER.jpg"
+                Image: "Images/Skid2.jpg"
+            }
+        ]
+    },
+    {
+        Name: "EQUIPMENTS",
+        Type: "PROJECTS",
+        Caption: "View in Projects Page.",
+        contentPosition: "right",
+        Items: [
+            {
+                Name: "Boiler",
+                Image: "Images/Boiler.png"
+            },
+            {
+                Name: "Homogenizer",
+                Image: "Images/Equipment2.jpg"
             }
         ]
     }

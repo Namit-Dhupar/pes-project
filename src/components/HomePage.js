@@ -3,7 +3,6 @@ import Carousel from './UI/Carousel/Carousel';
 import ClientCarousel from './UI/Carousel/CarouselClient'
 import {Grid, Button} from '@material-ui/core';
 import '../styles/homepage.scss';
-import {Link} from 'react-router-dom';
 
 const HomePage = () => {
     return (
@@ -33,54 +32,6 @@ const HomePage = () => {
                 </Grid>
                 <br />
                 <div className="heading">
-                <h1>OUR POPULAR PRODUCTS</h1>
-                <h3>Our Latest Product</h3>
-
-                {/*PUMP PRODUCT */}
-                <Grid container className="Product">
-                <Grid item lg={3} xs={12}> 
-                <Link className="bard" to="#" style={{backgroundImage: "url(/Images/Puma-Pump.jpg)"}}>
-                  <p>PUMPS</p>
-                <div>
-                  <h1>Pumps</h1>
-                </div>   
-                </Link>
-                </Grid>
-
-                 {/*TUBE PRODUCT */}
-                 <Grid item lg={3} xs={12}> 
-                 <Link className="bard" to="#" style={{backgroundImage: "url(/Images/REFRIGERATION-SYSTEM.jpg)"}}>
-                  <p>REFRIGERATION SYSTEM</p>
-                <div>
-                  <h1>REFRIGERATION SYSTEM</h1>
-                </div>   
-                </Link>
-                </Grid>
-
-                 {/*HOMOGENIZER PRODUCT */}
-                 <Grid item lg={3} xs={12}> 
-                 <Link className="bard" to="#" style={{backgroundImage: "url(/Images/HOMOGENIZER.jpg)"}}>
-                  <p>HOMOGENIZER</p>
-                <div>
-                  <h1>HOMOGENIZER</h1>
-                </div>   
-                </Link>
-                </Grid>
-
-                 {/*VALVES PRODUCT */}
-                 <Grid item lg={3} xs={12}> 
-                 <Link className="bard" to="#" style={{backgroundImage: "url(/Images/BULK-COOLER.jpg)"}}>
-                  <p>BULK COOLER</p>
-                <div>
-                  <h1>BULK COOLER</h1>
-                </div>   
-                </Link>
-               </Grid>
-               </Grid>
-               </div>
-
-               <br />
-                <div className="heading">
                 <h1>OUR CLIENTS</h1>
                 <p className="title">We are providing our products and services to some of the very esteemed clients in 
                 the industry who are satisfied with our products and after sales service. Here are the few:</p>
@@ -94,13 +45,10 @@ const HomePage = () => {
                <div className="Download">
                  <br />
                  <h2>CREATE OWN BUSINESS WITH OUR IDEAS</h2>
-                 <p>We undertake turnkey projects for dairy, candy, juices, chocolate industry and 
-                   like and are dedicated to provide you the best product with our expertise and
-                    dedicated team of professionals. You think it, we make it.</p>
                  <br />
                  <a style={{textDecoration:'none'}} href='/Catalogue.PDF' download='PES Brochure'>
-                <Button variant="contained" style={{backgroundColor:"#3c2344", color:"#ffffff", marginBottom:"2%"}}>
-                 Download Brochure
+                <Button variant="contained" size="large" style={{backgroundColor:"#3c2344", color:"#ffffff", marginBottom:"2%"}}>
+                 Download PES Product Brochure
                  </Button></a>
                </div>
             </Fragment>   

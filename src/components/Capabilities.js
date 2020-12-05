@@ -62,7 +62,60 @@ const Capabilities= () => {
     const classes = useStyles();
     return (
         <div>
-            <h1>CAPABILITIES</h1>
+          <Grid container>
+            <Grid item xs={12}>      
+            <h1>Company</h1>
+                  <h3><strong>PES Group</strong></h3>
+                  <p><strong>Project Engineering Services (PES) :</strong></p>
+                  <p>Undertakes turn-key contracting Woks in F&B Sectors including Dairies, Breweries, 
+                    Distilleries, Frozen Food plants etc.</p>
+                  <p><strong>EN Project & Engineering Industries Pvt.Ltd/Gurgaon :</strong></p>
+                  <p>Undertakes Contracting Works in Food Processing, Confectionary, Beverage 
+                  plants besides responsible for our manufacturing & Fabrication Works at our
+                  factories.</p>
+                  <p><strong>PES Stainless Equipments Pvt.Ltd./New Delhi :</strong></p>
+                  <p> Being Chanel Partner & Distributor to number of Global leading Co’s: Deals 
+                  in supply of Alfa-Laval, CSE & ASTRA SS Valves, SS Pipes & Fittings, Beverage 
+                  Filters, Sanitary Pumps, Pall Filters, PHEs, Anderson & Negele Process Instruments,
+                  Mech Seals of CinchSeals for low speed Mixtures</p>
+                  <p><strong>Our Vision & Mission</strong></p>
+                  <p>To achieve total customer satisfaction’ & gain Customer Confidence by giving 
+                  perfect solutions following quality & Industry Codes and set our own bench marks 
+                  which would define the standards of Industry.</p>
+                  <p><strong>Our Success Story</strong></p>
+                  <p>Since our operations from 1979, our major strengths are in Fabrication, Supply &
+                  Installation of various projects including Process & Utility Piping works for 
+                  Dairies, Beverage plants, most of F & B Sector plants, CIP Systems, owning to
+                  our specialized teams of  qualified & experienced  Project Engineers, Welders,
+                  Fitters, Helpers, Operators,  Electricians etc.</p>
+                  <p>PES offers personalized services, quality products, and superior technical 
+                  support before and after the sale. We invite you to join our family and discover 
+                  for yourself what we mean by personalized service.</p>
+                  <p><strong>Patents (PES Gp.Co’s)</strong></p>
+                  <p>We have no.of Patents for our special & proven designs for our various products 
+                  like : Cable Trays, Floor Drains etc.</p>
+                  <p><strong>Our Specialization</strong></p>
+                  <p>We provide value-added process components and systems for hygienic processes.
+                   We will understand the needs of our customers and work as a team to fill those
+                   needs.</p>
+                   <p><strong>Our Values</strong></p>
+                   <ul>
+                       <li>Customers</li>
+                       <li>Provide perfect solutions</li>
+                       <li>Reliability</li>
+                       <li>Respect</li>
+                       <li>Encouragement</li>
+                       <li>Honesty</li>
+                       <li>Learning</li>
+                       <li>Continuous Improvement</li>
+                       <li>Fun and Community</li>
+                       <li>After market Sevices</li>
+                       <li>Customer Feed-back reports</li>
+                       <li>Forming team with customers</li>
+                   </ul>
+                </Grid>
+                </Grid>
+            <h3>CAPABILITIES</h3>
             <p>MANUFACTURING OF SS 304, SS 316 WITH HIGH QUALITY  PRODUCTS WITH FINISHING</p>
             <Grid container>
             <Grid item lg={3} xs={12}> 

@@ -2,14 +2,12 @@ import React, { useState } from 'react';
 import {Link} from 'react-router-dom';
 import { makeStyles, useTheme } from '@material-ui/core/styles';
 import {AppBar, Toolbar, IconButton, Drawer, Divider, Hidden, List, ListItem, ListItemIcon, 
-Menu, MenuItem, ListItemText, Collapse, Button, Grid} from '@material-ui/core';
+ListItemText, Button, Grid} from '@material-ui/core';
 import MenuIcon from '@material-ui/icons/Menu';
 import CardTravelIcon from '@material-ui/icons/CardTravel';
 import HomeIcon from '@material-ui/icons/Home';
 import PhoneIcon from '@material-ui/icons/Phone';
 import BusinessIcon from '@material-ui/icons/Business';
-import ExpandLess from '@material-ui/icons/ExpandLess';
-import ExpandMore from '@material-ui/icons/ExpandMore';
 import WorkIcon from '@material-ui/icons/Work';
 import RoomServiceIcon from '@material-ui/icons/RoomService';
 import ModalEnquiry from '../Modal/ModalEnquiry'
@@ -61,22 +59,7 @@ const PrimarySearchAppBar = (props) => {
   const { window } = props;
   const classes = useStyles();
   const theme = useTheme();
-  const [anchorEl, setAnchorEl] = React.useState(null);
-  const openComp = Boolean(anchorEl);
   const [mobileOpen, setMobileOpen] = useState(false);
-  const [open, setOpen] = useState(true);
-
-  const handleMenu = (event) => {
-    setAnchorEl(event.currentTarget);
-  };
-
-  const handleClose = () => {
-    setAnchorEl(null);
-  };
-
-  const handleClick = () => {
-    setOpen(!open);
-  };
 
   const handleDrawerToggle = () => {
     setMobileOpen(!mobileOpen);
@@ -111,29 +94,9 @@ const PrimarySearchAppBar = (props) => {
             Home
           </Link>  
           </Button>
-          <Button color="inherit" onClick={handleMenu}>Company <ExpandMore /></Button>
-          <Menu
-                id="menu-appbar"
-                anchorEl={anchorEl}
-                anchorOrigin={{
-                  vertical: 'top',
-                  horizontal: 'right',
-                }}
-                keepMounted
-                transformOrigin={{
-                  vertical: 'top',
-                  horizontal: 'right',
-                }}
-                open={openComp}
-                onClose={handleClose}
-              >
-                <Link to="/company/about" className={classes.nolink}> 
-                <MenuItem onClick={handleClose}>About Us</MenuItem>
-                </Link>
-                <Link to="/company/capabilities" className={classes.nolink}> 
-                <MenuItem onClick={handleClose}>Capabilities</MenuItem>
-                </Link>
-              </Menu>
+          <Link to="/company" className={classes.nolink}>
+          <Button color="inherit">Company</Button>
+          </Link>
           <Link to="/products" className={classes.nolink}>
           <Button color="inherit">Products</Button>
           </Link>
@@ -177,26 +140,12 @@ const PrimarySearchAppBar = (props) => {
            <ListItemText primary="Home" />
         </ListItem>
         </Link>
-
-        <ListItem button onClick={handleClick}>
+        <Link onClick={handleDrawerToggle} to="/company" className={classes.nolink}>
+        <ListItem button>
         <ListItemIcon><BusinessIcon /></ListItemIcon>
-          <ListItemText primary="Company" />
-        {open != null ? open ? <ExpandMore /> : <ExpandLess /> : null}
-         </ListItem>
-        <Collapse component="li" in={!open} timeout="auto" unmountOnExit>
-        <List disablePadding>
-        <Link onClick={handleDrawerToggle} to="/company/about" className={classes.nolink}>  
-        <ListItem button className={classes.nested}>
-           <ListItemText primary="About Us" />
+           <ListItemText primary="Company" />
         </ListItem>
         </Link>
-        <Link onClick={handleDrawerToggle} to="/company/capabilities" className={classes.nolink}>
-        <ListItem button className={classes.nested}>
-           <ListItemText primary="Capabilities" />
-        </ListItem>
-        </Link>
-        </List>
-       </Collapse>
 
         <Link onClick={handleDrawerToggle} to="/products" className={classes.nolink}>
         <ListItem button>

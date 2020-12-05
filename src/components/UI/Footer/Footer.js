@@ -8,14 +8,14 @@ import { makeStyles } from '@material-ui/core/styles';
 
 const useStyles = makeStyles((theme) => ({
     divider: {
-      backgroundColor: "white",
+      backgroundColor: "black",
       width: "350px"
     },
     linkStyle: {
       marginBottom: "5px"
     },
     anchorStyle: {
-      color: "white", 
+      color: "black", 
       textDecoration: "none", 
       cursor: "default"
     }
@@ -32,9 +32,11 @@ const Footer = () =>{
         <img width="50%" src="/image001.jpg" alt="pes logo" />
         </Grid>
         <Grid item lg={10} md={12}>
-        <p>Project Engineering Services(popularly known as PES), is one of the fastest growing 
+        {/* <p>Project Engineering Services(popularly known as PES), is one of the fastest growing 
             Engineering Company since 1979 and are engaged in Designing, Erection, manufacturing 
-            of various high quality stainless steel equipments</p><br />
+            of various high quality stainless steel equipments</p> */}
+         <h3>Everything you need. Whenever you need.</h3>   
+        <br />
         </Grid>
         <Grid item lg={4} md={12}>
         PRODUCT CATEGORIES

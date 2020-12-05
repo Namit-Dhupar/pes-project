@@ -334,16 +334,16 @@ const ContactPage = () => {
         <Grid item lg={6} sm={12}>
           <h3>PES Stainless Equipment Steel Pvt Ltd</h3>
           <p>C-2/11 PES Stainless Equipment, Rajouri Garden, New Delhi, Delhi 110027</p>
-          <iframe title="myFrame" className="sisterMap"
+          {/* <iframe title="myFrame" className="sisterMap"
         src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14005.88789852091!2d77.1249931!3d28.6455835!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xaac431036489e3aa!2sPes%20Stainless%20Equipment!5e0!3m2!1sen!2sin!4v1602935892046!5m2!1sen!2sin" 
-       frameBorder="0" allowFullScreen={true} aria-hidden="false" tabIndex="0"></iframe>
+       frameBorder="0" allowFullScreen={true} aria-hidden="false" tabIndex="0"></iframe> */}
         </Grid>
         <Grid item lg={6} sm={12}>
           <h3>E N Project & Engg Industries Private Limited</h3>
           <p>Plot 41, Maruti Industrial Area, Sector 18, Gurugram, Haryana 122008</p>
-          <iframe title="myFrame" className="sisterMap"
+          {/* <iframe title="myFrame" className="sisterMap"
         src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14026.784911056071!2d77.0636765!3d28.4886936!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xd644519c47de614!2sE%20N%20Project%20%26%20Engg%20Industries%20Private%20Limited!5e0!3m2!1sen!2sin!4v1602935994608!5m2!1sen!2sin" 
-       frameBorder="0" allowFullScreen={true} aria-hidden="false" tabIndex="0"></iframe>
+       frameBorder="0" allowFullScreen={true} aria-hidden="false" tabIndex="0"></iframe> */}
         </Grid>
         {allowDownload > 0 ? 
         <Grid item sm={12} className="enquiry">
