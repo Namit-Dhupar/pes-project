@@ -35,7 +35,7 @@ const Footer = () =>{
         {/* <p>Project Engineering Services(popularly known as PES), is one of the fastest growing 
             Engineering Company since 1979 and are engaged in Designing, Erection, manufacturing 
             of various high quality stainless steel equipments</p> */}
-         <h3>Everything you need. Whenever you need.</h3>   
+         <h3>Everything you need. Whenever you need. The Complete Line Solution</h3>   
         <br />
         </Grid>
         <Grid item lg={4} md={12}>

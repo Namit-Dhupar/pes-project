@@ -126,7 +126,7 @@ const items = [
             },
             {
                 Name: "Butterfly Valve",
-                Image: "/Images/Valve2.png"
+                Image: "/Images/Valve2.jpg"
             }
         ]
     },
@@ -138,7 +138,7 @@ const items = [
         Items: [
             {
                 Name: "Fitting 1",
-                Image: "/Images/fitting1.jpg"
+                Image: "/Images/fittingS1.jpeg"
             },
             {
                 Name: "Fitting 2",
@@ -154,11 +154,11 @@ const items = [
         Items: [
             {
                 Name: "Flanges",
-                Image: "/Images/PHE1.webp"
+                Image: "/Images/PHE1.gif"
             },
             {
                 Name: "Boilers",
-                Image: "/Images/PHE2.jpg"
+                Image: "/Images/PHE2.gif"
             }
         ]
     },
@@ -189,8 +189,8 @@ const items = [
                 Image: "Images/Boiler.png"
             },
             {
-                Name: "Homogenizer",
-                Image: "Images/Equipment2.jpg"
+                Name: "Refrigration",
+                Image: "Images/REFRIGERATION-SYSTEM.jpg"
             }
         ]
     }

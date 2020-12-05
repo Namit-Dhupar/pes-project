@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import {Link} from 'react-router-dom';
-import { useSelector, useDispatch } from 'react-redux';
+import { useSelector } from 'react-redux';
+//import { useSelector, useDispatch } from 'react-redux';
 import Generatepdf from './UI/pdfmodule/Generatepdf';
 import '../styles/contacts.scss';
 import { TextField, Grid, Button, Divider } from '@material-ui/core/';
@@ -8,7 +9,7 @@ import GetAppIcon from '@material-ui/icons/GetApp';
 import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
 import SendIcon from '@material-ui/icons/Send';
 import ShowMessage from './UI/Snackbar/Snackbar';
-import { reset } from '../store/actions/actions';
+//import { reset } from '../store/actions/actions';
 
 const ContactPage = () => {
  
@@ -25,7 +26,7 @@ const ContactPage = () => {
   const [generateUri, setgenerateUri] = useState(false);
   const [allowDownload, setallowDownload] = useState("");
   const enquiredProducts = useSelector(state => state.enquiry.products);
-  const dispatch = useDispatch();
+  //const dispatch = useDispatch();
   
   const regexName = /^[a-zA-ZàáâäãåąčćęèéêëėįìíîïłńòóôöõøùúûüųūÿýżźñçčšžÀÁÂÄÃÅĄĆČĖĘÈÉÊËÌÍÎÏĮŁŃÒÓÔÖÕØÙÚÛÜŲŪŸÝŻŹÑßÇŒÆČŠŽ∂ð ,.'-]+$/;
   const regexPhone = /^(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]?\d{3}[\s.-]?\d{4}$/;
@@ -44,7 +45,7 @@ const ContactPage = () => {
     setMessage('');
     setPhone('');
     setCompany('');
-    dispatch(reset());
+   // dispatch(reset());
     localStorage.clear();
   }
 
@@ -97,9 +98,9 @@ const ContactPage = () => {
 
   function sendMail() {
     window.Email.send({
-      SecureToken : "32c831be-ec17-46b2-8e05-fd167211981e",
-      To : 'namitmatrix@gmail.com',
-      From : "namitmatrix@gmail.com",
+      SecureToken : "c5da93bc-d89c-455d-83f7-ca42e4c24efa",
+      To : 'info@pesgroup.co.in',
+      From : `${Email}`,
       Subject : `New Enquiry from ${firstName} ${lastName} from website`,
       Body : `<html>
               <p>${Message}</p>
