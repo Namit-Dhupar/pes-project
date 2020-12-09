@@ -1,7 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import {Link} from 'react-router-dom';
-import { useSelector } from 'react-redux';
-//import { useSelector, useDispatch } from 'react-redux';
+import { useSelector, useDispatch } from 'react-redux';
 import Generatepdf from './UI/pdfmodule/Generatepdf';
 import '../styles/contacts.scss';
 import { TextField, Grid, Button, Divider } from '@material-ui/core/';
@@ -9,7 +8,8 @@ import GetAppIcon from '@material-ui/icons/GetApp';
 import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
 import SendIcon from '@material-ui/icons/Send';
 import ShowMessage from './UI/Snackbar/Snackbar';
-//import { reset } from '../store/actions/actions';
+import Progress from './UI/Progress/Progress';
+import { reset } from '../store/actions/actions';
 
 const ContactPage = () => {
  
@@ -23,10 +23,11 @@ const ContactPage = () => {
   const [Message, setMessage] = useState("");
   const [Company, setCompany] = useState("");
   const [generate, setgenerate] = useState(false);
+  const [isLoading, setisLoading] = useState(false);
   const [generateUri, setgenerateUri] = useState(false);
   const [allowDownload, setallowDownload] = useState("");
   const enquiredProducts = useSelector(state => state.enquiry.products);
-  //const dispatch = useDispatch();
+  const dispatch = useDispatch();
   
   const regexName = /^[a-zA-ZàáâäãåąčćęèéêëėįìíîïłńòóôöõøùúûüųūÿýżźñçčšžÀÁÂÄÃÅĄĆČĖĘÈÉÊËÌÍÎÏĮŁŃÒÓÔÖÕØÙÚÛÜŲŪŸÝŻŹÑßÇŒÆČŠŽ∂ð ,.'-]+$/;
   const regexPhone = /^(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]?\d{3}[\s.-]?\d{4}$/;
@@ -45,7 +46,7 @@ const ContactPage = () => {
     setMessage('');
     setPhone('');
     setCompany('');
-   // dispatch(reset());
+    dispatch(reset());
     localStorage.clear();
   }
 
@@ -119,6 +120,7 @@ const ContactPage = () => {
       : ''               
    }).then(message => {
      if(message === "OK"){
+      setisLoading(false);
       MessageOnSuccess();
       EmptyFields();
      }
@@ -146,7 +148,10 @@ const ContactPage = () => {
         return false;
       }
       togglegenerateUri();
-      setTimeout(function() { sendMail(); }, 300);
+      setTimeout(function() { 
+        setisLoading(true);
+        sendMail(); 
+      }, 300);
       
   }
 
@@ -271,6 +276,9 @@ const ContactPage = () => {
         </Grid>
         {allowDownload > 0 ? 
         <Grid item lg={6} xs={12}>
+        {isLoading ? 
+        <Progress />
+        :
         <Button
         type="submit"
         variant="contained"
@@ -278,9 +286,12 @@ const ContactPage = () => {
         endIcon={<SendIcon />}
         >
         Send Enquiry
-      </Button>
+      </Button>}         
       </Grid>
       : <Grid item lg={6} xs={12}>
+        {isLoading ? 
+        <Progress />
+        :
         <Button
         type="submit"
         variant="contained"
@@ -288,7 +299,7 @@ const ContactPage = () => {
         endIcon={<SendIcon />}
         >
         Send Message
-      </Button>
+      </Button>}
       </Grid>
       }
       {allowDownload > 0 ? 

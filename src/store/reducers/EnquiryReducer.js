@@ -1,8 +1,9 @@
 import ProductData from '../../data/ProductData.json';
 import { TOGGLE_FAV, SELECTED_HP, SELECTED_SIZE, SELECTED_MOC, SELECTED_TEXT, RESET } from '../actions/actions';
 
+const copy = JSON.parse(JSON.stringify(ProductData));
 const initialState = {
-    products: ProductData
+    products: copy
 };
 
 const EnquiryReducer = (state = initialState, action) => {
@@ -22,6 +23,7 @@ const EnquiryReducer = (state = initialState, action) => {
         });
 
         return{
+          ...state,
           products: [...state.products]
         }
         case SELECTED_HP:
@@ -37,6 +39,7 @@ const EnquiryReducer = (state = initialState, action) => {
           });
   
           return{
+            ...state,
             products: [...state.products]
           }
 
@@ -53,6 +56,7 @@ const EnquiryReducer = (state = initialState, action) => {
           });
   
           return{
+            ...state,
             products: [...state.products]
           }
 
@@ -69,6 +73,7 @@ const EnquiryReducer = (state = initialState, action) => {
           });
   
           return{
+            ...state,
             products: [...state.products]
           }
 
@@ -85,12 +90,14 @@ const EnquiryReducer = (state = initialState, action) => {
           });
   
           return{
+            ...state,
             products: [...state.products]
           }
-          case RESET:
-              return{
-                  products: {...initialState}
-              }
+         case RESET:
+          return{
+              ...state,
+              products: ProductData
+          }
 
           default:
            return state;       

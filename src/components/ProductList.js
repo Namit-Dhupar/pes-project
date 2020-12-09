@@ -12,6 +12,7 @@ import {Tabs, TextField,
         Divider,
         Grid,
         Hidden, Radio, RadioGroup, FormControlLabel, FormControl, FormLabel} from '@material-ui/core';
+                
 
 const TabPanel = (props) => {
     const { children, value, index, ...other } = props;
@@ -99,7 +100,7 @@ const tabPanel = productState.map((product,index) => {
       <FormControlLabel
       key={i}
       value={Hp}
-      control={<Radio color="primary" />}
+      control={<Radio color="primary"/>}
       label={Hp}
       labelPlacement="start"
     />      
