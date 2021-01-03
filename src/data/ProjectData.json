@@ -1,0 +1,227 @@
+[
+    {
+     "ProjectType": "Diary",   
+     "ProjectImages": [
+         {
+             "id": 1,
+             "src": "/Images/Projects/IMG-20201219-WA0026.jpg",
+             "thumbnail": "/Images/Projects/IMG-20201219-WA0026.jpg",
+             "thumbnailWidth": 320,
+             "thumbnailHeight": 190,
+             "caption": "Our Machinery at ABC"
+         },
+         {
+             "id": 2,
+             "src": "/Images/Projects/IMG-20201219-WA0027.jpg",
+             "thumbnail": "/Images/Projects/IMG-20201219-WA0027.jpg",
+             "thumbnailWidth": 320,
+             "thumbnailHeight": 190,
+             "caption": "Our Machinery at ABC"           
+         },
+         {
+             "id": 3,
+             "src": "/Images/Projects/IMG-20201219-WA0028.jpg",
+             "thumbnail": "/Images/Projects/IMG-20201219-WA0028.jpg",
+             "thumbnailWidth": 320,
+             "thumbnailHeight": 190,
+             "caption": "Our Machinery at ABC"             
+         },
+         {
+             "id": 4,
+             "src": "/Images/Projects/IMG-20201219-WA0029.jpg",
+             "thumbnail": "/Images/Projects/IMG-20201219-WA0029.jpg",
+             "thumbnailWidth": 320,
+             "thumbnailHeight": 190,
+             "caption": "Our Machinery at ABC"      
+         },
+         {
+            "id": 5,
+            "src": "/Images/Projects/IMG-20201219-WA0030.jpg",
+            "thumbnail": "/Images/Projects/IMG-20201219-WA0030.jpg",
+            "thumbnailWidth": 320,
+            "thumbnailHeight": 190,
+            "caption": "Our Machinery at ABC"
+        }
+     ]
+    },
+    {
+     "ProjectType": "Beverage",   
+     "ProjectImages":[
+        {
+            "id": 6,
+            "src": "/Images/Projects/IMG-20201219-WA0037.jpg",
+            "thumbnail": "/Images/Projects/IMG-20201219-WA0037.jpg",
+            "thumbnailWidth": 320,
+            "thumbnailHeight": 190,
+            "caption": "Our Machinery at ABC"
+        },
+        {
+            "id": 7,
+            "src": "/Images/Projects/IMG-20201219-WA0038.jpg",
+            "thumbnail": "/Images/Projects/IMG-20201219-WA0038.jpg",
+            "thumbnailWidth": 320,
+            "thumbnailHeight": 190,
+            "caption": "Our Machinery at ABC"           
+        },
+        {
+            "id": 8,
+            "src": "/Images/Projects/IMG-20201219-WA0039.jpg",
+            "thumbnail": "/Images/Projects/IMG-20201219-WA0039.jpg",
+            "thumbnailWidth": 320,
+            "thumbnailHeight": 190,
+            "caption": "Our Machinery at ABC"             
+        },
+        {
+            "id": 9,
+            "src": "/Images/Projects/IMG-20201219-WA0040.jpg",
+            "thumbnail": "/Images/Projects/IMG-20201219-WA0040.jpg",
+            "thumbnailWidth": 320,
+            "thumbnailHeight": 190,
+            "caption": "Our Machinery at ABC"      
+        },
+        {
+           "id": 10,
+           "src": "/Images/Projects/IMG-20201219-WA0041.jpg",
+           "thumbnail": "/Images/Projects/IMG-20201219-WA0041.jpg",
+           "thumbnailWidth": 320,
+           "thumbnailHeight": 190,
+           "caption": "Our Machinery at ABC"
+       }
+     ]
+    },
+    {
+     "ProjectType": "Brewery and distillary",   
+     "ProjectImages":[
+        {
+            "id": 11,
+            "src": "/Images/Projects/IMG-20201219-WA0048.jpg",
+            "thumbnail": "/Images/Projects/IMG-20201219-WA0048.jpg",
+            "thumbnailWidth": 320,
+            "thumbnailHeight": 190,
+            "caption": "Our Machinery at ABC"
+        },
+        {
+            "id": 12,
+            "src": "/Images/Projects/IMG-20201219-WA0049.jpg",
+            "thumbnail": "/Images/Projects/IMG-20201219-WA0049.jpg",
+            "thumbnailWidth": 320,
+            "thumbnailHeight": 190,
+            "caption": "Our Machinery at ABC"           
+        },
+        {
+            "id": 14,
+            "src": "/Images/Projects/IMG-20201219-WA0050.jpg",
+            "thumbnail": "/Images/Projects/IMG-20201219-WA0050.jpg",
+            "thumbnailWidth": 320,
+            "thumbnailHeight": 190,
+            "caption": "Our Machinery at ABC"             
+        },
+        {
+            "id": 15,
+            "src": "/Images/Projects/IMG-20201219-WA0051.jpg",
+            "thumbnail": "/Images/Projects/IMG-20201219-WA0051.jpg",
+            "thumbnailWidth": 320,
+            "thumbnailHeight": 190,
+            "caption": "Our Machinery at ABC"      
+        },
+        {
+           "id": 16,
+           "src": "/Images/Projects/IMG-20201219-WA0052.jpg",
+           "thumbnail": "/Images/Projects/IMG-20201219-WA0052.jpg",
+           "thumbnailWidth": 320,
+           "thumbnailHeight": 190,
+           "caption": "Our Machinery at ABC"
+       }
+     ]
+    },
+    {
+     "ProjectType": "Confectionary",   
+     "ProjectImages":[
+        {
+            "id": 17,
+            "src": "/Images/Projects/IMG-20201219-WA0059.jpg",
+            "thumbnail": "/Images/Projects/IMG-20201219-WA0059.jpg",
+            "thumbnailWidth": 320,
+            "thumbnailHeight": 190,
+            "caption": "Our Machinery at ABC"
+        },
+        {
+            "id": 18,
+            "src": "/Images/Projects/IMG-20201219-WA0060.jpg",
+            "thumbnail": "/Images/Projects/IMG-20201219-WA0060.jpg",
+            "thumbnailWidth": 320,
+            "thumbnailHeight": 190,
+            "caption": "Our Machinery at ABC"           
+        },
+        {
+            "id": 19,
+            "src": "/Images/Projects/IMG-20201219-WA0061.jpg",
+            "thumbnail": "/Images/Projects/IMG-20201219-WA0061.jpg",
+            "thumbnailWidth": 320,
+            "thumbnailHeight": 190,
+            "caption": "Our Machinery at ABC"             
+        },
+        {
+            "id": 20,
+            "src": "/Images/Projects/IMG-20201219-WA0062.jpg",
+            "thumbnail": "/Images/Projects/IMG-20201219-WA0062.jpg",
+            "thumbnailWidth": 320,
+            "thumbnailHeight": 190,
+            "caption": "Our Machinery at ABC"      
+        },
+        {
+           "id": 21,
+           "src": "/Images/Projects/IMG-20201219-WA0063.jpg",
+           "thumbnail": "/Images/Projects/IMG-20201219-WA0063.jpg",
+           "thumbnailWidth": 320,
+           "thumbnailHeight": 190,
+           "caption": "Our Machinery at ABC"
+       }
+     ]
+    },
+    {
+     "ProjectType": "Slaughter",   
+     "ProjectImages":[
+        {
+            "id": 22,
+            "src": "/Images/Projects/IMG-20201219-WA0070.jpg",
+            "thumbnail": "/Images/Projects/IMG-20201219-WA0070.jpg",
+            "thumbnailWidth": 320,
+            "thumbnailHeight": 190,
+            "caption": "Our Machinery at ABC"
+        },
+        {
+            "id": 23,
+            "src": "/Images/Projects/IMG-20201219-WA0071.jpg",
+            "thumbnail": "/Images/Projects/IMG-20201219-WA0071.jpg",
+            "thumbnailWidth": 320,
+            "thumbnailHeight": 190,
+            "caption": "Our Machinery at ABC"           
+        },
+        {
+            "id": 24,
+            "src": "/Images/Projects/IMG-20201219-WA0072.jpg",
+            "thumbnail": "/Images/Projects/IMG-20201219-WA0072.jpg",
+            "thumbnailWidth": 320,
+            "thumbnailHeight": 190,
+            "caption": "Our Machinery at ABC"             
+        },
+        {
+            "id": 25,
+            "src": "/Images/Projects/IMG-20201219-WA0073.jpg",
+            "thumbnail": "/Images/Projects/IMG-20201219-WA0073.jpg",
+            "thumbnailWidth": 320,
+            "thumbnailHeight": 190,
+            "caption": "Our Machinery at ABC"      
+        },
+        {
+           "id": 26,
+           "src": "/Images/Projects/IMG-20201219-WA0074.jpg",
+           "thumbnail": "/Images/Projects/IMG-20201219-WA0074.jpg",
+           "thumbnailWidth": 320,
+           "thumbnailHeight": 190,
+           "caption": "Our Machinery at ABC"
+       }
+     ]
+    }
+]   
