@@ -1,6 +1,6 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
-import { Tabs, Tab, Box} from '@material-ui/core';
+import { Tabs, Tab, Box, Grid} from '@material-ui/core';
 import ProjectData from '../data/ProjectData.json';
 import Gallery from 'react-grid-gallery';
 
@@ -40,6 +40,9 @@ const useStyles = makeStyles((theme) => ({
   tabs: {
     borderRight: `1px solid ${theme.palette.divider}`,
   },
+  list: {
+    width: '100%'
+  }
 }));
 
 const ProjectList = () => {
@@ -77,16 +80,18 @@ const ProjectList = () => {
                     return i;
                 });
   return(
-    <TabPanel key={index} value={value} index={index}>
-          <div style={{
-          display: "block",
+    <TabPanel className={classes.list} key={index} value={value} index={index}>
+        <div>
+       <Grid container >
+       <Grid item lg={12} sm={3} style={{
           minHeight: "1px",
           width: "100%",
-          border: "1px solid #ddd",
-          overflow: "auto"}}>
+          border: "1px solid #ddd"}}>
        <Gallery
        images={images}
        enableImageSelection={false}/>
+       </Grid>
+       </Grid>
       </div>
   </TabPanel>
   )              
