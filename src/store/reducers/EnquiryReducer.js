@@ -1,6 +1,6 @@
 import ProductData from '../../data/ProductData.json';
 import { TOGGLE_FAV, SELECTED_HP, SELECTED_SIZE, SELECTED_MOC, SELECTED_TEXT, 
-         SELECTED_FLOW, SELECT_FITTING, SELECT_UNION, RESET } from '../actions/actions';
+         SELECTED_FLOW, SELECT_FITTING, SELECT_UNION,SELECT_PURPOSE, RESET } from '../actions/actions';
 
 const copy = JSON.parse(JSON.stringify(ProductData));
 const initialState = {
@@ -119,6 +119,23 @@ const EnquiryReducer = (state = initialState, action) => {
             updatedProducts[prodIndex] = {
               ...el.Subtype[prodIndex],
               SelectedUnion: action.value
+            }
+            updatedPes = updatedProducts.filter((index) => index !== -1)
+            return updatedPes;
+          });
+  
+          return{
+            ...state,
+            products: [...state.products]
+          }
+
+          case SELECT_PURPOSE:
+          state.products.map(el => {
+            const prodIndex = el.Subtype.findIndex(p => p.id === action.productId);
+            const updatedProducts = el.Subtype;
+            updatedProducts[prodIndex] = {
+              ...el.Subtype[prodIndex],
+              SelectedPurpose: action.value
             }
             updatedPes = updatedProducts.filter((index) => index !== -1)
             return updatedPes;

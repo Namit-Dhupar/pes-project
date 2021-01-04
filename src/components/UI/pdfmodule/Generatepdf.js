@@ -60,7 +60,10 @@ const Generatepdf = (props) => {
         {pes.SelectedFitting ?
         <span><b>FITTING TYPE: </b>{pes.SelectedFitting}</span>
         : pes.SelectedUnion ?
-        <span><b>UNION TYPE: </b>{pes.SelectedUnion}</span> : null}
+        <span><b>UNION TYPE: </b>{pes.SelectedUnion}</span> : 
+        pes.SelectedPurpose ?
+        <span><b>APPLICATION: </b>{pes.SelectedPurpose}</span>
+        : null}
         <br/>
         {pes.ItemMessage ?
         <span><b>OTHER DETAILS: </b>{pes.ItemMessage}</span> : null}

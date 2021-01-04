@@ -113,6 +113,8 @@ const useStyles = makeStyles((theme) => ({
             <p style={{marginLeft: '12px'}}><strong><span style={{color: '#ec1f1f'}}>FITITING TYPE:</span> {pes.SelectedFitting}</strong></p>
             : pes.SelectedUnion ?  
              <p style={{marginLeft: '12px'}}><strong><span style={{color: '#ec1f1f'}}>UNION TYPE:</span> {pes.SelectedUnion}</strong></p>
+            : pes.SelectedPurpose ?  
+            <p style={{marginLeft: '12px'}}><strong><span style={{color: '#ec1f1f'}}>APPLICATION:</span> {pes.SelectedPurpose}</strong></p>
             : null}
             </Grid>
             <Grid item xs={12}>

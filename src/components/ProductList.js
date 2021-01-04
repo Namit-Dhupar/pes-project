@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { selectedhp, selectedsize, selectedmoc, selectedtext, 
-selectedflowrate, selectedfitting, selectedunion } from '../store/actions/actions';
+selectedflowrate, selectedfitting, selectedunion, selectedpurpose } from '../store/actions/actions';
 import Showpdffull from './UI/Modal/ModalFull';
 import Showpdfphone from './UI/Modal/ModalMobile';
 import { makeStyles } from '@material-ui/core/styles';
@@ -91,6 +91,25 @@ const tabPanel = productState.map((product,index) => {
           pdf={el.ItemFile} isEnq={el.isEnquired} id={el.id} /> 
       {el.isEnquired ?
       <FormControl style={{marginTop: "10px"}} component="fieldset">
+      {
+        el.ItemPurpose
+         ?
+         <div>
+         <FormLabel>Application</FormLabel>
+         <RadioGroup row aria-label="position3" name="position3" value={el.SelectedPurpose} 
+         onChange={e => dispatch(selectedpurpose(el.id, e.target.value))} defaultValue="top3">
+         {el.ItemPurpose.map((PP,i)=>(      
+           <FormControlLabel
+             key={i}
+             value={PP}
+             control={<Radio color="secondary" />}
+             label={PP}
+             labelPlacement="start"
+           />
+           ))} 
+           </RadioGroup> 
+           </div> : null
+      }
       {el.ItemHPKW ? 
       <div>
       <FormLabel>HP/kW:</FormLabel>
@@ -135,7 +154,7 @@ const tabPanel = productState.map((product,index) => {
         <FormControlLabel
           key={i}
           value={FR}
-          control={<Radio color="secondary" />}
+          control={<Radio color="primary" />}
           label={FR}
           labelPlacement="start"
         />
@@ -199,7 +218,8 @@ const tabPanel = productState.map((product,index) => {
         </div>
       :  null
       }
-      <FormLabel>{(el.SelectedSize === "Custom Size" || el.SelectedFlowRate === "Custom Flow Rate") ? 
+      <FormLabel>{(el.SelectedSize === "Custom Size" || el.SelectedFlowRate === "Custom Flow Rate"
+      || el.SelectedPurpose === "Other Purpose") ? 
       <span>Other Details & Your Custom Info</span>
       : <span>Other Details</span>}</FormLabel>
         <TextField
@@ -224,6 +244,25 @@ const tabPanel = productState.map((product,index) => {
           pdf={el.ItemFile} isEnq={el.isEnquired} id={el.id}/> 
           {el.isEnquired ?
       <FormControl style={{marginTop: "10px"}} component="fieldset">
+        {
+        el.ItemPurpose
+         ?
+         <div>
+         <FormLabel>Application</FormLabel>
+         <RadioGroup row aria-label="position3" name="position3" value={el.SelectedPurpose} 
+         onChange={e => dispatch(selectedpurpose(el.id, e.target.value))} defaultValue="top3">
+         {el.ItemPurpose.map((PP,i)=>(      
+           <FormControlLabel
+             key={i}
+             value={PP}
+             control={<Radio color="secondary" />}
+             label={PP}
+             labelPlacement="start"
+           />
+           ))} 
+           </RadioGroup> 
+           </div> : null
+      }
       {el.ItemHPKW ? 
       <div>
       <FormLabel>HP/kW:</FormLabel>
@@ -329,9 +368,10 @@ const tabPanel = productState.map((product,index) => {
         ))} 
         </RadioGroup> 
         </div>
-      :  null
+      : null
       }
-      <FormLabel>{(el.SelectedSize === "Custom Size" || el.SelectedFlowRate === "Custom Flow Rate") ? 
+      <FormLabel>{(el.SelectedSize === "Custom Size" || el.SelectedFlowRate === "Custom Flow Rate"
+      || el.SelectedPurpose === "Other Purpose") ? 
       <span>Other Details & Your Custom Size</span>
       : <span>Other Details</span>}</FormLabel>
         <TextField

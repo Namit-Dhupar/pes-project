@@ -203,54 +203,37 @@
      ]
     },
     {
-     "ProductType": "Plate Heat Exchangers",   
+     "ProductType": "Heat Exchangers",   
      "Subtype":[
+         
          {
              "id": 14,
-             "ItemName": "PLATE HEAT EXCHANGER A",
-             "ItemImageA": "/Images/Row%207/PLATE%20HEAT%20EXCHANGER%201.jpg",
-             "ItemImageB": null,            
-             "ItemFile": "/Products/PHE-Catalogue.pdf",
-             "ItemDescription": "The frame consists of a fixed frame plate, a movable pressure plate, an upper carrying bar, a lower guiding bar, a support column and tightening bolts with nuts. The corrugation of the plates provides a passage between the plates, supports each plate against the adjacent one and enhances the turbulence, resulting inefficient heat transfer.", 
-             "ItemFlowRate": ["1", "2", "3", "4", "5", "Custom Flow Rate"],
-             "SelectedFlowRate": "",
-             "ItemMessage": "",
-             "isEnquired": false           
-         },
-         {
-             "id": 15,
-             "ItemName": "PLATE HEAT EXCHANGER B",
+             "ItemName": "PLATE TYPE HEAT EXCHANGER",
              "ItemImageA": "/Images/Row%207/PLATE%20HEAT%20EXCHANGER%20%202.jpg",
              "ItemImageB": null,            
              "ItemFile": "/Products/PHE-Catalogue.pdf",
              "ItemDescription": "The frame consists of a fixed frame plate, a movable pressure plate, an upper carrying bar, a lower guiding bar, a support column and tightening bolts with nuts. The corrugation of the plates provides a passage between the plates, supports each plate against the adjacent one and enhances the turbulence, resulting inefficient heat transfer.",
              "ItemFlowRate": ["1", "2", "3", "4", "5", "Custom Flow Rate"],
+             "ItemMOC": ["SS-304", "SS-316"],
+             "ItemPurpose": ["Chiller", "Heat Exchange", "Pasteurizer", "Other Purpose"],
+             "SelectedPurpose": "",
+             "SelectedMOC" : "",
              "SelectedFlowRate": "",
              "ItemMessage": "", 
              "isEnquired": false
          },
          {
              "id": 16,
-             "ItemName": "PLATE HEAT EXCHANGER C",
+             "ItemName": "TUBE TYPE HEAT EXCHANGER",
              "ItemImageA": "/Images/Row%207/PLATE%20HEAT%20EXCHANGER%203.jpg",
              "ItemImageB": null,            
              "ItemFile": "/Products/PHE-Catalogue.pdf",
              "ItemDescription": "The frame consists of a fixed frame plate, a movable pressure plate, an upper carrying bar, a lower guiding bar, a support column and tightening bolts with nuts. The corrugation of the plates provides a passage between the plates, supports each plate against the adjacent one and enhances the turbulence, resulting inefficient heat transfer.",
              "ItemFlowRate": ["1", "2", "3", "4", "5", "Custom Flow Rate"],
+             "ItemMOC": ["SS-304", "SS-316"],  
+             "SelectedMOC" : "",
              "SelectedFlowRate": "",
              "ItemMessage": "", 
-             "isEnquired": false
-         },
-         {
-             "id": 17,
-             "ItemName": "PLATE HEAT EXCHANGER D",
-             "ItemImageA": "/Images/Row%207/PLATE%20HEAT%20EXCHANGER%204.jpg",
-             "ItemImageB": "/Images/Row%207/PLATE%20HEAT%20EXCHANGER%20%205.jpg",            
-             "ItemFile": "/Products/PHE-Catalogue.pdf",
-             "ItemDescription": "The frame consists of a fixed frame plate, a movable pressure plate, an upper carrying bar, a lower guiding bar, a support column and tightening bolts with nuts. The corrugation of the plates provides a passage between the plates, supports each plate against the adjacent one and enhances the turbulence, resulting inefficient heat transfer.", 
-             "ItemFlowRate": ["1", "2", "3", "4", "5", "Custom Flow Rate"],
-             "SelectedFlowRate": "",
-             "ItemMessage": "",
              "isEnquired": false
          }
      ]

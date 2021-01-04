@@ -6,6 +6,7 @@ export const SELECTED_TEXT = 'SELECTED_TEXT';
 export const SELECTED_FLOW = 'SELECTED_FLOW';
 export const SELECT_FITTING = 'SELECT_FITTING';
 export const SELECT_UNION = 'SELECT_UNION';
+export const SELECT_PURPOSE = 'SELECT_PURPOSE';
 export const RESET = 'RESET';
 
 export const toggleFav = id => {
@@ -58,6 +59,14 @@ export const selectedfitting = (id, value) => {
 export const selectedunion = (id, value) => {
     return{
         type: SELECT_UNION,
+        productId: id,
+        value: value
+    }
+}
+
+export const selectedpurpose = (id, value) => {
+    return{
+        type: SELECT_PURPOSE,
         productId: id,
         value: value
     }
