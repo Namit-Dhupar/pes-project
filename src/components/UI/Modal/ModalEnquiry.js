@@ -98,12 +98,21 @@ const useStyles = makeStyles((theme) => ({
             <p style={{marginLeft: '24px'}}><strong><span style={{color: '#ec1f1f'}}>HP/kW:</span> {pes.SelectedHP}</strong></p>
             : pes.SelectedSize ? 
             <p style={{marginLeft: '24px'}}><strong><span style={{color: '#ec1f1f'}}>SIZE(MM):</span> {pes.SelectedSize}</strong></p>
+            : pes.SelectedFlowRate ?
+            <p style={{marginLeft: '24px'}}><strong><span style={{color: '#ec1f1f'}}>FLOW RATE(KL):</span> {pes.SelectedFlowRate}</strong></p>
             : null
             }
             </Grid>
             <Grid item xs={4}>
             { pes.SelectedMOC ?  
             <p style={{marginLeft: '12px'}}><strong><span style={{color: '#ec1f1f'}}>MOC:</span> {pes.SelectedMOC}</strong></p>
+            : null}
+            </Grid>
+            <Grid item xs={4}>
+            { pes.SelectedFitting ?  
+            <p style={{marginLeft: '12px'}}><strong><span style={{color: '#ec1f1f'}}>FITITING TYPE:</span> {pes.SelectedFitting}</strong></p>
+            : pes.SelectedUnion ?  
+             <p style={{marginLeft: '12px'}}><strong><span style={{color: '#ec1f1f'}}>UNION TYPE:</span> {pes.SelectedUnion}</strong></p>
             : null}
             </Grid>
             <Grid item xs={12}>

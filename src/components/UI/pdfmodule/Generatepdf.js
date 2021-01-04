@@ -51,10 +51,16 @@ const Generatepdf = (props) => {
       <StyledTableCell>
         {pes.SelectedHP ?
         <span><b>HP/kW: </b>{pes.SelectedHP}</span>
-       : pes.SelectedSize ?<span><b>SIZE: </b>{pes.SelectedSize}</span> : null}
+       : pes.SelectedSize ?<span><b>SIZE: </b>{pes.SelectedSize}</span> 
+       : pes.SelectedFlowRate ? <span><b>FLOW RATE(KL): </b>{pes.SelectedFlowRate}</span> : null}
         <br/>
        {pes.SelectedMOC ?
         <span><b>MOC: </b>{pes.SelectedMOC}</span>: null}
+        <br/>
+        {pes.SelectedFitting ?
+        <span><b>FITTING TYPE: </b>{pes.SelectedFitting}</span>
+        : pes.SelectedUnion ?
+        <span><b>UNION TYPE: </b>{pes.SelectedUnion}</span> : null}
         <br/>
         {pes.ItemMessage ?
         <span><b>OTHER DETAILS: </b>{pes.ItemMessage}</span> : null}

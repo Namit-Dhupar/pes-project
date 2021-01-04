@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import { selectedhp, selectedsize, selectedmoc, selectedtext } from '../store/actions/actions';
+import { selectedhp, selectedsize, selectedmoc, selectedtext, 
+selectedflowrate, selectedfitting, selectedunion } from '../store/actions/actions';
 import Showpdffull from './UI/Modal/ModalFull';
 import Showpdfphone from './UI/Modal/ModalMobile';
 import { makeStyles } from '@material-ui/core/styles';
@@ -107,7 +108,8 @@ const tabPanel = productState.map((product,index) => {
       ))} 
       </RadioGroup>     
       </div>
-      :
+      : 
+      el.ItemSize ?
       <div>
       <FormLabel>Size(mm)</FormLabel>
       <RadioGroup row aria-label="position" name="position" value={el.SelectedSize}
@@ -123,8 +125,28 @@ const tabPanel = productState.map((product,index) => {
       ))} 
       </RadioGroup>
       </div>
+      : 
+      el.ItemFlowRate ?
+        <div>
+      <FormLabel>Flow Rate(KL)</FormLabel>
+      <RadioGroup row aria-label="position2" name="position2" value={el.SelectedFlowRate} 
+      onChange={e => dispatch(selectedflowrate(el.id, e.target.value))} defaultValue="top2">
+      {el.ItemFlowRate.map((FR,i)=>(      
+        <FormControlLabel
+          key={i}
+          value={FR}
+          control={<Radio color="secondary" />}
+          label={FR}
+          labelPlacement="start"
+        />
+        ))} 
+        </RadioGroup> 
+        </div>
+        : null
       }
-        <FormLabel>MOC</FormLabel>
+      {el.ItemMOC ? 
+      <div>
+      <FormLabel>MOC</FormLabel>
       <RadioGroup row aria-label="position2" name="position2" value={el.SelectedMOC} 
       onChange={e => dispatch(selectedmoc(el.id, e.target.value))} defaultValue="top2">
       {el.ItemMOC.map((MOC,i)=>(      
@@ -136,9 +158,49 @@ const tabPanel = productState.map((product,index) => {
           labelPlacement="start"
         />
         ))} 
-        </RadioGroup>
-      <FormLabel>{el.SelectedSize === "Custom Size" ? 
-      <span>Other Details & Your Custom Size</span>
+        </RadioGroup> 
+        </div>
+      : 
+      null
+      }
+      {el.FittingType ? 
+      <div>
+      <FormLabel>Fitting Type</FormLabel>
+      <RadioGroup row aria-label="position3" name="position3" value={el.SelectedFitting} 
+      onChange={e => dispatch(selectedfitting(el.id, e.target.value))} defaultValue="top3">
+      {el.FittingType.map((FT,i)=>(      
+        <FormControlLabel
+          key={i}
+          value={FT}
+          control={<Radio color="secondary" />}
+          label={FT}
+          labelPlacement="start"
+        />
+        ))} 
+        </RadioGroup> 
+        </div>
+      : 
+      el.UnionType
+      ?
+      <div>
+      <FormLabel>Union Type</FormLabel>
+      <RadioGroup row aria-label="position3" name="position3" value={el.SelectedUnion} 
+      onChange={e => dispatch(selectedunion(el.id, e.target.value))} defaultValue="top3">
+      {el.UnionType.map((UT,i)=>(      
+        <FormControlLabel
+          key={i}
+          value={UT}
+          control={<Radio color="secondary" />}
+          label={UT}
+          labelPlacement="start"
+        />
+        ))} 
+        </RadioGroup> 
+        </div>
+      :  null
+      }
+      <FormLabel>{(el.SelectedSize === "Custom Size" || el.SelectedFlowRate === "Custom Flow Rate") ? 
+      <span>Other Details & Your Custom Info</span>
       : <span>Other Details</span>}</FormLabel>
         <TextField
           required
@@ -179,7 +241,8 @@ const tabPanel = productState.map((product,index) => {
       ))} 
       </RadioGroup>     
       </div>
-      :
+      : 
+      el.ItemSize ?
       <div>
       <FormLabel>Size(mm)</FormLabel>
       <RadioGroup row aria-label="position" name="position" value={el.SelectedSize}
@@ -195,8 +258,27 @@ const tabPanel = productState.map((product,index) => {
       ))} 
       </RadioGroup>
       </div>
+      :  el.ItemFlowRate ?
+      <div>
+    <FormLabel>Flow Rate(KL)</FormLabel>
+    <RadioGroup row aria-label="position2" name="position2" value={el.SelectedFlowRate} 
+    onChange={e => dispatch(selectedflowrate(el.id, e.target.value))} defaultValue="top2">
+    {el.ItemFlowRate.map((FR,i)=>(      
+      <FormControlLabel
+        key={i}
+        value={FR}
+        control={<Radio color="secondary" />}
+        label={FR}
+        labelPlacement="start"
+      />
+      ))} 
+      </RadioGroup> 
+      </div>
+      : null
       }
-        <FormLabel>MOC</FormLabel>
+       {el.ItemMOC ? 
+      <div>
+      <FormLabel>MOC</FormLabel>
       <RadioGroup row aria-label="position2" name="position2" value={el.SelectedMOC} 
       onChange={e => dispatch(selectedmoc(el.id, e.target.value))} defaultValue="top2">
       {el.ItemMOC.map((MOC,i)=>(      
@@ -208,8 +290,48 @@ const tabPanel = productState.map((product,index) => {
           labelPlacement="start"
         />
         ))} 
-        </RadioGroup>
-      <FormLabel>{el.SelectedSize === "Custom Size" ? 
+        </RadioGroup> 
+        </div>
+      : 
+      null
+      }
+      {el.FittingType ? 
+      <div>
+      <FormLabel>Fitting Type</FormLabel>
+      <RadioGroup row aria-label="position3" name="position3" value={el.SelectedFitting} 
+      onChange={e => dispatch(selectedfitting(el.id, e.target.value))} defaultValue="top3">
+      {el.FittingType.map((FT,i)=>(      
+        <FormControlLabel
+          key={i}
+          value={FT}
+          control={<Radio color="secondary" />}
+          label={FT}
+          labelPlacement="start"
+        />
+        ))} 
+        </RadioGroup> 
+        </div>
+      : 
+      el.UnionType
+      ?
+      <div>
+      <FormLabel>Union Type</FormLabel>
+      <RadioGroup row aria-label="position3" name="position3" value={el.SelectedUnion} 
+      onChange={e => dispatch(selectedunion(el.id, e.target.value))} defaultValue="top3">
+      {el.UnionType.map((UT,i)=>(      
+        <FormControlLabel
+          key={i}
+          value={UT}
+          control={<Radio color="secondary" />}
+          label={UT}
+          labelPlacement="start"
+        />
+        ))} 
+        </RadioGroup> 
+        </div>
+      :  null
+      }
+      <FormLabel>{(el.SelectedSize === "Custom Size" || el.SelectedFlowRate === "Custom Flow Rate") ? 
       <span>Other Details & Your Custom Size</span>
       : <span>Other Details</span>}</FormLabel>
         <TextField
