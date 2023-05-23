@@ -1,4 +1,4 @@
-# Website Readme
+# PES Group Website
 
 This repository contains the source code and assets for the website hosted at [http://pesgroup.co.in/](http://pesgroup.co.in/).
 
